@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 91
+
+Auf einem Konto befinden sich am Anfang eines 
+Jahres 2 500 € zu einem festen Zinssatz von 5,2%.
+a) Geben Sie für den Kontostand nach 5 Jahren 
+eine rekursive und eine explizite Darstellung der 
+Folge an.
+b) Am Ende eines jeden Jahres hebt der 
+Kontoinhaber 200 € ab. Geben Sie für den sich 
+verändernden Kontostand eine rekursive 
+Darstellung und den Kontostand nach 5 Jahren an.
+ 
+a)
+
+G<sub>0</sub> = 2 500 €
+
+G<sub>1</sub> = 2 500 + 2 500 * 0,052 = 2 500 * 1,052 = 
+
+= G<sub>0</sub> * 1,052 €
+
+G<sub>2</sub> = G<sub>0</sub> * 1,052 + G<sub>0</sub> * 1,052 * 0,052 = 
+
+= G<sub>0</sub> * 1,052 * (1 + 0,052) = G<sub>0</sub> * 1,052<sup>2</sup>
+.
+.
+.
+
+Explizite Darstellung: 
+
+<span style="color:red">G<sub>5</sub> = G<sub>0</sub> * 1,52<sup>5</sup></span>
+
+G<sub>n</sub> = G<sub>0</sub> * 1,52<sup>n</sup>
+
+Rekursive Darstellung:
+
+<span style="color:red">G<sub>5</sub> = G<sub>4</sub> * 1,052</span>
+
+G<sub>n</sub> = G<sub>n-1</sub> * 1,52
+
+b)
+
+Am Ende des ersten Jahres usw.:
+
+G<sub>1</sub> = G<sub>0</sub> * 1,052 - 200
+
+G<sub>2</sub> = (G<sub>0</sub> * 1,052 - 200) * 1,052 - 200 = 
+
+= G<sub>0</sub> * 1,052<sup>2</sup> - 200 * (1,052 + 1)
+
+G<sub>3</sub> = G<sub>0</sub> * 1,052<sup>2</sup> - 200*(1,052 + 1) * 1,052 - 200 
+
+G<sub>3</sub> = G<sub>0</sub> * 1,052<sup>3</sup> - 200 * (1,052<sup>2</sup> + 1,052 + 1)
+.
+.
+.
+G<sub>5</sub> = G<sub>0</sub> * 1,052<sup>5</sup> - 200 * (1,052<sup>4</sup> + 1,052<sup>3</sup> + 
+
++ 1,052<sup>2</sup> + 1,052 + 1)
+
+Explizite Darstellung:
+
+G<sub>n</sub> = G<sub>0</sub> * 1,052<sup>n</sup> - 200*(1,052<sup>n-1</sup> + ... 1,052<sup>n-n</sup>)
+
+<span style="color:red">G<sub>5</sub> =</span> 2 500 * 1,052<sup>5</sup> - 200 * (1,052<sup>4</sup> + 1,052<sup>3</sup> + 
+
++ 1,052<sup>2</sup> + 1,052 + 1) = <span style="color:red">2 111,66 €</span>
+
+Rekursive Darstellung:
+
+<span style="color:red">G<sub>n</sub> = G<sub>n-1</sub> * 1,052 - 200</span>
+
+G<sub>1</sub> = G<sub>0</sub> * 1,052 - 200 = 2 500 * 1,052 - 200 = 
+
+= 2 430 €
+
+G<sub>2</sub> = G<sub>1</sub> * 1,052 - 200 = 2 430 * 1,052 - 200 = 
+
+= 2 356,36 €
+
+G<sub>3</sub> = G<sub>2</sub> * 1,052 - 200 = 2 356,36 * 1,052 - 200 = 
+
+= 2 278,89 €
+
+G<sub>4</sub> = G<sub>3</sub> * 1,052 - 200 = 2 278,89 * 1,052 - 200 = 
+
+= 2 197,39 €
+
+<span style="color:red">G<sub>5</sub> =</span> G<sub>4</sub> * 1,052 - 200 = 2 197,39 * 1,052 - 200 = 
+
+= <span style="color:red">2 111,65 €</span>
+
+</p></b></pre>

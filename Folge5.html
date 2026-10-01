@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>      
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button { font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Folgen und Reihen</p> 
+    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
+  	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+                          
+<!--//Aufgabe 72--> 
+
+<pre><b><p class ="Aufgabe" >Aufgabe 72
+
+Im luftleeren Raum fällt ein Körper in der 
+1. Sekunde etwa 4,9 m, in jeder folgenden 
+Sekunde 9,8 m mehr als in der vorhergehenden.
+a) Wieviel m fällt er in der 10. Sekunde? 
+
+Es sind <input type="text" id="Eintrag72" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button>
+
+b) Wie groß ist der Fallweg in den ersten 
+10 und in den folgenden 10 Sekunden?</p></pre>  
+
+                      <script>
+                        function Aufgabe72() { 
+                                                
+                          if (Eintrag72.value=="93,1") {alert("Richtig"); document.getElementById("Pruef72").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag72.value!=="93,1" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef72").disabled= true; document.getElementById("Eintrag72").value="93,1"; window.open('Folge_Aufgabe72.html');}
+                               
+                          else if (Eintrag72.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<!--//Aufgabe 73-->                           
+                          
+<pre><p class="Aufgabe">Aufgabe 73
+
+Die Schar von Halbkreisen bildet eine Spirale.
+
+<img src="Aufgabe73.jpg">
+
+a) Wie lang ist der 10. Halbkreisbogen, 
+wenn r<sub>1</sub> = 1 cm und r<sub>2</sub> = 1,5 cm betragen?
+b) Wie groß ist die Gesamtlänge l der Spirale 
+bis einschließlich 10. Halbkreisbogen?
+
+<button  onclick="window.open('Folge_Aufgabe73.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 74--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 74
+
+Ein Kreis soll so in 6 Ausschnitte geteilt 
+werden, dass die jeweiligen Zentriwinkel um 10° 
+größer werden. Bestimmen Sie die Folge der 
+Zentriwinkel.     
+
+a<sub>1</sub> = <input type="text" id="Eintrag74" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe74() { 
+                                                
+                          if (Eintrag74.value=="35") {alert("Richtig"); document.getElementById("Pruef74").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag74.value!=="35" && Eintrag74.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef74").disabled= true; document.getElementById("Eintrag74").value="35"; window.open('Folge_Aufgabe74.html');}
+                               
+                          else if (Eintrag74.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<!--//Aufgabe 75-->                           
+                          
+<pre><p class="Aufgabe">Aufgabe 75
+
+a) Wie groß ist die Summe aller durch 11 
+teilbaren zweiziffrigen Zahlen?
+
+b) Zwischen die Zahlen 7 und 16 sollen 5 Zahlen 
+so eingefügt werden, dass eine arithmetische 
+Folge entsteht. 
+Bestimmen Sie die Glieder der Folge.
+Wie groß ist ihre Summe?
+
+<button  onclick="window.open('Folge_Aufgabe75.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 76--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 76
+
+a) Die Entwicklung eines Films kostet 1,60 € 
+und jedes Bild 0,23 €. Wie lautet die explizite 
+Beschreibung dieser Zahlenfolge für eine 
+beliebige Anzahl Bilder? 
+Wie lautet das 72.Folgeglied?
+
+b) Messungen bei Bohrungen haben ergeben, dass 
+die Temperatur um 3° je 100 m Bohrtiefe zunimmt, 
+wenn man von einer Temperatur von 10° in 25 m 
+Tiefe ausgeht.
+b<sub>1</sub>) Wie hoch ist die Temperatur in einer Tiefe 
+von 2 300 m?    
+Es sind <input type="text" id="Eintrag76" maxlength="2" size="1" style= background-color:yellow ></input>° <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button>
+b<sub>2</sub>) In welcher Tiefe sind es 100°?
+b<sub>3</sub>) Aus welcher Tiefe kommt Heilwasser, das 
+eine Temperatur von 45° hat?</p></pre>  
+
+                      <script>
+                        function Aufgabe76() { 
+                                                
+                          if (Eintrag76.value=="79") {alert("Richtig"); document.getElementById("Pruef76").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag76.value!=="79" && Eintrag76.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef76").disabled= true; document.getElementById("Eintrag76").value="79"; window.open('Folge_Aufgabe76.html');}
+                               
+                          else if (Eintrag76.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+
+<!--//Aufgabe 77-->                           
+                         
+<pre><p class="Aufgabe">Aufgabe 77
+
+a) Eine Kirchuhr schlägt nur ganze Stunden. 
+Bsp. um 2 Uhr 2 Schläge, um 5 Uhr 5 Schläge usw. 
+Wieviel Schläge sind das in 3 Tagen?
+
+b) Eine Kirchuhr schlägt die ganzen Stunden und 
+zu jeder vollen Stunde viermal, zu jeder 
+Viertelstunde einmal, zu jeder halben Stunde 
+zweimal und zu jeder Dreiviertelstunde dreimal. 
+Wieviel Schläge sind das an einem Tag? 
+
+<button  onclick="window.open('Folge_Aufgabe77.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 78--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 78
+
+a) Das Bohren eines Schachtes für eine Heizung 
+mit Erdwärme kostet für den ersten Meter 5 € 
+und für jeden weiteren m 1,25 € mehr. 
+Wie teuer wird ein 1 200 m tiefer Schacht?
+
+Es sind <input type="text" id="Eintrag78" maxlength="6" size="2" style= background-color:yellow ></input> € <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button>
+
+b) Am ersten Tag erreicht eine Bohrung eine 
+Tiefe von 84 m. An den nachfolgenden Tagen sind 
+es 4 m weniger als am Tag zuvor. Wie tief ist 
+die Bohrung maximal? Am wievielten Tag ist eine 
+Tiefe von 900 m erreicht? </p></pre>  
+
+                      <script>
+                        function Aufgabe78() { 
+                                                
+                          if (Eintrag78.value=="905250") {alert("Richtig"); document.getElementById("Pruef78").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag78.value!=="905250" && Eintrag78.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef78").disabled= true; document.getElementById("Eintrag78").value="905250"; window.open('Folge_Aufgabe78.html');}
+                               
+                          else if (Eintrag78.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<!--//Aufgabe 79-->
+                          
+<pre><p class="Aufgabe">Aufgabe 79
+
+a) Berechnen Sie die Summe der ersten 25 Glieder 
+der Folge (-2; 0; 2; 4 ...)
+
+b) Wie groß ist die Summe der ersten 100 
+ungeraden Zahlen?
+
+<button  onclick="window.open('Folge_Aufgabe79.html');" >Lösung</button></p></pre>                          
+
+<!--//Aufgabe 80-->
+
+<pre><p class ="Aufgabe" >Aufgabe 80
+
+a) Wie groß ist die Summe der ungeraden Zahlen 
+zwischen 300 und 800?
+
+b) Wie groß ist die Summe aller natürlichen 
+dreiziffrigen Zahlen, die durch 23 ohne Rest 
+teilbar sind?     
+
+s = <input type="text" id="Eintrag80" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe80() { 
+                                                
+                          if (Eintrag80.value=="21528") {alert("Richtig"); document.getElementById("Pruef80").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag80.value!=="21528" && Eintrag80.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef80").disabled= true; document.getElementById("Eintrag80").value="21528"; window.open('Folge_Aufgabe80.html');}
+                               
+                          else if (Eintrag80.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                           </script>
+
+<!--//Aufgabe 81-->                           
+                                                     
+<pre><p class="Aufgabe">Aufgabe 81
+
+a) Wie groß ist die Summe aller ohne Rest durch 
+3 teilbaren geraden Zahlen zwischen 100 und 
+1 000?
+
+b) Wie groß ist die Summe aller durch 7 mit dem 
+Rest 4 teilbaren ungeraden Zahlen zwischen 50 
+und 500?
+
+<button  onclick="window.open('Folge_Aufgabe81.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 82--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 82
+
+a) Die Summe des 3. und 11. Gliedes einer 
+arithmetischen Folge ist gleich 34, die des 
+7. und 12. Gliedes gleich 44. 
+Berechnen Sie das 20. Glied und die Summe der 
+ersten 35 Glieder.
+
+b) Die Summe des 5. und 8. Gliedes einer 
+arithmetischen Folge ist gleich 1, die des 
+2. und 6. Gliedes gleich 0. 
+Berechnen Sie die Summe der ersten 12 Glieder. 
+
+s<sub>12</sub> = <input type="text" id="Eintrag82" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe82() { 
+                                                
+                          if (Eintrag82.value=="6") {alert("Richtig"); document.getElementById("Pruef82").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag82.value!=="6" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef82").disabled= true; document.getElementById("Eintrag82").value="6"; window.open('Folge_Aufgabe82.html');}
+                               
+                          else if (Eintrag82.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<!--//Aufgabe 83-->                          
+
+<pre><p class="Aufgabe">Aufgabe 83
+
+a) Fährt man in einem Bergwerk nach unten, nimmt 
+die Temperatur alle  35 m um 1° zu. Wie hoch ist 
+die Temperatur in einer Tiefe von 1 330 m, wenn 
+an der Oberfläche eine Temperatur von 10° 
+gemessen wird?
+
+b) Ein Dach hat Trapezform. In der obersten Reihe 
+liegen 40 Ziegel. In jeder folgenden liegen 
+jeweils 2 mehr. 
+Wieviel Ziegel liegen auf dem Dach, wenn es aus 
+32 Reihen besteht?
+
+<button  onclick="window.open('Folge_Aufgabe83.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 84-->
+
+<pre><p class ="Aufgabe" >Aufgabe 84
+
+a) Ein Körper legt im freien Fall in der ersten 
+Sekunde 5 m zurück, in jeder folgenden Sekunde 
+10 m mehr als in der vorhergehenden. 
+Welchen Weg hat er nach 15 s zurückgelegt?
+
+b) Ein Ball wird senkrecht nach oben geschossen 
+und erreicht in der ersten Sekunde eine Höhe von 
+60 m. In den folgenden Sekunden steigt er um 
+jeweils 10 m weniger als in den vorhergehenden. 
+Wie hoch und wie lange steigt er?      
+
+Es sind <input type="text" id="Eintrag84" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe84() { 
+                                                
+                          if (Eintrag84.value=="210") {alert("Richtig"); document.getElementById("Pruef84").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag84.value!=="210" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef84").disabled= true; document.getElementById("Eintrag84").value="210"; window.open('Folge_Aufgabe84.html');}
+                               
+                          else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                         
+                          </script> 
+
+<!--//Aufgabe 85-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 85
+
+a) Auf eine Rakete wirkt in 3 000 m Höhe 140 s 
+lang ihre maximale Beschleunigung von 35 m/s². 
+Wie hoch ist ihre Endgeschwindigkeit, wenn sie 
+in dieser Höhe eine Geschwindigkeit von 245 m/s 
+hatte? 
+ 
+b) Auf eine Spule von 50 mm Länge und einem 
+Durchmesser von 20 mm werden 15 Lagen Kupferdraht 
+mit einem Durchmesser von 0,5 mm gewickelt. 
+b<sub>1</sub>) Welchen Durchmesser d hat die gewickelte 
+Spule?
+b<sub>2</sub>) Wieviel Draht braucht man?
+
+<button  onclick="window.open('Folge_Aufgabe85.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 86-->
+
+<pre><p class ="Aufgabe" >Aufgabe 86
+
+a) Eine arithmetische Folge besteht aus 
+8 Gliedern, deren Summe 165 beträgt. Die Summe 
+der ersten 5 Glieder beträgt 75. 
+Wie lauten die Glieder der Folge, und wie groß 
+ist die Summe der ersten 4 Glieder? 
+
+s<sub>4</sub> = <input type="text" id="Eintrag86" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button>
+ 
+b) Die Summe der ersten 5 Glieder einer 
+arithmetischen Folge beträgt 125. Die Summe der 
+Quadrate dieser Glieder beträgt 4 125. 
+Wie lauten die 5 Glieder der Folge? </p></pre>  
+
+                      <script>
+                        function Aufgabe86() { 
+                                                
+                          if (Eintrag86.value=="52,5") {alert("Richtig"); document.getElementById("Pruef86").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag86.value!=="52,5" && Eintrag86.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef86").disabled= true; document.getElementById("Eintrag86").value="52,5"; window.open('Folge_Aufgabe86.html');}
+                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                         
+                          </script>
+                          
+<!--//Aufgabe 87-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 87
+
+a) 5, 11, 17 ... seien die Anfangsglieder einer 
+arithmetischen Folge.
+a<sub>1</sub>) Ab welchem Glied sind die Glieder der Folge 
+größer als 10 000?
+a<sub>2</sub>) Ab welchem Glied ist die Teilsumme der 
+Glieder größer als 100?
+ 
+b) Wieviel Glieder der Folge der natürlichen 
+ungeraden Zahlen ab 1 muss man addieren, wenn 
+ihre Summe 1 600 sein soll?
+
+<button  onclick="window.open('Folge_Aufgabe87.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 88-->
+
+<pre><p class ="Aufgabe" >Aufgabe 88
+
+a) Wieviel Glieder der Folge der natürlichen 
+geraden Zahlen ab 2 muss man addieren, wenn 
+ihre Summe 1 640 sein soll? 
+
+n = <input type="text" id="Eintrag88" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button> 
+
+b) Ein Körper hat eine Geschwindigkeit von 
+600 km/h. Wie lange dauert es bis zum 
+Stillstand, wenn seine Geschwindigkeit um 
+9,8 m/s abnimmt? </p></pre>  
+
+                      <script>
+                        function Aufgabe88() { 
+                                                
+                          if (Eintrag88.value=="40") {alert("Richtig"); document.getElementById("Pruef88").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag88.value!=="40" && Eintrag88.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef88").disabled= true; document.getElementById("Eintrag88").value="40"; window.open('Folge_Aufgabe88.html');}
+                               
+                          else if (Eintrag88.value=="") {alert("Bitte eine Eingabe machen")}}
+                      
+                          
+                          </script>
+                          
+<!--//Aufgabe 89-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 89
+
+a) Ein 180 m langer Draht mit einem Durchmesser 
+von 2 mm wird auf eine Trommel mit einem 
+Durchmesser von 3 cm und einer Länge von 40 cm 
+gewickelt. 
+Wieviel Lagen hat die fertige Wicklung? 
+
+b) Fertige Flaschen werden nach der Herstellung 
+so gestapelt, dass in der untersten Reihe 
+25 Flaschen liegen. In den Reihen darüber liegen 
+über jeweils 2 Flaschen der darunterliegenden 
+Reihe nur 1 Flasche. 
+Wie viel Flaschen liegen in 10 Reihen?
+
+<button  onclick="window.open('Folge_Aufgabe89.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 90-->
+
+<pre><p class ="Aufgabe" >Aufgabe 90
+
+a) Ein Mechaniker verdient brutto 37 200 € im 
+Jahr. Wie hoch ist sein Bruttogehalt im 25. Jahr, 
+wenn er bis dahin nach Ablauf eines jeden Jahres 
+eine monatliche Zulage von 40 € erhält? Wieviel 
+hat er insgesamt nach Ablauf der 25 Jahre 
+verdient?
+ 
+b) Ein Fahrzeug fährt bergabwärts. In der ersten 
+Sekunde legt es 3 m und in jeder folgenden 
+Sekunde 1,2 m mehr als in der vorhergehenden 
+zurück. Welche Geschwindigkeit in km/h hat es 
+nach 21 Sekunden?
+
+c) 6 000 € sollen so unter 12 Teilnehmern 
+aufgeteilt werden, dass jeder folgende 
+Teilnehmer 30 € mehr als der vorhergehende 
+erhält. Wieviel € erhält der erste und wieviel 
+der letzte Teilnehmer?     
+
+Der erste erhält <input type="text" id="Eintrag90" maxlength="3" size="1" style= background-color:yellow ></input> € <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button>   </p></pre>  
+
+                      <script>
+                        function Aufgabe90() { 
+                                                
+                          if (Eintrag90.value=="335") {alert("Richtig"); document.getElementById("Pruef90").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag90.value!=="335" && Eintrag90.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef90").disabled= true; document.getElementById("Eintrag90").value="335"; window.open('Folge_Aufgabe90.html');}
+                               
+                          else if (Eintrag90.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          </script> 
+                          
+<!--//Aufgabe 91-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 91
+
+Auf einem Konto befinden sich am Anfang eines 
+Jahres 2 500 € zu einem festen Zinssatz von 5,2%.
+a) Geben Sie für den Kontostand nach 5 Jahren 
+eine rekursive und eine explizite Darstellung der 
+Folge an.
+b) Am Ende eines jeden Jahres hebt der Konto-
+inhaber 200 € ab. Geben Sie für den sich 
+verändernden Kontostand eine rekursive 
+Darstellung und den Kontostand nach 5 Jahren an.
+
+<button  onclick="window.open('Folge_Aufgabe91.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 92-->
+
+<pre><p class ="Aufgabe" >Aufgabe 92
+
+Bestimmen Sie eine explizite und eine rekursive 
+Darstellung der Glieder der Folge der 
+dargestellten 'Wurzelschnecke'.    
+
+<img src="Aufgabe92.jpg">
+
+Explizit: a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>&#xA0;</mo><mo>+</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>&#xa0;</mo></math>
+
+In die Lücke in der Wurzel gehört 
+
+die Zahl <input type="text" id="Eintrag92" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button> </p></pre>  
+
+                      <script>
+                        function Aufgabe92() { 
+                                                
+                          if (Eintrag92.value=="1") {alert("Richtig"); document.getElementById("Pruef92").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag92.value!=="1" && Eintrag92.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef92").disabled= true; document.getElementById("Eintrag92").value="1"; window.open('Folge_Aufgabe92.html');}
+                               
+                          else if (Eintrag92.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          </script> 
+                          
+<!--//Aufgabe 93-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 93
+
+Der wievielte Halbkreisbogen hat eine Länge von 
+einem Millionstel der Länge des Anfangsbogens?
+
+<img src="Aufgabe93.jpg">
+
+<button  onclick="window.open('Folge_Aufgabe93.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 94-->
+
+<pre><p class ="Aufgabe" >Aufgabe 94
+
+a) Die Bevölkerungszahl eines Landes mit 
+5 000 000 Einwohnern wächst jährlich um 1%. 
+Dazu kommen 10 000 Einwanderer pro Jahr. 
+Wie groß ist seine Bevölkerung nach 20 Jahren, 
+bei gleichbleibenden Zuwachsbedingungen? 
+
+b) Eine Stahlkugel fällt aus einer Höhe von einem 
+Meter auf eine Metallplatte und springt von dort 
+auf 95% der ursprünglichen Höhe zurück.
+b<sub>1</sub>) Auf welche Höhe h springt die Kugel nach dem 
+5. Aufschlag?
+b<sub>2</sub>) Nach wievielen Aufschlägen n springt sie auf 
+die Hälfte der Ausgangshöhe? 
+
+Nach <input type="text" id="Eintrag94" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button>
+
+b<sub>3</sub>) Welchen Weg s hat die Kugel insgesamt bis zum 
+fünften Aufschlag zurückgelegt?</p></pre>  
+
+                      <script>
+                        function Aufgabe94() { 
+                                                
+                          if (Eintrag94.value=="14") {alert("Richtig"); document.getElementById("Pruef94").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag94.value!=="14" && Eintrag94.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef94").disabled= true; document.getElementById("Eintrag94").value="14"; window.open('Folge_Aufgabe94.html');}
+                        }     
+   
+                          </script> 
+
+<!--//Aufgabe 95-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 95
+
+Ein Autofahrer hat aus Versehen den 60 l Tank 
+seines Fahrzeugs mit Diesel minderwertiger 
+B-Qualität gefüllt. Um wieder A-Qualität in den 
+Tank zu bekommen, tankt er nach einem Verbrauch 
+von 40 l Tankinhalt 40 l A-Qualität zu dem Rest 
+im Tank dazu.
+a) Wieviel l der B-Qualität befinden sich nach 
+5-maligem wie beschriebenen Tanken noch im Tank? 
+b) Wie oft muss er wie beschrieben tanken, damit 
+der Anteil der B-Qualität auf 0,01 l gesunken 
+ist?
+
+<button  onclick="window.open('Folge_Aufgabe95.html');" >Lösung</button></p></b></pre>
+
+<a href="https://joafroehlich.github.io/Matheaufgaben-loesen/sek2.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      

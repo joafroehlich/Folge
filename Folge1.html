@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>      
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button { font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Folgen und Reihen</p> 
+    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
+  	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+<!--//Aufgabe 1-->
+
+  <pre><b><p class="Aufgabe">Aufgabe 1
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+             1
+a) a<sub>n</sub> = 1 + ---
+             n
+
+          3  
+b) a<sub>n</sub> = (---)<sup>n</sup>
+          4                   
+
+<button  onclick="window.open('Folge_Aufgabe1.html');" >Lösung</button></p></pre>
+
+
+<!--//Aufgabe 2-->
+
+    <pre><p class="Aufgabe">Aufgabe 2
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+a) a<sub>n</sub> = (-1)<sup>n</sup>
+
+             (-1)<sup>n</sup>
+b) a<sub>n</sub> = 1 + ------     
+              n    
+               
+b) kleinste obere Schranke = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+
+<script>
+                        function Aufgabe2() { 
+                                                
+                          if (Eintrag2.value=="1,5") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          }  
+                           
+                          else if (Eintrag2.value!=="1,5" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="1,5"; window.open('Folge_Aufgabe3.html');           
+                          document.getElementById("Pruef2").disabled= true;}
+                               
+                          else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+        <!--//Aufgabe 3-->
+
+  <pre><p class="Aufgabe">Aufgabe 3
+
+Untersuchen Sie die Folgen für n ∈ℕ auf 
+Monotonie und Beschränktheit:
+
+           8<sup>n</sup>  
+a) a<sub>n</sub> = --------
+        n<sup>2</sup> + 1 
+
+          n<sup>2</sup>
+b) a<sub>n</sub> = ------ + n
+         100  
+         
+<button  onclick="window.open('Folge_Aufgabe3.html');" >Lösung</button></p></pre>         
+
+<!--//Aufgabe 4-->
+
+  <pre><p class="Aufgabe">Aufgabe 4
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+              5
+a) a<sub>n</sub> = 1 - (---)<sup>n</sup>     
+              9 
+
+größte untere Schranke = <input type="text" id="Eintrag4" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button>              
+
+         1  
+b) a<sub>n</sub> = ----
+        √n</p></pre>
+
+<script>
+                        function Aufgabe4() { 
+                                                
+                          if (Eintrag4.value=="9") {alert("Richtig"); document.getElementById("Pruef4").disabled= true;
+                          }  
+                           
+                          else if (Eintrag4.value!=="9" && Eintrag4.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag4").value="9"; window.open('Folge_Aufgabe4.html');           
+                          document.getElementById("Pruef4").disabled= true;}
+                               
+                          else if (Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+
+ <!--//Aufgabe 5-->  
+
+  <pre><p class="Aufgabe">Aufgabe 5
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+          1 + 5n<sup>2</sup>
+a) a<sub>n</sub> = ------------
+        n * (n + 1) 
+
+             1  
+b) a<sub>n</sub> = n + ---
+             n 
+             
+<button  onclick="window.open('Folge_Aufgabe5.html');" >Lösung</button></p></pre>               
+
+<!--//Aufgabe 6-->
+
+ <pre><p class="Aufgabe">Aufgabe 6
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+          n<sup>2</sup>                                                 
+a) a<sub>n</sub> = ------     
+        n + 1 
+
+a<sub>n</sub> ist streng monoton
+
+<button id ="steig" onclick="Schalter1('steig')">steigend</button> <button id ="fall" onclick="Schalter1('fall')" >fallend</button>    <button  id = "L6" onclick="window.open('Folge_Aufgabe6.html');" style="display:none;">Lösung</button>
+        
+         2<sup>n</sup>
+b) a<sub>n</sub> = ----
+         n<sup>2</sup></p></pre>    
+
+<script>
+
+function Schalter1(buttonId){
+                                                
+                          if (buttonId==="steig") {alert("Richtig"); document.getElementById("steig").disabled= true;document.getElementById("fall").disabled= true;
+                          
+                         }                     
+                          
+                          else if (buttonId ==="fall" ) {alert("Leider falsch. Steigend ist richtig.");            
+                          document.getElementById("steig").disabled= true;document.getElementById("fall").disabled= true;
+                          document.getElementById("L6").style.display="inline";}
+                          
+                          }                                            
+                        
+                      </script>
+
+  <!--//Aufgabe 7-->   
+
+  <pre><p class="Aufgabe">Aufgabe 7
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+                2n + 1  
+a) a<sub>n</sub> = (-1)<sup>n</sup> * --------
+                   n!  
+
+           1
+b) a<sub>n+1</sub> = --- * a<sub>n</sub> + 2, a<sub>1</sub> = 2
+           2   
+
+<button  onclick="window.open('Folge_Aufgabe7.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 8-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 8
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+           1  
+a) a<sub>n+1</sub> = ---- + 1, a<sub>1</sub> = 1     
+           a<sub>n</sub>  
+
+Grenzwert g = <input type="text" id="Eintrag8" maxlength="5" size="1" style= background-color:yellow ></input> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button>                         
+
+b) a<sub>n+2</sub> = a<sub>n+1</sub> + a<sub>n</sub>, a<sub>1</sub> = 1, a<sub>2</sub> = 2</p></pre>    
+
+<script>
+                        function Aufgabe8() { 
+                                                
+                          if (Eintrag8.value=="1,618") {alert("Richtig"); document.getElementById("Pruef8").disabled= true;
+                          }  
+                           
+                          else if (Eintrag8.value!=="1,618" && Eintrag8.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag8").value="1,618"; window.open('Folge_Aufgabe8.html');           
+                          document.getElementById("Pruef8").disabled= true;}
+                               
+                          else if (Eintrag8.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+  <!--//Aufgabe 9-->   
+
+  <pre><p class="Aufgabe">Aufgabe 9
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+a) a<sub>n+1</sub> = aₙ * a<sub>n-1</sub>, a<sub>1</sub> = 1, a<sub>2</sub> = -2
+
+        n - 1     
+b) a<sub>n</sub> = ------
+          n  
+
+<button  onclick="window.open('Folge_Aufgabe9.html');" >Lösung</button></p></pre>          
+
+<!--//Aufgabe 10-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 10
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+         n<sup>2</sup> + 12
+a) a<sub>n</sub> = ----------     
+            n
+
+streng monoton steigend ab n = <input type="text" id="Eintrag10" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button>            
+
+b) a<sub>n</sub> = lg n</p></pre>    
+ 
+                      <script>
+                        function Aufgabe10() { 
+                                                
+                          if (Eintrag10.value=="4") {alert("Richtig"); document.getElementById("Pruef10").disabled= true;
+                          }  
+                           
+                          else if (Eintrag10.value!=="4" && Eintrag10.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag10").value="4"; window.open('QFunkt_Aufgabe10.html');           
+                          document.getElementById("Pruef10").disabled= true;}
+                               
+                          else if (Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                   
+
+ <!--//Aufgabe 11-->   
+
+  <pre><p class="Aufgabe">Aufgabe 11
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+                 n + 1
+a) a<sub>n</sub> = (-1)<sup>n</sup> * -------
+                   n<sup>2</sup>
+
+b) a<sub>n</sub> = (-3)<sup>-n</sup>
+
+c) a<sub>n</sub> = 10<sup>1/n</sup>    
+
+<button  onclick="window.open('Folge_Aufgabe11.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 12-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 12
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie:
+
+         2n
+a) a<sub>n</sub> = ------
+        n + 1
+
+        1 - n<sup>2</sup>
+b) a<sub>n</sub> = -------
+        n + 1 
+        
+<button  onclick="window.open('Folge_Aufgabe12.html');" >Lösung</button></p></pre>        
+
+    <!--//Aufgabe 13-->
+                      
+    <pre><p class="Aufgabe">Aufgabe 13
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie:
+
+        (2 - n)<sup>2</sup>
+a) a<sub>n</sub> = ----------
+         n + 1
+
+           n<sup>2</sup>
+b) a<sub>n</sub> = --------     
+        2n<sup>2</sup> - 1
+
+ist monoton <button id ="steig1" onclick="Schalter1('steig1')">steigend</button> <button id ="fall1" onclick="Schalter1('fall1')" >fallend</button>    
+
+<button  id = "L13" onclick="window.open('Folge_Aufgabe13.html');" style="display:none;">Lösung</button></p></pre>        
+
+<script>
+
+function Schalter1(buttonId){
+                                                
+                          if (buttonId==="fall") {alert("Richtig"); document.getElementById("fall1").disabled= true;document.getElementById("steig1").disabled= true;
+                          
+                         }                     
+                          
+                          else if (buttonId ==="steig1" ) {alert("Leider falsch. Fallend ist richtig.");            
+                          document.getElementById("steig1").disabled= true;document.getElementById("fall1").disabled= true;
+                          document.getElementById("L13").style.display="inline";}
+                          
+                          }                                            
+                        
+                      </script>
+<!--//Aufgabe 14-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 14
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie:
+
+         3 - 4n
+a) a<sub>n</sub> = ---------
+         2n + 1
+
+b) a<sub>n</sub> = 2<sup>n</sup> - n<sup>2</sup>    
+
+<button  onclick="window.open('Folge_Aufgabe14.html');" >Lösung</button></p></pre>  
+      
+
+                      
+     <!--//Aufgabe 15--> 
+                      
+    <pre><p class="Aufgabe">Aufgabe 15
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Beschränktheit:
+
+          n    
+a) a<sub>n</sub> = -------
+        n + 2
+
+           1  
+b) a<sub>n</sub> = - ---     
+           n         
+
+die kleinste obere Schranke = <input type="text" id="Eintrag15" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe15() { 
+                                                
+                          if (Eintrag15.value=="0") {alert("Richtig"); document.getElementById("Pruef15").disabled= true;
+                          }  
+                           
+                          else if (Eintrag15.value!=="0" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag15").value="0"; window.open('QFunkt_Aufgabe15.html');           
+                          document.getElementById("Pruef15").disabled= true;}
+                               
+                          else if (Eintrag15.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+
+<!--//Aufgabe 16-->
+
+<pre><p class="Aufgabe">Aufgabe 16
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Beschränktheit.
+
+        2n + 1    
+a) a<sub>n</sub> = --------
+        3n - 1
+
+          n<sup>2</sup>  
+b) a<sub>n</sub> = -------
+        n + 2  
+
+<button  onclick="window.open('Folge_Aufgabe16.html');" >Lösung</button></p></pre> 
+                                          
+<!--//Aufgabe 17-->
+
+<pre><p class ="Aufgabe" >Aufgabe 17
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Beschränktheit.
+
+a) a<sub>n</sub> = (-2)ⁿ
+
+b) a<sub>n</sub> = <math mathsize ="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><mi mathvariant="normal">n</mi><mo>&#xA0;</mo></math> 
+
+die größte untere Schranke = <input type="text" id="Eintrag17" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button></p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe17() { 
+                                                
+                          if (Eintrag17.value=="0") {alert("Richtig"); document.getElementById("Pruef17").disabled= true;
+                          }  
+                           
+                          else if (Eintrag17.value!=="0" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag17").value="0"; window.open('Folge_Aufgabe17.html');           
+                          document.getElementById("Pruef17").disabled= true;}
+                               
+                          else if (Eintrag17.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 18--> 
+                      
+    <pre><p class="Aufgabe">Aufgabe 18
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Beschränktheit.
+
+                     n - 1
+a) a<sub>n</sub> = 4 + (-1)<sup>n</sup> * -------
+                     n + 1
+
+                 n + 1
+b) a<sub>n</sub> = (-1)<sup>n</sup> * --------
+                 2n - 1
+
+<button  onclick="window.open('Folge_Aufgabe18.html');" >Lösung</button></p></b></pre>
+
+<a href="https://joafroehlich.github.io/Matheaufgaben-loesen/sek2.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>
+        
+         
+
+        </body></html>
+
+                      

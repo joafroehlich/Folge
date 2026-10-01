@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 94
+
+a) Die Bevölkerungszahl eines Landes mit 
+5 000 000 Einwohnern wächst jährlich um 1%. 
+Dazu kommen 10 000 Einwanderer pro Jahr. 
+Wie groß ist seine Bevölkerung nach 20 Jahren, 
+bei gleichbleibenden Zuwachsbedingungen? 
+
+b) Eine Stahlkugel fällt aus einer Höhe von einem 
+Meter auf eine Metallplatte und springt von dort 
+auf 95% der ursprünglichen Höhe zurück.
+b<sub>1</sub>) Auf welche Höhe h springt die Kugel nach dem 
+5. Aufschlag?
+b<sub>2</sub>) Nach wie vielen Aufschlägen n springt sie auf 
+die Hälfte der Ausgangshöhe?
+b<sub>3</sub>) Welchen Weg s hat die Kugel insgesamt bis zum 
+fünften Aufschlag zurückgelegt?
+
+a)
+
+a<sub>0</sub> = 5 000 000 Einwohner
+
+Am Ende des ersten Jahres:
+
+a<sub>1</sub> = 5 000 000 * 1,01 + 10 000
+
+Am Ende des zweiten Jahres:
+
+a<sub>2</sub> = (5 000 000 * 1,01 + 10 000) * 1,01 + 10 000 
+
+a<sub>2</sub> = 5 000 000 * 1,01<sup>2</sup> + 10 000 * 1,01 + 10 000
+.
+.
+Am Ende des n-ten Jahres:
+
+a<sub>n</sub> = 5 000 000*1,01<sup>n</sup> + 10 000 * 1,01<sup>n-1</sup> + 10 000
+
+a<sub>20</sub> = 5 000 000*1,01<sup>20</sup> + 10 000 * 1,01<sup>19</sup> + 10 000
+
+<span style="color:red">a<sub>20</sub> = 6 123 031 Einwohner</span>
+
+b)
+
+b<sub>1</sub>)
+
+Für die Rückprallhöhe h gilt nach dem ersten 
+Aufschlag:
+
+h<sub>1</sub> = 0,95 m
+
+Nach dem 2. Aufschlag 
+
+h<sub>2</sub> = 0,95 * 0,95 = 0,95<sup>2</sup> m
+
+Nach dem n-ten Aufschlag:
+
+h<sub>n</sub> = 0,95<sup>n</sup> m
+
+Nach dem 5. Aufschlag:
+
+<span style="color:red">h<sub>5</sub> =</span> 0,955 = <span style="color:red">0,774 m</span>
+
+b<sub>2</sub>)
+
+0,5 = 0,95<sup>n</sup>
+
+Logarithmieren:
+
+lg 0,5 = lg 0,95<sup>n</sup>
+
+lg 0,5 = n * lg 0,95 |:lg 0,95
+
+     lg 0,5
+<span style="color:red">n =</span> --------- = 13,5 --> <span style="color:red">14 Aufschläge</span>
+     lg 0,95
+
+b<sub>3</sub>)
+
+s = 1 + 2*0,95 + 2*0,95<sup>2</sup> + 2 * 0,95<sup>3</sup> + 2*0,954
+
+<span style="color:red">s = 8,05 m</span>
+
+</p></b></pre>

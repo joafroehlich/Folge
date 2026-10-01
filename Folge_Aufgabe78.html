@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 78
+
+a) Das Bohren eines Schachtes für eine Heizung 
+mit Erdwärme kostet für den ersten Meter 5 € und 
+für jeden weiteren m 1,25 € mehr. Wie teuer wird 
+ein 1 200 m tiefer Schacht?
+
+b) Am ersten Tag erreicht eine Bohrung eine 
+Tiefe von 84 m. An den nachfolgenden Tagen sind 
+es 4 m weniger als am Tag zuvor. Wie tief ist 
+die Bohrung maximal? Am wievielten Tag ist eine 
+Tiefe von 900 m erreicht? 
+
+a)
+
+a<sub>1</sub> = 1 m
+
+n = 1 200 m
+
+d<sub>1</sub> = 1,25 €
+
+d<sub>2</sub> = 1 m
+
+Für die Tiefe gilt:
+
+a<sub>1200</sub> = 1 + (1200 - 1) * 1 = 1 199 m
+
+Für die Kosten k gilt:
+
+k<sub>1200</sub> = 5 + (1200 - 1) * 1,25 = 1 503,75 €
+
+         1200
+<span style="color:red">s<sub>1200</sub> =</span> ------- * (5 + 1 503,75) = <span style="color:red">905 250 €</span>
+           2 
+
+b)
+
+a<sub>1</sub> = 84 m
+
+a<sub>n</sub> = 0 m
+
+d = -4 m
+
+0 = 84 + (n - 1) * (-4)
+
+0 = 84 - 4n + 4 |+4n
+
+4n = 88 |:4
+
+n = 22
+
+       n
+s<sub>22</sub> = --- * (a1 + a22)
+       2
+
+       22
+<span style="color:red">s<sub>22</sub> =</span> ---- * (84 + 0) = <span style="color:red">924 m</span>
+        2
+
+       n
+900 = --- * (84 + a<sub>n</sub>)
+       2      
+
+       n
+900 = --- * (84 + 84 + (n - 1) * (-4))
+       2      
+
+900 = 84n - 2n<sup>2</sup> + 2n |+2n<sup>2</sup> - 86n
+
+2n<sup>2</sup> - 86n + 900 = 0 |:2
+
+n<sup>2</sup> - 43n + 450 = 0
+
+p, q - Formel
+
+p = -43, q = 450
+
+n<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>43</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>43</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>450</mn></mrow></msqrt></math> = 21,5 ± 3,5
+
+n<sub>1</sub> = 18
+
+n<sub>2</sub> = -25 keine Lösung, kein ∉ von ℕ
+
+<span style="color:red">Am 18. Tag</span>
+
+</p></b></pre>

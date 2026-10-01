@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 118
+
+a) 1 l Alkohol wird mit 4 l Wasser vermischt. 
+In 1 l dieser Mischung kommen wieder 4 l Wasser. 
+Wie oft muss dieser Mischvorgang durchgeführt 
+werden, damit die Mischung noch 0,00032 l Alkohol 
+enthält?
+
+b) Das Dreieck ABC ist gleichseitig mit einer 
+Seitenlänge von 12 cm. Das Dreieck EFG entsteht, 
+indem die Mittelpunkte der Seiten des Dreiecks 
+ABC miteinander verbunden werden usw.
+b<sub>1</sub>) Bestimmen Sie jeweils den Flächeninhalt der 
+ersten 3 Dreiecke.
+b<sub>1</sub>) Bestimmen Sie die Summe der ersten 5 Flächen-
+inhalte.
+
+<img src="Aufgabe118.jpg">
+
+a)
+
+Ursprünglicher Anteil Alkohol = 1 l = a<sub>1</sub>
+
+Anteil Alkohol in der 1. Mischung:
+
+1 l Alkohol + 4 l Wasser = 5 l Mischung, 
+
+davon 1/5 Alkohol ≙ 20% ≙ 0,2 l Alkohol/pro l 
+Mischung
+
+--> q = 0,2 
+
+a<sub>n</sub> = 0,00032 l
+
+a<sub>n</sub> = a<sub>1</sub> * q<sup>n-1</sup>
+
+0,00032 = 0,2<sup>n-1</sup>
+
+Logarithmieren:
+
+lg 0,00032 = lg 0,2<sup>n-1</sup>
+
+lg 0,00032 = (n - 1) * lg 0,2 |:lg 0,2
+
+         lg 0,00032
+n - 1 = ------------ |+1
+            lg 0,2
+
+     lg 0,00032
+<span style="color:red">n =</span> ------------ + 1 = <span style="color:red">6</span>
+       lg 0,2
+
+b<sub>1</sub>)
+
+      12 cm * h
+A<sub>1</sub> = ----------- 
+           2
+
+Satz von Pythagoras im Dreieck 
+
+h = EC
+
+              AB
+AC<sup>2</sup> = EC<sup>2</sup> + (----)<sup>2</sup>
+               2
+
+              12
+12<sup>2</sup> = EC<sup>2</sup> + (----)<sup>2</sup> |-6<sup>2</sup>
+               2
+
+EC<sup>2</sup> = 108 |√
+
+EC = 6 * √3 cm
+
+      12 * 6 * √3
+<span style="color:red">A<sub>1</sub> =</span> ------------- = <span style="color:red">62,35 cm<sup>2</sup></span>
+           2
+
+Durch die Unterteilung entstehen aus dem Dreieck 
+ABC 4 gleich große Dreiecke 
+
+--> q = 0,25
+
+A<sub>n</sub> = A<sub>1</sub> * q<sup>n-1</sup>
+
+<span style="color:red">A<sub>2</sub> =</span> 62,35 * 0,25 = <span style="color:red">15,59 cm<sup>2</sup></span>
+
+<span style="color:red">A<sub>3</sub></span> = 62,35 * 0,25<sup>2</sup> = <span style="color:red">3,9 cm<sup>2</sup></span>
+
+b<sub>2</sub>)
+
+              1 - (0,25)<sup>5</sup>
+<span style="color:red">s<sub>5</sub> =</span> 62,35 * ------------- = <span style="color:red">83,05 cm<sup>2</sup></span>
+                1 - 0,25
+
+</p></b></pre>

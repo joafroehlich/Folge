@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 126
+
+a<sub>1</sub>) Wie groß ist die Summe der Weizenkörner, die 
+entsteht, wenn man mit einem Korn auf dem ersten 
+Feld eines Schachbretts beginnt und die Anzahl 
+auf den nachfolgenden Feldern jeweils verdoppelt? 
+a<sub>2</sub>) Wieviel t wiegen die Körner, wenn 20 Körner 
+1 g wiegen?
+a<sub>3</sub>) Wie groß ist die Summe der Weizenkörner, die 
+entsteht, wenn auf das erste Feld 1 Korn, auf 
+das zweite 3 Körner, auf das dritte 5 Körner usw. 
+kommen?
+
+b) Das Dreieck ABC ist gleichseitig. Verbindet 
+man die Seitenmitten miteinander, entsteht das 
+gleichseitige Dreieck EFG usw. Wie groß sind der 
+Flächeninhalt A und der Umfang U aller Dreiecke?
+
+<img src="Aufgabe126.jpg"> 
+
+a<sub>1</sub>)
+
+a<sub>1</sub> = 1
+
+q = 2
+
+           2<sup>64</sup> - 1
+s<sub>64</sub> = 1 * ---------  
+            2 - 1
+
+s<sub>64</sub> = 18 446 744 073 709 551 615 Körner
+
+a<sub>2</sub>) 
+
+     18 446 744 073 709 551 615
+m = ---------------------------- = 
+                 20
+
+= 922 337 203 685 477 581 g                 
+
+= 922 337 203 685 478 kg = 922 337 203 685 t
+
+a<sub>3</sub>)
+
+Es ist eine arithmetische Folge mit a<sub>1</sub> = 1 
+und d = 2:
+
+a<sub>n</sub> = a<sub>1</sub> + (n - 1) * d
+
+a<sub>64</sub> = 1 + 63 * 2 = 127 Körner
+
+       64
+s<sub>64</sub> = ---- * (1 + 127) = 4 096 Körner
+        2
+
+b)
+
+AB = a
+
+EC = h
+
+Umfang:
+
+U<sub>1</sub> = 3 * a = a<sub>1</sub>
+
+      a
+EF = ---
+      2
+
+          a
+U<sub>2</sub> = 3 * ---
+          2
+
+          a
+U<sub>3</sub> = 3 * ---
+          4
+
+     1
+q = ---
+     2
+
+Es ist eine unendliche geometrische Reihe:
+
+       3 * a
+<span style="color:red">U<sub>∞</sub> =</span> --------- = <span style="color:red">6a</span>
+      1 - 0,5
+
+Flächeninhalt:
+
+Satz von Pythagoras im Dreieck AEC:
+ 
+       a              a
+a<sup>2</sup> = (---)<sup>2</sup> + h<sup>2</sup> | -(---)<sup>2</sup>
+       2              2
+
+      a<sup>2</sup>                 
+a<sup>2</sup> - ---- = h<sup>2</sup> 
+      4    
+
+      3
+h<sup>2</sup> = --- * a<sup>2</sup> |√
+      4             
+
+     a
+h = --- * √3
+     2 
+
+           a              
+      a * --- * √3 
+           2           a<sup>2</sup>
+A<sub>1</sub> = -------------- = ---- * √3 = a<sub>1</sub>
+            2           4
+
+A<sub>1</sub> besteht aus 4 gleichgroßen Dreiecken --> 
+
+      A<sub>1</sub>           1
+A<sub>2</sub> = ---- --> q = ---
+      4            4
+
+Es ist eine unendliche geometrische Reihe:
+
+       a<sup>2</sup>
+      ---- * √3
+        4             a<sup>2</sup> * √3       <span style="color:red">a<sup>2</sup></span>
+<span style="color:red">A<sub>∞</sub> =</span> ------------ = ----------- = <span style="color:red">-----</span>
+            1              3        <span style="color:red">√3</span>
+       1 - ---        4 * ---
+            4              4
+
+</p></b></pre>

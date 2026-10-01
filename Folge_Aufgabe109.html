@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 109
+
+a) Die Summe des 5. und 6. Gliedes einer 
+geometrischen Folge verhält sich zur Summe des 
+10. und 11. Gliedes wie 1/243. Bestimmen Sie q.
+
+b) Die Zahlen 1; 0,2; 0,04 bilden die ersten 
+3 Glieder einer geometrischen Folge. 
+Ab welchem n ist die Summe von n Gliedern der 
+Folge größer als 1,2?
+
+a)
+
+  a<sub>5</sub> + a<sub>6</sub>       1      
+----------- = ----- 
+ a<sub>10</sub> + a<sub>11</sub>     243      
+
+ a<sub>1</sub> * q<sup>4</sup> + a<sub>1</sub> * q<sup>5</sup>       1
+-------------------- = -----
+ a<sub>1</sub> * q<sup>9</sup> + a<sub>1</sub> * q<sup>10</sup>     243
+
+ a<sub>1</sub> * q<sup>4</sup> * (1 + q)       1
+-------------------- = -----
+ a<sub>1</sub> * q<sup>9</sup> * (1 + q)      243
+
+  1      1
+---- = -----
+ q<sup>5</sup>     243
+
+Über Kreuz multipliziert:
+
+q<sup>5</sup> = 243 |<math mathsize="1em"><mroot><mrow/><mn mathvariant="bold">5</mn></mroot></math>
+
+<span style="color:red">q = 3</span>
+
+b)
+
+     a<sub>2</sub>    0,2
+q = --- = ----- = 0,2
+     a<sub>1</sub>     1
+
+          0,2<sup>n</sup> - 1
+s<sub>n</sub> = 1 * ---------- 
+          0,2 - 1
+
+            0,2<sup>n</sup> - 1
+1,2 < 1 * ----------- |*-0,8
+            0,2 - 1
+
+-0,96 < 0,2<sup>n</sup> - 1 |+1
+
+0,04 < 0,2<sup>n</sup>
+
+Logarithmieren:
+
+lg 0,04 < lg 0,2<sup>n</sup>
+
+lg 0,04 < n * lg 0,2 |:lg 0,2
+
+     lg 0,04
+n > --------- = 2 --> <span style="color:red">Ab n = 3</span>
+      lg 0,2
+
+</p></b></pre>

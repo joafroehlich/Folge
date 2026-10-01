@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 105
+
+a) Wie viele Glieder der geometrischen Folge mit 
+-4, -1, ... ergeben die Summe s<sub>n</sub> = -5,33203125?
+
+b) Vom wievielten Glied der geometrischen Folge 
+mit 3, 12, 48, 192, ... ab, sind die Folgeglieder 
+größer als 10<sup>6</sup>?
+
+a)
+
+a<sub>1</sub> = -4, a<sub>2</sub> = -1
+
+     a<sub>2</sub>     -1
+q = ---- = ---- = 0,25
+     a<sub>1</sub>     -4
+
+                     1 - 0,25<sup>n</sup> 
+- 5,33203125 = -4 * ----------- |:-4
+                     1 - 0,25
+
+                1 - 0,25<sup>n</sup>
+1,3330078125 = ----------- |*0,75
+                   0,75
+
+0,999755859375 = 1 - 0,25<sup>n</sup> |+0,25<sup>n</sup> 
+
+0,999755859375 + 0,25<sup>n</sup> = 1 |- 0,999755859375
+
+0,25<sup>n</sup> = 0,000244140625
+
+Logarithmieren:
+
+lg 0,25<sup>n</sup> = lg 0,000244140625
+
+n * lg 0,25 = lg 0,000244140625 |:lg 0,25
+
+     lg 0,000244140625 
+<span style="color:red">n =</span> ------------------- = <span style="color:red">6</span>
+           lg 0,25
+
+           0,25<sup>6</sup> - 1
+s<sub>6</sub> = -4 * ----------- = - 5,33203125
+           0,25 - 1
+
+b)
+
+a<sub>1</sub> = 3, a<sub>2</sub> = 12
+
+     a<sub>2</sub>     12
+q = ---- = ---- = 4
+     a<sub>1</sub>      3
+
+a<sub>n</sub> = a<sub>1</sub> * q<sup>n-1</sup>
+
+106 < 3 * 4<sup>n-1</sup> |:3
+
+ 106     4<sup>n</sup>
+----- < ---- |*4
+  3       4
+
+      4 * 106
+4<sup>n</sup> > ---------
+         3
+
+Logarithmieren:
+
+            4 * 106
+lg 4<sup>n</sup> > lg ---------
+               3
+
+               4 * 106
+n * lg 4 > lg ---------- |:lg 4
+                   3
+
+         4 * 106
+     lg --------- 
+            3
+n > -------------- = 10,17 --> <span style="color:red">Ab n = 11</span>
+          lg 4
+
+</p></b></pre>

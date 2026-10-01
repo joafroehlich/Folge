@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>      
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button { font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Folgen und Reihen</p> 
+    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
+  	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+<!--//Aufgabe 19-->
+
+  <pre><b><p class ="Aufgabe" >Aufgabe 19
+
+Bestimmen Sie den Grenzwert g der Folge. 
+Ermitteln Sie rechnerisch, ab welchem Glied 
+der Folge der Abstand zum Grenzwert weniger 
+als 0,1 beträgt.
+
+            1
+a) a<sub>n</sub> = 1 + ---
+            3n
+
+              1
+b) a<sub>n</sub> = 4 * (---)<sup>n-1</sup>         
+              3
+
+g = <input type="text" id="Eintrag19" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe19() { 
+                                                
+                          if (Eintrag19.value=="0") {alert("Richtig"); document.getElementById("Pruef19").disabled= true;
+                          }  
+                           
+                          else if (Eintrag19.value!=="0" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag19").value="0"; window.open('Folge_Aufgabe19.html');           
+                          document.getElementById("Pruef19").disabled= true;}
+                               
+                          else if (Eintrag19.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+         <!--//Aufgabe 20--> 
+                      
+    <pre><p class="Aufgabe">Aufgabe 20
+
+Bestimmen Sie den Grenzwert g der Folge. 
+Ermitteln Sie rechnerisch, ab welchem Glied 
+der Folge der Abstand zum Grenzwert weniger 
+als 0,1 beträgt.
+
+         6n + 2
+a) a<sub>n</sub> = ---------
+            3n
+
+          3n<sup>2</sup>
+b) a<sub>n</sub> = --------
+        n<sup>2</sup> + 5
+
+<button  onclick="window.open('Folge_Aufgabe20.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 21-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 21
+
+Bestimmen Sie den Grenzwert g der Folge. 
+Ermitteln Sie rechnerisch, ab welchem Glied 
+der Folge der Abstand zum Grenzwert weniger 
+als 0,1 beträgt.
+
+         1 + √n
+a) a<sub>n</sub> = ---------     
+         2 + √n
+
+g = <input type="text" id="Eintrag21" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button>        
+
+        1 + n
+b) a<sub>n</sub> = -------
+          n</p></pre> 
+
+                      <script>
+                        function Aufgabe21() { 
+                                                
+                          if (Eintrag21.value=="1") {alert("Richtig"); document.getElementById("Pruef21").disabled= true;
+                          }  
+                           
+                          else if (Eintrag21.value!=="1" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag21").value="1"; window.open('Folge_Aufgabe21.html');           
+                          document.getElementById("Pruef21").disabled= true;}
+                               
+                          else if (Eintrag21.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+             <!--//Aufgabe 22--> 
+                      
+    <pre><p class="Aufgabe">Aufgabe 22
+
+Bestimmen Sie den Grenzwert g der Folge. 
+Ermitteln Sie rechnerisch, ab welchem Glied 
+der Folge der Abstand zum Grenzwert weniger 
+als 0,1 beträgt.
+
+        n<sup>2</sup> - 1
+a) a<sub>n</sub> = -------
+           n<sup>2</sup>
+
+             100
+b) a<sub>n</sub> = 1 - ------
+              n
+
+<button  onclick="window.open('Folge_Aufgabe22.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 23-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 23
+
+Bestimmen Sie den Grenzwert g der Folge. 
+Ermitteln Sie rechnerisch, ab welchem Glied 
+der Folge der Abstand zum Grenzwert weniger 
+als 0,1 beträgt.
+
+         n - 1
+a) a<sub>n</sub> = --------
+         n + 2   
+
+        2n<sup>2</sup> - 3                         
+b) a<sub>n</sub> = ---------     
+           3n<sup>2</sup>
+
+      2
+g = ------ <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button>
+    <input type="text" id="Eintrag23" maxlength="1" size="1" style= background-color:yellow ></input> </p></pre>
+    
+ 
+                      <script>
+                        function Aufgabe23() { 
+                                                
+                          if (Eintrag23.value=="3") {alert("Richtig"); document.getElementById("Pruef23").disabled= true;
+                          }  
+                           
+                          else if (Eintrag23.value!=="3" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag23").value="3"; window.open('Folge_Aufgabe23.html');           
+                          document.getElementById("Pruef23").disabled= true;}
+                               
+                          else if (Eintrag23.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+   <!--//Aufgabe 24--> 
+                      
+    <pre><p class="Aufgabe">Aufgabe 24
+
+Sind die Folgen konvergent oder divergent? 
+Begründen Sie Ihre Entscheidung rechnerisch.
+
+a) a<sub>n</sub> = 1 + n<sup>2</sup>
+
+b) a<sub>n</sub> = (-1)<sup>n</sup> * (n + 2)
+
+<button  onclick="window.open('Folge_Aufgabe24.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 25-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 25
+
+Ist g Grenzwert? Überprüfen Sie dies 
+anhand der Differenzenfolge aₙ - g. 
+
+        3n - 2
+a) a<sub>n</sub> = --------, g = 3
+         n + 2
+
+         n<sup>2</sup> + n
+b) a<sub>n</sub> = ---------, g = 0,2
+           5n<sup>2</sup>
+           
+<button id ="ja" onclick="Schalter1('ja')">Ja</button> <button id ="nein" onclick="Schalter1('nein')" >Nein</button>    <button  id = "L25" onclick="window.open('Folge_Aufgabe25.html');" style="display:none;">Lösung</button></p></pre>
+        
+<script>
+
+function Schalter1(buttonId){
+                                                
+                          if (buttonId==="ja") {alert("Richtig"); document.getElementById("ja").disabled= true;document.getElementById("nein").disabled= true;
+                          
+                         }                     
+                          
+                          else if (buttonId ==="nein") {alert("Leider falsch. Ja ist richtig.");            
+                          document.getElementById("ja").disabled= true;document.getElementById("nein").disabled= true;
+                          document.getElementById("L25").style.display="inline";}
+                          
+                          }                                            
+                        
+                      </script>           
+                      
+     <!--//Aufgabe 26--> 
+                      
+    <pre><p class="Aufgabe">Aufgabe 26
+
+Ist g Grenzwert? Überprüfen Sie dies 
+anhand der Differenzenfolge aₙ - g. 
+
+          2<sup>n+1</sup>
+a) a<sub>n</sub> = --------, g = 2
+         2<sup>n</sup> + 1  
+
+        3 * 2<sup>n</sup> + 2         3
+b) a<sub>n</sub> = ------------, g = ---
+            2<sup>n+1</sup>           2 
+                              
+<button  onclick="window.open('Folge_Aufgabe26.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 27-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 27
+
+Zeigen Sie, dass die Folge aₙ konvergent ist, 
+und bestimmen Sie ihren Grenzwert.
+
+      n + 1
+a<sub>n</sub> = --------  g = <input type="text" id="Eintrag27" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef27" onclick="Aufgabe27()">Prüfen</button>  
+       5n</p></pre>    
+ 
+                      <script>
+                        function Aufgabe27() { 
+                                                
+                          if (Eintrag27.value=="0,2") {alert("Richtig"); document.getElementById("Pruef27").disabled= true;
+                          }  
+                           
+                          else if (Eintrag27.value!=="0,2" && Eintrag27.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag27").value="0,2"; window.open('Folge_Aufgabe27.html');           
+                          document.getElementById("Pruef27").disabled= true;}
+                               
+                          else if (Eintrag27.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 28--> 
+                      
+    <pre><p class="Aufgabe">Aufgabe 28
+
+Zeigen Sie, dass die Folge a<sub>n</sub> konvergent ist, 
+und bestimmen Sie ihren Grenzwert.
+
+       <math mathsize="1em"><msqrt><mrow><mn>5</mn><mi mathvariant="normal">n</mi></mrow></msqrt><mo>&#xA0;</mo></math>
+a<sub>n</sub> = ----------
+      <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#xA0;</mo></math>
+
+<button  onclick="window.open('Folge_Aufgabe28.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 29-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 29
+
+Zeigen Sie, dass die Folge a<sub>n</sub> konvergent ist, 
+und bestimmen Sie ihren Grenzwert.
+
+      n * √n + 10
+a<sub>n</sub> = --------------  g = <input type="text" id="Eintrag29" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef29" onclick="Aufgabe29()">Prüfen</button>    
+          n<sup>2</sup> </p></pre> 
+
+     
+                      <script>
+                        function Aufgabe29() { 
+                                                
+                          if (Eintrag29.value=="0") {alert("Richtig"); document.getElementById("Pruef29").disabled= true;
+                          }  
+                           
+                          else if (Eintrag29.value!=="0" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag29").value="0"; window.open('Folge_Aufgabe29.html');           
+                          document.getElementById("Pruef29").disabled= true;}
+                               
+                          else if (Eintrag29.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                      
+                      
+       <!--//Aufgabe 30--> 
+                      
+    <pre><p class="Aufgabe">Aufgabe 30
+
+Zeigen Sie, dass die Folge a<sub>n</sub> konvergent ist, 
+und bestimmen Sie ihren Grenzwert.
+
+        n 
+a<sub>n</sub> = --------
+      n<sup>2</sup> + 1
+
+<button  onclick="window.open('Folge_Aufgabe30.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 31--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 31
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+
+         1 + 2n 
+a) a<sub>n</sub> = ---------
+         1 + n
+
+         7n<sup>3</sup> + 1 
+b) a<sub>n</sub> = ---------  g = <input type="text" id="Eintrag31" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button>      
+         n<sup>3</sup> - 10</p></pre> 
+
+
+ 
+                      <script>
+                        function Aufgabe31() { 
+                                                
+                          if (Eintrag31.value=="7") {alert("Richtig"); document.getElementById("Pruef31").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag31.value!=="7" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef31").disabled= true; document.getElementById("Eintrag31").value="7"; window.open('Folge_Aufgabe31.html');}
+                               
+                          else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+<!--//Aufgabe 32-->                         
+                    
+<pre><p class="Aufgabe">Aufgabe 32
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+
+         n<sup>2</sup> + 2n + 1 
+a) a<sub>n</sub> = --------------
+         n<sup>2</sup> + n + 1
+
+          <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi></mrow></msqrt><mo>&#xA0;</mo></math> + n + n<sup>2</sup> 
+b) a<sub>n</sub> = ---------------
+            <math mathsize="1em"><msqrt><mrow><mn>2</mn><mi mathvariant="normal">n</mi></mrow></msqrt><mo>&#xA0;</mo></math> + n<sup>2</sup>
+
+<button  onclick="window.open('Folge_Aufgabe32.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 33--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 33
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+            
+        (5 - n)<sup>4</sup>
+a) a<sub>n</sub> = ---------
+        (5 + n)<sup>4</sup>
+
+         (2 + n)<sup>10</sup>
+b) a<sub>n</sub> = ------------  g = <input type="text" id="Eintrag33" maxlength="1" size="1" style= background-color:yellow ></input>  <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button>      
+         (1 + n)<sup>10</sup></p></pre>  
+
+
+ 
+                      <script>
+                        function Aufgabe33() { 
+                                                
+                          if (Eintrag33.value=="1") {alert("Richtig"); document.getElementById("Pruef33").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag33.value!=="1" && Eintrag33.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef33").disabled= true; document.getElementById("Eintrag33").value="1"; window.open('Folge_Aufgabe33.html');}
+                               
+                          else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+<!--//Aufgabe 34-->   
+
+<pre><p class="Aufgabe">Aufgabe 34
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+            
+        (1 + 2n)<sup>10</sup>
+a) a<sub>n</sub> = ------------    
+        (1 + n)<sup>10</sup> 
+
+        (1 + 2n)<sup>k</sup>
+b) a<sub>n</sub> = -----------      
+        (1 + 3n)<sup>k</sup> 
+
+<button  onclick="window.open('Folge_Aufgabe34.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 35--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 35
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+            
+        2<sup>n</sup> - 1
+a) a<sub>n</sub> = -------
+          2<sup>n</sup>
+
+         2<sup>n</sup> - 1
+b) a<sub>n</sub> = ---------      
+          2<sup>n-1</sup>
+
+y = x<sup>2</sup> + <input type="text" id="Eintrag35" maxlength="2" size="1" style= background-color:yellow ></input> x + 25 <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe35() { 
+                                                
+                          if (Eintrag35.value=="10") {alert("Richtig"); document.getElementById("Pruef35").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag35.value!=="10" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef35").disabled= true; document.getElementById("Eintrag35").value="10"; window.open('Folge_Aufgabe35.html');}
+                               
+                          else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+
+<!--//Aufgabe 36-->                           
+                          
+<pre><p class="Aufgabe">Aufgabe 36
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+
+          2<sup>n</sup>            
+a) a<sub>n</sub> = -------
+        1 + 4<sup>n</sup>
+
+         2<sup>n</sup> - 3<sup>n</sup>
+b) a<sub>n</sub> = --------- 
+         2<sup>n</sup> + 3<sup>n</sup>
+
+<button  onclick="window.open('Folge_Aufgabe36.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 37--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 37
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+    
+        2<sup>n</sup> + 3<sup>n+1</sup>       
+a) a<sub>n</sub> = -----------  g = <input type="text" id="Eintrag37" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>     
+          2 * 3<sup>n</sup>
+
+         6n + 9
+b) a<sub>n</sub> = ---------
+         2n + 1</p></pre>
+
+
+ 
+                      <script>
+                        function Aufgabe37() { 
+                                                
+                          if (Eintrag37.value=="1,5") {alert("Richtig"); document.getElementById("Pruef37").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag37.value!=="1,5" && Eintrag37.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef37").disabled= true; document.getElementById("Eintrag37").value="1,5"; window.open('Folge_Aufgabe37.html');}
+                               
+                          else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<!--//Aufgabe 38-->                           
+                          
+<pre><p class="Aufgabe">Aufgabe 38
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+
+         5n + 9
+a) a<sub>n</sub> = ---------
+         2n<sup>2</sup> - 5
+
+         0,5<sup>n</sup> + 9
+b) a<sub>n</sub> = -----------
+         0,9<sup>n</sup> + 1
+
+<button  onclick="window.open('Folge_Aufgabe38.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 39--> 
+
+<pre><p class ="Aufgabe" >Aufgabe 39
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+            
+         6n - 4n<sup>2</sup>           
+a) a<sub>n</sub> = -----------       
+         4n + 3n<sup>2</sup>             
+         
+     <input type="text" id="Eintrag39" maxlength="1" size="1" style= background-color:yellow ></input>   
+g = -------  <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button>       
+       3
+
+        (4 + n)<sup>2</sup> - 16
+b) a<sub>n</sub> = --------------
+              n</p></pre>
+
+                      <script>
+                        function Aufgabe39() { 
+                                                
+                          if (Eintrag39.value=="4") {alert("Richtig"); document.getElementById("Pruef39").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag39.value!=="4" && Eintrag39.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef39").disabled= true; document.getElementById("Eintrag39").value="4"; window.open('Folge_Aufgabe39.html');}
+                               
+                          else if (Eintrag39.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+
+<!--//Aufgabe 40-->                           
+                          
+<pre><p class="Aufgabe">Aufgabe 40
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+            
+         (n - 2)<sup>2</sup>
+a) a<sub>n</sub> = ----------
+         n<sup>2</sup> - 4 
+
+         n<sup>2</sup> + √3               
+b) a<sub>n</sub> = ----------
+          2 + n<sup>2</sup>      
+
+<button  onclick="window.open('Folge_Aufgabe40.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 41-->
+
+<pre><p class ="Aufgabe" >Aufgabe 41
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>. 
+            
+         n<sup>2</sup> + 2n
+a) a<sub>n</sub> = ----------
+         2n<sup>3</sup> + n 
+
+         2 + √n
+b) a<sub>n</sub> = ---------  g = <input type="text" id="Eintrag41" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef41" onclick="Aufgabe41()">Prüfen</button>     
+         2 * √n</p></pre>     
+ 
+                      <script>
+                        function Aufgabe41() { 
+                                                
+                          if (Eintrag41.value=="0,5") {alert("Richtig"); document.getElementById("Pruef41").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag41.value!=="0,5" && Eintrag41.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef41").disabled= true; document.getElementById("Eintrag41").value="0,5"; window.open('Folge_Aufgabe41.html');}
+                               
+                          else if (Eintrag41.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+                          
+<!--//Aufgabe 42-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 42
+
+Bestimmen Sie den Grenzwert g der Folge a<sub>n</sub>. 
+Überprüfen Sie Ihr Ergebnis mit der ε-Umgebung.
+            
+      5 - 3n
+a<sub>n</sub> = ---------     n ≠ 1
+      n - 1    
+
+<button  onclick="window.open('Folge_Aufgabe42.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 43-->
+
+<pre><p class ="Aufgabe" >Aufgabe 43
+
+Ist der angegebene Wert für g Grenzwert der 
+Folge a<sub>n</sub>? 
+Überprüfen Sie dies mithilfe der ε-Umgebung.
+
+      3n + 1
+a<sub>n</sub> = ---------     g = 3   <button id ="ja1" onclick="Schalter1('ja1')">Ja</button> <button id ="nein1" onclick="Schalter1('nein1')" >Nein</button>    <button  id = "L43" onclick="window.open('Folge_Aufgabe25.html');" style="display:none;">Lösung</button>
+         n</p></pre>           
+<script>
+
+function Schalter1(buttonId){
+                                                
+                          if (buttonId==="ja1") {alert("Richtig"); document.getElementById("ja1").disabled= true;document.getElementById("nein1").disabled= true;
+                          
+                         }                     
+                          
+                          else if (buttonId ==="nein1") {alert("Leider falsch. Ja ist richtig.");            
+                          document.getElementById("ja1").disabled= true;document.getElementById("nein1").disabled= true;
+                          document.getElementById("L43").style.display="inline";}
+                          
+                          }                                            
+                        
+                      </script>          
+
+<!--//Aufgabe 44-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 44
+
+Ist der angegebene Wert für g Grenzwert der 
+Folge a<sub>n</sub>? 
+Überprüfen Sie dies mithilfe der ε-Umgebung.
+
+      n - 1
+a<sub>n</sub> = --------     g = 0,5
+        2n     
+
+<button  onclick="window.open('Folge_Aufgabe44.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 45-->
+
+<pre><p class ="Aufgabe" >Aufgabe 45
+
+Ist der angegebene Wert für g Grenzwert der 
+Folge a<sub>n</sub>? 
+Überprüfen Sie dies mithilfe der ε-Umgebung.
+            
+         1
+a) a<sub>n</sub> = ----     g = 0
+        n<sup>2</sup>     
+
+           n + 1
+b) a<sub>n</sub> = - -------     g = -1  
+             n 
+
+<button id ="ja2" onclick="Schalter1('ja2')">Ja</button> <button id ="nein2" onclick="Schalter1('nein2')" >Nein</button>    <button  id = "L45" onclick="window.open('Folge_Aufgabe45.html');" style="display:none;">Lösung</button></p></pre>             
+            
+<script>
+
+function Schalter1(buttonId){
+                                                
+                          if (buttonId==="ja2") {alert("Richtig"); document.getElementById("ja2").disabled= true;document.getElementById("nein2").disabled= true;
+                          
+                         }                     
+                          
+                          else if (buttonId ==="nein2") {alert("Leider falsch. Ja ist richtig.");            
+                          document.getElementById("ja2").disabled= true;document.getElementById("nein2").disabled= true;
+                          document.getElementById("L45").style.display="inline";}
+                          
+                          }                                            
+                        
+                      </script>       
+                          
+<!--//Aufgabe 46-->                          
+                          
+<pre><p class="Aufgabe">Aufgabe 46
+
+Ist der angegebene Wert für g Grenzwert 
+der Folge a<sub>n</sub>? 
+Überprüfen Sie dies mithilfe der ε-Umgebung.
+            
+        1 - 2n
+a) a<sub>n</sub> = --------     g = -2
+           n     
+
+         (-1)<sup>n</sup> 
+b) a<sub>n</sub> = -------     g = 0
+           n
+
+<button  onclick="window.open('Folge_Aufgabe46.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 47-->
+
+<pre><p class ="Aufgabe" >Aufgabe 47
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen aₙ.            
+
+a) a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xa0;</mo></math>
+
+b) a<sub>n</sub> = <math mathsize="1em"><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><mfenced><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfenced><mo>&#xa0;</mo></math>
+
+g = <input type="text" id="Eintrag47" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef47" onclick="Aufgabe47()">Prüfen</button> 
+
+c) a<sub>n</sub> = <math mathsize="1em"><msqrt><mfenced><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></mfenced></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xa0;</mo></math></p></b></pre>
+
+
+ 
+                      <script>
+                        function Aufgabe47() { 
+                                                
+                          if (Eintrag47.value=="0,5") {alert("Richtig"); document.getElementById("Pruef47").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag47.value!=="0,5" && Eintrag47.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef47").disabled= true; document.getElementById("Eintrag47").value="0,5"; window.open('Folge_Aufgabe47.html');}
+                               
+                          else if (Eintrag47.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+                          
+<a href="https://joafroehlich.github.io/Matheaufgaben-loesen/sek2.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      

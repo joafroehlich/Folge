@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 106
+
+a) Vom wievielten Glied der geometrischen Folge 
+mit 1; 0,5; 0,25; 0,125; ... ab, sind die 
+Folgeglieder kleiner als 10<sup>-6</sup>?
+
+b) Bei welcher geometrischen Folge mit a<sub>1</sub> = 5 
+und a<sub>7</sub> = 3 645 ist die Summe der ersten 
+6 Glieder gleich -910?
+
+a)
+
+a<sub>1</sub> = 1, a<sub>2</sub> = 0,5
+
+     a<sub>2</sub>     0,5
+q = ---- = ----- = 0,5
+     a<sub>1</sub>      1
+
+a<sub>n</sub> = a<sub>1</sub> * q<sup>n-1</sup>
+
+10<sup>-6</sup> > 1 * 0,5<sup>n-1</sup> 
+
+Logarithmieren:
+
+ lg 10<sup>-6</sup> > lg 0,5<sup>n-1</sup> 
+
+-6 > (n - 1) * lg 0,5 |:lg 0,5
+
+Wegen lg 0,5 < 0 
+
+   -6
+-------- < n - 1 |+1
+ lg 0,5
+
+       -6
+n > -------- + 1 = 20,9 --> <span style="color:red">Ab n = 21</span>
+     lg 0,5
+
+b) 
+
+a<sub>7</sub> = a<sub>1</sub> * q<sup>6</sup>
+
+3 645 = 5 * q<sup>6</sup> |:5
+
+q<sup>6</sup> = 729 |<math mathsize="1em"><mroot><mrow/><mn mathvariant="bold">6</mn></mroot></math>
+
+q = ± 3
+
+          (-3)<sup>6</sup> - 1
+s<sub>6</sub> = 5 * ---------- = -910
+          (-3) - 1
+
+a<sub>n</sub> = a<sub>1</sub> * q<sup>n-1</sup>
+
+<span style="color:red">a<sub>n</sub> = 5 * (-3)<sup>n-1</sup></span>
+
+</p></b></pre>

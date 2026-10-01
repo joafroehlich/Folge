@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 123
+
+a) Ein weibliches Insekt legt in einem Jahr 
+120 Eier. In einem Jahr entstehen 3 Generationen. 
+60% der Eier sterben ab, 50% der überlebenden 
+Insekten sind weibliche Tiere. Wie hoch ist die 
+Gesamtzahl der überlebenden Insekten in einem 
+Jahr?
+
+b) Ein Pendel schwingt zu Beginn um 10 cm aus. 
+Welchen Weg legt die Pendelspitze bis zum Still-
+stand zurück, wenn der Ausschlag nach jeder 
+Halbschwingung um 5% kürzer wird?
+ 
+a)
+
+1. Generation
+
+40% = 0,4
+
+0,4 * 120 = 48 Insekten überleben
+
+Davon sind 0,5 * 48 = 24 weiblich
+
+2. Generation
+
+24 weibliche Insekten legen 
+
+24 * 120 = 2 880 Eier
+
+0,4 * 2 880 = 0,4 * 24 * 120 = 24 * 48 = 
+
+= 1 152 überleben
+
+Davon sind 0,5 * 1 152 = 576 weiblich
+
+3. Generation
+
+576 weibliche Insekten legen 
+
+576 * 120 = 69 120 Eier
+
+0,4 * 69 120 = 0,4 * 576 * 120 = 576 * 48 = 
+
+= 0,5 * 24 * 48 * 48 = = 24<sup>2</sup> * 48 = 
+
+= 27 648 überleben
+
+<span style="color:red">Gesamtzahl der überlebenden Insekten:</span>
+
+48 + 1 152 + 27 648 <span style="color:red">= 28 848 </span>
+
+oder
+
+a<sub>1</sub> = 48
+
+q = 24
+
+a<sub>n</sub> = a<sub>1</sub> * q<sup>n-1</sup>
+
+a<sub>3</sub> = 48 * 252 = 27 648 Insekten
+
+           1 - 24<sup>3</sup>
+<span style="color:red">s<sub>3</sub> =</span> 48 * --------- = <span style="color:red">28 848 Insekten</span>
+           1 - 24
+
+b)
+
+1. Halbschwingung = 10 cm + 10 cm = 20 cm
+
+100% - 5% = 95% = 0,95
+
+2. Halbschwingung = 20 cm * 0,95 = 19 cm
+
+3. Halbschwingung = 20 * 0,95 * 0,95 = 
+
+= 20 * 0,95<sup>2</sup> = 18,05 cm
+.
+.
+nte Halbschwingung = 20 * q<sup>n</sup>
+
+Es handelt sich um eine unendliche geometrische 
+Reihe mit der Summe:
+
+a<sub>1</sub> = 20
+
+q = 0,95
+
+        a<sub>1</sub>         20
+<span style="color:red">s<sub>∞</sub> =</span> ------- = ---------- = <span style="color:red">400 cm</span>
+      1 - q     1 - 0,95
+
+</p></b></pre>

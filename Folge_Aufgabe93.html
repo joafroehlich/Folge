@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 93
+
+Der wievielte Halbkreisbogen hat eine Länge von 
+einem Millionstel der Länge des Anfangsbogens?
+
+ <img src="Aufgabe93.jpg"> 
+
+Für die Durchmesser d gilt:
+
+      2
+d<sub>1</sub> = --- * d<sub>0</sub> 
+      3
+
+      2          2     2           2
+d<sub>2</sub> = --- * d<sub>1</sub> = --- * --- * d<sub>0</sub> = (---)<sup>2</sup> * d<sub>0</sub>
+      3          3     3           3
+
+      2          2      2             2
+d<sub>3</sub> = --- * d<sub>2</sub> = --- * (---)<sup>2</sup> * d<sub>0</sub> = (---)<sup>3</sup> * d<sub>0</sub>
+      3          3      3             3
+.
+.
+       2
+d<sub>n</sub> = (---)n * d<sub>0</sub>
+       3
+
+Für die Bogenlänge b gilt:
+
+           π
+b<sub>0</sub> = d<sub>0</sub> * ---
+           2
+
+       2            π      2
+b<sub>n</sub> = (---)n * d<sub>0</sub> * --- = (---)n * b<sub>0</sub>
+       3            2      3
+
+
+     b<sub>0</sub>         2
+----------- = (---)n * b<sub>0</sub> |: b<sub>0</sub>
+ 1 000 000      3
+
+      1          2
+------------ = (---)<sup>n</sup>
+ 1 000 000       3
+
+Logarithmieren:
+
+        1             2
+lg ------------ = lg(---)<sup>n</sup>
+    1 000 000         3
+
+        1                 2         2
+lg ------------ = n * lg(---) |:lg(---)
+    1 000 000             3         3    
+
+             1                     
+     lg ----------- 
+         1 000 000          -6      
+<span style="color:red">n =</span> ----------------- = --------- = 34,07 --> <span style="color:red">35</span>
+             2           -0,1761
+        lg (---) 
+             3  
+            
+</p></b></pre>

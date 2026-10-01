@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 63
+
+Bestimmen Sie den Grenzwert der rekursiv 
+gegebenen Folge. 
+
+a) a<sub>1</sub> = -4, a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>4</mn></mrow></msqrt></math>
+
+b) a<sub>1</sub> = 4, a<sub>n</sub> = <math mathsize="1.2em"><msqrt><mfrac><mn>8</mn><mrow><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow></mfrac></msqrt></math>
+
+a)
+ 
+a<sub>1</sub> = -4, a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>4</mn></mrow></msqrt></math>
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+ -4       0       2      2,45    2,54
+
+<math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">g</mi></math>
+
+<math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><msqrt><mrow><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>4</mn></mrow></msqrt></math>
+
+g = <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">g</mi><mo>+</mo><mn>4</mn></mrow></msqrt></math>  |<sup>2</sup>
+
+g<sup>2</sup> = g + 4 |-g - 4
+
+g<sup>2</sup> - g - 4 = 0
+
+p, q - Formel
+
+p = -1, q = -4
+
+g<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>4</mn></mrow></mfenced></mrow></msqrt></math> = 0,5 ± 2,06
+
+<span style="color:red">g1 = 2,56</span>
+
+g<sub>2</sub> = -1,56   keine Lösung
+
+b)
+
+a<sub>1</sub> = 4, a<sub>n</sub> = <math mathsize="1.2em"><msqrt><mfrac><mn>8</mn><mrow><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow></mfrac></msqrt></math>
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+  4      1,41    2,38    1,83    2,09
+
+<math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">g</mi></math>
+
+<math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><msqrt><mfrac><mn>8</mn><mrow><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow></mfrac></msqrt></math>
+
+g = <math mathsize="1em"><msqrt><mfrac><mn>8</mn><mi mathvariant="normal">g</mi></mfrac></msqrt></math>  |<sup>2</sup>
+
+      8
+g<sup>2</sup> = --- |*g
+      g
+
+g<sup>3</sup> = 8 |<math mathsize="1em"><mroot><mrow/><mn>3</mn></mroot></math>
+
+<span style="color:red">g = 2</span>
+
+</p></b></pre>

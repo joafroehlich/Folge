@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 89
+
+a) Ein 180 m langer Draht mit einem Durchmesser 
+von 2 mm wird auf eine Trommel mit einem 
+Durchmesser von 3 cm und einer Länge von 40 cm 
+gewickelt. 
+Wieviel Lagen hat die fertige Wicklung? 
+
+b) Fertige Flaschen werden nach der Herstellung 
+so gestapelt, dass in der untersten Reihe 
+25 Flaschen liegen. In den Reihen darüber liegen 
+über jeweils 2 Flaschen der darunterliegenden 
+Reihe nur 1 Flasche. 
+Wie viel Flaschen liegen in 10 Reihen?
+
+a)
+
+2 mm = 0,2 cm
+
+180 m = 18 000 cm = l<sub>n</sub>
+
+Anzahl der Wicklungen nebeneinander:
+
+ 40 cm
+-------- = 200 
+ 0,2 cm
+
+Länge l der ersten 200 Wicklungen auf der 
+Trommel:
+
+Durchmesser d<sub>1</sub> der ersten Wicklung:
+
+d<sub>1</sub> = 3 cm + 0,2 cm = 3,2 cm
+
+l = 3,2 cm * π * 200 = 2 009,6 cm = a1
+
+Durchmesserzuwachs der nachfolgenden Wicklungen
+
+2 * 0,2 cm = 0,4 cm
+
+Umfangszuwachs der nachfolgenden Wicklungen
+
+0,4 * π 
+
+l<sub>n</sub> = (l + (n - 1) * 0,4 * π) * 200
+
+l<sub>n</sub> = (3,2 * π + (n - 1) * 0,4 * π) * 200
+
+          n
+18 000 = --- * ((3,2 * π + 3,2 * π + 0,4 * π * n - 0,4 * π) * 200) |:200 * 2
+          2
+
+180 = n * (6π + 0,4 * π * n)
+
+180 = 6π * n + 0,4 * π * n² |-180
+
+0,4π * n² + 6π * n - 180 = 0
+
+A, B, C - Formel
+
+A = 0,4π, B = 6π, C = -180
+
+n<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mn>6</mn><mi mathvariant="normal">&#x3c0;</mi><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mn>6</mn><mi>&#x3c0;</mi></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>0</mn><mo>,</mo><mn>4</mn><mi mathvariant="normal">&#x3c0;</mi><mo>&#xd7;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>180</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mn>0</mn><mo>,</mo><mn>4</mn><mi mathvariant="normal">&#x3c0;</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>&#x2212;</mo><mn>6</mn><mi mathvariant="normal">&#x3c0;</mi><mo>&#xb1;</mo><mn>3</mn><mn>5</mn><mo>,</mo><mn>5</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>8</mn><mi mathvariant="normal">&#x3c0;</mi></mrow></mfrac></math>
+
+n<sub>1</sub> = 6,6 --> <span style="color:red">7 nicht ganz volle Lagen</span>
+
+n<sub>2</sub> = -21,6 < 0 --> keine Lösung
+
+b) 
+
+a<sub>1</sub> = 25
+
+d = -1
+
+n = 10
+
+a<sub>10</sub> = a<sub>1</sub> + (n - 1) * d
+
+a<sub>10</sub> = 25 + (10 - 1) * (-1) = 16
+
+       10
+s<sub>10</sub> = ---- * (25 + 16)  
+        2
+
+<span style="color:red">s<sub>10</sub></span> = 5 * 41 = <span style="color:red">205 Flaschen</span>
+
+</p></b></pre>

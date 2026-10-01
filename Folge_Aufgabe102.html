@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 102
+
+a) 3 Zahlen bilden eine geometrische Folge mit 
+der Summe 39. Die mittlere Zahl ist gleich 10. 
+Wie lauten die beiden anderen Zahlen?
+
+b) Von 3 Zahlen, die eine geometrische Folge 
+bilden, ist die zweite um 13 größer als die erste 
+und die dritte um 26 größer als die zweite. 
+Wie lauten die Zahlen?
+
+a)
+
+a<sub>2</sub> = a<sub>1</sub> * q |:q 
+
+      a<sub>2</sub>     10
+a<sub>1</sub> = ---- = ----
+       q      q
+
+39 = a<sub>1</sub> + a<sub>1</sub> * q + a<sub>1</sub> * q<sup>2</sup>
+
+      10
+39 = ---- + 10 + 10 * q |*q
+       q
+
+39q = 10 + 10q + 10q<sup>2</sup> |-39q
+
+10q<sup>2</sup> - 29q + 10 = 0
+
+A, B, C-Formel
+
+A = 10, B = -29, C = 10
+
+q<sub>1,2</sub> = <math mathsize="1.2em"><mfrac><mrow><mo>&#x2212;</mo><mfenced><mrow><mo>&#x2212;</mo><mn>29</mn></mrow></mfenced><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>29</mn></mrow></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>4</mn><mo>&#xd7;</mo><mn>10</mn><mo>&#xd7;</mo><mn>10</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>29</mn><mo>&#xb1;</mo><mn>21</mn></mrow><mn>20</mn></mfrac></math>
+
+q<sub>1</sub> = 2,5
+
+q<sub>2</sub> = 0,4
+
+       10
+a<sub>11</sub> = ----- = 4
+       2,5
+
+oder
+
+       10
+a<sub>12</sub> = ----- = 25
+       0,4
+
+Erste mögliche Folge q = 0,4:
+
+ a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>
+ <span style="color:red">25</span>      10       <span style="color:red">4</span>
+
+Zweite mögliche Folge q = 2,5
+
+ a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>
+ <span style="color:red">4</span>       10      <span style="color:red">25</span>
+
+b)
+
+a<sub>2</sub> = a<sub>1</sub> + 13 
+
+a<sub>3</sub> = a<sub>2</sub> + 26 = a<sub>1</sub> + 13 + 26 = a<sub>1</sub> + 39
+
+     a<sub>2</sub>     a<sub>1</sub> + 13
+q = ---- = ---------  
+     a<sub>1</sub>       a<sub>1</sub>
+
+     a<sub>3</sub>     a<sub>1</sub> + 39
+q = ---- = ---------  
+     a<sub>2</sub>     a<sub>1</sub> + 13
+
+   a<sub>1</sub> + 13      a<sub>1</sub> + 39
+  ---------- = --------- 
+      a<sub>1</sub>        a<sub>1</sub> + 13
+
+Über Kreuz multipliziert:
+
+a<sub>1</sub><sup>2</sup> + 26a<sub>1</sub> + 169 = a<sub>1</sub><sup>2</sup> + 39a<sub>1</sub> |-a<sub>1</sub><sup>2</sup> -26a<sub>1</sub>
+
+13a<sub>1</sub> = 169 |:13
+
+<span style="color:red">a<sub>1</sub> = 13
+
+a<sub>2</sub> = 26
+
+a<sub>3</sub> = 52</span>
+
+
+
+</p></b></pre>

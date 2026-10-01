@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 111
+
+a) Wie groß ist für l<sub>0</sub> = 1 die Länge l<sub>n</sub> nach 
+n Schritten?
+
+<img src="Aufgabe111.jpg">
+
+b) Wie groß ist im gleichseitigen Dreieck für 
+A<sub>0</sub> = 1 die farbige Fläche A<sub>n</sub> nach n Schritten?
+
+<img src="Aufgabe111b.jpg"> 
+
+a)
+
+l<sub>1</sub> nach dem ersten Schritt:
+
+          1          4
+l<sub>1</sub> = 4 * --- * l<sub>0</sub> = ---l<sub>0</sub>
+          3          3 
+
+l<sub>2</sub> nach dem zweiten Schritt:
+
+           1          16        4
+l<sub>2</sub> = 16 * --- * l<sub>0</sub> = ----l<sub>0</sub> = (---)<sup>2</sup> * l<sub>0</sub>
+           9           9        3
+.
+.
+       <span style="color:red">4
+l<sub>n</sub> = (---)<sup>n</sup> * l<sub>0</sub>
+       3</span>
+
+b)
+
+Die Winkel im Dreieck sind gleich groß und 
+betragen 60°.
+
+A<sub>1</sub> nach dem ersten Schritt:
+
+Es entstehen 4 gleichgroße Dreiecke mit dem 
+Flächeninhalt -->
+
+ 1
+--- * A<sub>0</sub>
+ 4
+
+Die gefärbten Flächen haben einen Flächeninhalt 
+A<sub>1</sub> von:
+
+      3
+A<sub>1</sub> = --- * A<sub>0</sub>
+      4 
+
+A<sub>2</sub> nach dem zweiten Schritt:
+
+Es entstehen 9 gleichgroße Dreiecke mit dem 
+Flächeninhalt:
+
+ 1     1         1
+--- * --- A<sub>0</sub> = ---- * A<sub>0</sub>
+ 4     4        16 
+
+Die gefärbten Flächen haben einen Flächeninhalt 
+A<sub>2</sub> von:
+
+       9           3
+A<sub>2</sub> = ---- * A<sub>0</sub> = (---)² * A<sub>0</sub>
+      16           4
+.
+.
+       <span style="color:red">3
+A<sub>n</sub> = (---)<sup>n</sup> * A<sub>0</sub>
+       4</span>
+
+</p></b></pre>

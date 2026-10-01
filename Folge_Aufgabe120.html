@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 120
+
+a) In einem Gefäß befinden sich 15 l 96%iger 
+Alkohol. Um den Alkohol zu verdünnen, gibt man 
+erst 3 l Wasser hinzu und entnimmt dann 
+3 l Mischung.
+Wieviel prozentig ist die Mischung, wenn dies 
+6mal wiederholt wird? Wie oft muss man den 
+Vorgang wiederholen, damit die Mischung 18,6%ig 
+wird?
+
+b) Ein Becher enthält 1 dm<sup>3</sup> Wasser, in dem 50 g 
+Farbstoff gelöst sind. Nach dem Entleeren bleibt 
+noch 1 cm<sup>3</sup> dieser Lösung im Eimer. Wieviel g 
+Farbstoff sind noch vorhanden, wenn man zum 
+Spülen fünfmal Wasser nachfüllt und den Becher 
+danach jedes Mal bis auf 1 cm<sup>3</sup> entleert?
+
+a)
+
+15 l Alkohol + 3 l Wasser = 18 l Mischung
+
+     15
+q = ---- = 0,833
+     18
+
+a<sub>1</sub> = 96%
+
+a<sub>n</sub> = 96 * q<sup>n</sup>
+
+Alkoholanteil nach dem erstmaligen Mischen:
+
+a<sub>1</sub> = 96 * 0,833 = 79,97%
+
+Alkoholanteil nach dem zweiten Mischen:
+
+a<sub>2</sub> = 79,97 * 0,833 = 96 * 0,833<sup>2</sup> = 66,61%
+.
+.
+
+<span style="color:red">a<sub>6</sub> =</span> 96 * 0,833<sup>6</sup> = <span style="color:red">32,07%</span>
+
+18,6 = 96 * 0,833<sup>n</sup> |:96
+
+0,19375 = 0,833<sup>n</sup>
+
+Logarithmieren:
+
+lg 0,19375 = lg 0,833<sup>n</sup>
+
+lg 0,19375 = n * lg 0,833 |:lg 0,833
+
+     lg 0,19375
+n = -------------- = 8,98 --> <span style="color:red">n = 9</span>
+      lg 0,833
+
+b)
+
+1dm<sup>3</sup> = 1 000 cm<sup>3</sup>
+
+           1
+1 cm<sup>3</sup> = ------- dm<sup>3</sup>
+         1 000
+
+Nach dem ersten Leeren:
+
+                       50
+in 1 cm<sup>3</sup> verbleiben -------- = 0,05 g Farbstoff
+                     1 000
+
+       1
+q = -------
+     1 000
+
+a<sub>1</sub> = 0,05 g
+
+Noch 4mal leeren:
+
+                 1
+a<sub>4</sub> = 0,05 * (--------)<sup>4</sup>
+              1 000
+
+a<sub>5</sub> = 5 * 10<sup>-2</sup> * (10<sup>-3</sup>)<sup>4</sup> = <span style="color:red">5 * 10<sup>-14</sup> g</span>
+
+</p></b></pre>

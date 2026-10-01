@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 130
+
+a) Ein Kapital wird 5 Jahre lang mit 5% und dann 
+6 Jahre lang mit 4% verzinst. Wie hoch war das 
+Anfangskapital, wenn es auf 9 876 € angewachsen 
+ist?
+
+b) Ein Sparer zahlt am Anfang des 1. des 5. und 
+des 6. Jahres 4 000 € auf sein Konto ein. Am 
+Ende des 8. Jahres ist sein Kontostand 
+17 584,22 €. Wie hoch war der Kontostand vor der 
+ersten Einzahlung, wenn ein Zinssatz von 3,5% 
+über die Laufzeit vereinbart war?
+
+a)
+
+a<sub>11</sub> = 9 876 €
+
+a<sub>1</sub> = Anfangskapital
+
+a<sub>5</sub> = a<sub>1</sub> * 1,05<sup>5</sup>
+
+a<sub>11</sub> = a<sub>1</sub> * 1,05<sup>5</sup> * 1,04<sup>6</sup>
+
+9 876 = a<sub>1</sub> * 1,05<sup>5</sup> * 1,04<sup>6</sup> |:1,05<sup>5</sup> * 1,04<sup>6</sup>
+
+          9 876
+<span style="color:red">a<sub>1</sub> =</span> ---------------- = <span style="color:red">6 115,54 €</span>
+      1,05<sup>5</sup> * 1,04<sup>6</sup>
+
+b)
+
+a<sub>1</sub> = Anfangskapital
+
+Vom Anfang des 1. bis zum Anfang des 5. Jahres:
+
+(a<sub>1</sub> + 4 000) * 1,035<sup>4</sup>
+
+Vom Anfang des 5. bis zum Anfang des 6. Jahres
+
+[(a<sub>1</sub> + 4 000) * 1,035<sup>4</sup> + 4 000] * 1,035
+
+Vom Anfang des 6. bis zum Ende des 8. Jahres
+
+{[(a<sub>1</sub> + 4 000) * 1,035<sup>4</sup> + 4 000] * 1,035 + 
+    
++ 4 000} * 1,035<sup>3</sup>
+
+17 584,22 = {[(a<sub>1</sub> + 4 000) * 1,035<sup>4</sup> + 4 000] * 
+    
+* 1,035 + 4 000} * 1,035<sup>3</sup>
+
+17 584,22 = {[a<sub>1</sub> * 1,035<sup>4</sup> + 4 000 * 1,035<sup>4</sup> + 
+    
++ 4 000] * 1,035 + 4 000} * 1,035<sup>3</sup>
+
+17 584,22 = {a<sub>1</sub> * 1,035<sup>5</sup> + 4 000 * 1,035<sup>5</sup> + .html
+    
++ 4 000 * 1,035 + 4 000} * 1,035<sup>3</sup>
+
+17 584,22 = a<sub>1</sub> * 1,035<sup>8</sup> + 4 000 * 1,035<sup>8</sup> + 
+
++ 4 000 * 1,035<sup>4</sup> + 4 000 * 1,035<sup>3</sup>
+
+17 584,22 = a<sub>1</sub> * 1,035<sup>8</sup> + 4 000 * (1,035<sup>8</sup> + 
+
++ 1,0354 + 1,035<sup>3</sup>) 
+
+|- 4 000*(1,035<sup>8</sup> + 1,035<sup>4</sup> + 1,035<sup>3</sup>)
+
+17 584,22 - 4 000*(1,035<sup>8</sup> + 1,035<sup>4</sup> + 1,035<sup>3</sup>) = 
+
+= a<sub>1</sub> * 1,035<sup>8</sup> |:1,035<sup>8</sup>
+
+     17 584,22-4 000*(1,035<sup>8</sup> + 1,035<sup>4</sup> + 1,035<sup>3</sup>)
+a<sub>1</sub> = ------------------------------------------ 
+                        1,035<sup>8</sup>
+
+<span style="color:red">a<sub>1</sub> = 2 500 €</span>
+
+</p></b></pre>

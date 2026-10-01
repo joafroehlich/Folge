@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 81
+
+a) Wie groß ist die Summe aller ohne Rest durch 
+3 teilbaren geraden Zahlen zwischen 100 und 
+1 000?
+
+b) Wie groß ist die Summe aller durch 7 mit dem 
+Rest 4 teilbaren ungeraden Zahlen zwischen 50 
+und 500?
+
+a)
+
+a<sub>1</sub> = 99 + 3 = 102
+
+ist die kleinste gerade durch 3 teilbare Zahl 
+zwischen 100 und 1 000
+
+d = 6
+
+a<sub>n</sub> = 999 - 3 = 996
+
+ist die größte gerade durch 3 teilbare Zahl 
+zwischen 100 und 1 000
+
+996 = 102 + (n - 1) * 6 |-102
+
+894 = 6n - 6 |+6
+
+900 = 6n |:6
+
+n = 150
+
+        150
+<span style="color:red">s<sub>150</sub> =</span> ----- * (102 + 99699) = <span style="color:red">82 350</span>
+         2
+
+b)
+
+a<sub>1</sub> = 49 + 4 = 53
+
+ist die kleinste ungerade durch 7 mit Rest 4 
+teilbare Zahl zwischen 50 und 500
+
+d = 14
+
+500 : 7 = 71,4 --> 71 * 7 + 4 = 501, 
+
+a<sub>n</sub> = 501 - 14 = 487
+
+ist die größte ungerade durch 7 mit Rest 4 
+teilbare Zahl zwischen 50 und 500
+
+487 = 53 + (n - 1) * 14 |-53
+
+434 = 14n - 14 |+14
+
+448 = 14n |:14
+
+n = 32
+
+       32
+<span style="color:red">s<sub>32</sub> =</span> ---- * (53 + 487) = <span style="color:red">8 640</span>
+        2
+
+</p></b></pre>

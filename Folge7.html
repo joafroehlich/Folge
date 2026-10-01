@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>      
+  
+</head>
+<body style="background-color: white;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button { font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Folgen und Reihen</p> 
+    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
+  	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+                          
+<!--//Aufgabe 110-->
+
+  <pre><b><p class ="Aufgabe" >Aufgabe 110
+
+Auf einem Sparbuch sind 10 000 € angelegt.
+a) Um wieviel € wäre der Ertrag bei einer 
+Verzinsung pro Monat höher als der Jahreszins 
+bei einem Jahreszinssatz von 12 %?
+b) Um wieviel € wäre der Ertrag bei einer 
+Verzinsung pro Vierteljahr höher als pro 
+Halbjahr?      
+
+Um <input type="text" id="Eintrag110" maxlength="5" size="2" style= background-color:yellow ></input> € <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
+    
+                       <script>
+                        function Aufgabe110() { 
+                                                
+                          if (Eintrag110.value=="19,09") {alert("Richtig"); document.getElementById("Pruef110").disabled= true;
+                          }  
+                           
+                          else if (Eintrag110.value!=="19,09" && Eintrag110.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag110").value="19,09"; window.open('Folge_Aufgabe110.html');           
+                          document.getElementById("Pruef110").disabled= true;}
+                               
+                          else if (Eintrag110.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+
+<!--//Aufgabe 111-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 111
+
+a) Wie groß ist für l<sub>0</sub> = 1 die Länge l<sub>n</sub> nach 
+n Schritten?
+
+<img src="Aufgabe111.jpg">
+
+b) Wie groß ist im gleichseitigen Dreieck für 
+A<sub>0</sub> = 1 die farbige Fläche A<sub>n</sub> nach n Schritten?
+
+<img src="Aufgabe111b.jpg">
+
+<button  onclick="window.open('Folge_Aufgabe111.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 112-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 112
+
+a) Eine Bearbeitungsmaschine hat eine niedrigste 
+Drehzahl von 16 1/min und eine höchste von 
+90 1/min. 
+Zur Verbesserung des Einsatzes der Maschine 
+sollen weitere 4 Drehzahlen dazwischen 
+geometrisch eingestuft werden. Bestimmen Sie 
+diese 4 Drehzahlen auf 1 Stelle nach dem Komma.
+
+a<sub>2</sub> = <input type="text" id="Eintrag112" maxlength="4" size="1" style= background-color:yellow ></input> 1/min <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button>
+
+b) Mit einem Schaltwiderstand können zwischen 
+256 Ω und 16 Ω weitere 3 Widerstände geometrisch 
+abgestuft geschaltet werden. Welche Widerstände 
+sind das?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe112() { 
+                                                
+                          if (Eintrag112.value=="22,6") {alert("Richtig"); document.getElementById("Pruef112").disabled= true;
+                          }  
+                           
+                          else if (Eintrag112.value!=="22,6" && Eintrag112.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag112").value="22,6"; window.open('Folge_Aufgabe112.html');           
+                          document.getElementById("Pruef112").disabled= true;}
+                               
+                          else if (Eintrag112.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 113-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 113
+
+a) Auf welchen Betrag wachsen 5 000 € in 4 Jahren 
+bei einem Zinssatz von 4,5 % an?
+
+b) Wie hoch war der angelegte Betrag, wenn er in 
+22 Jahren bei einem Zinssatz von 4% auf 8 500 € 
+angewachsen ist?
+
+<button  onclick="window.open('Folge_Aufgabe113.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 114-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 114
+
+a) In wieviel Jahren wachsen 22 500 € bei einem 
+Zinssatz von 5% auf 59 699 € an?
+
+In <input type="text" id="Eintrag114" maxlength="2" size="1" style= background-color:yellow ></input> Jahren <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button>
+
+b) Mit welchem Zinssatz wurde ein angelegter 
+Betrag verzinst, wenn er sich in 20 Jahren 
+verdreifacht hat?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe114() { 
+                                                
+                          if (Eintrag114.value=="20") {alert("Richtig"); document.getElementById("Pruef114").disabled= true;
+                          }  
+                           
+                          else if (Eintrag114.value!=="20" && Eintrag114.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag114").value="20"; window.open('Folge_Aufgabe114.html');           
+                          document.getElementById("Pruef114").disabled= true;}
+                               
+                          else if (Eintrag114.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 115-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 115
+
+a) Ein Sparer legt 500 € zu einem Zinssatz von 
+3% an. Wieviel hat er nach 7 Jahren auf seinem 
+Konto, wenn er am Ende eines jeden Jahres weitere 
+400 € einzahlt?
+
+b) Nach wieviel Jahren ist ein Guthaben von 
+10 000 €, das mit 3,5% verzinst wird, 
+aufgebraucht, wenn am Ende eines jeden Jahres 
+960 € abgehoben werden?
+
+<button  onclick="window.open('Folge_Aufgabe115.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 116-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 116
+
+a) 5 Bakterien teilen sich alle 20 Minuten 
+einmal. Wieviel Bakterien sind es in 6 Stunden.
+
+b) Ein weibliches Insekt legt 1 600 Eier. In 
+einem Jahr entstehen 4 Generationen. 75% der 
+Eier sterben ab. Die Hälfte der überlebenden 
+sind weibliche Tiere.
+b<sub>1</sub>) Wie hoch ist die Anzahl der überlebenden 
+Insekten in einem Jahr, die auf weibliche 
+Insekten zurückgeführt werden können?
+
+<input type="text" id="Eintrag116" maxlength="10" size="6" style= background-color:yellow ></input> Insekten <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button>
+
+b<sub>2</sub>) Wie hoch ist die Gesamtzahl der gelegten 
+Eier in einem Jahr?</p></pre>
+   
+ 
+                      <script>
+                        function Aufgabe116() { 
+                                                
+                          if (Eintrag116.value=="3200000000") {alert("Richtig"); document.getElementById("Pruef116").disabled= true;
+                          }  
+                           
+                          else if (Eintrag116.value!=="3200000000" && Eintrag116.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag116").value="3200000000"; window.open('Folge_Aufgabe116.html');           
+                          document.getElementById("Pruef116").disabled= true;}
+                               
+                          else if (Eintrag116.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 117-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 117
+
+a) Ein Blatt Papier hat eine Dicke von 0,25 mm. 
+Wie dick in m wäre es, wenn es 20mal gefaltet 
+wird? 
+
+b) Licht verliert beim Durchgang durch eine 
+Glasplatte 1/12 seiner Stärke. Welche Stärke 
+bleibt nach dem Durchgang durch 12 Platten noch 
+erhalten? 
+
+<button  onclick="window.open('Folge_Aufgabe117.html');" >Lösung</button></p></pre>
+
+
+
+<!--//Aufgabe 118-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 118
+
+a) 1 l Alkohol wird mit 4 l Wasser vermischt. 
+In 1 l dieser Mischung kommen wieder 4 l Wasser. 
+Wie oft muss dieser Mischvorgang durchgeführt 
+werden, damit die Mischung noch 0,00032 l Alkohol 
+enthält?
+
+b) Das Dreieck ABC ist gleichseitig mit einer 
+Seitenlänge von 12 cm. Das Dreieck EFG entsteht, 
+indem die Mittelpunkte der Seiten des Dreiecks 
+ABC miteinander verbunden werden usw.
+
+<img src="Aufgabe118.jpg" >
+
+b₁) Bestimmen Sie jeweils den Flächeninhalt der 
+ersten 3 Dreiecke.
+
+A<sub>2</sub> = <input type="text" id="Eintrag118" maxlength="5" size="2" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button>
+
+b₂) Bestimmen Sie die Summe der ersten 
+5 Flächeninhalte.</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe118() { 
+                                                
+                          if (Eintrag118.value=="62,35") {alert("Richtig"); document.getElementById("Pruef118").disabled= true;
+                          }  
+                           
+                          else if (Eintrag118.value!=="62,35" && Eintrag118.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag118").value="62,35"; window.open('Folge_Aufgabe118.html');           
+                          document.getElementById("Pruef118").disabled= true;}
+                               
+                          else if (Eintrag118.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 119-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 119
+
+a) In dem Quadrat ABCD mit der Seitenlänge 20 cm 
+ist sein Inkreis gezeichnet. Dieser Inkreis ist 
+der Umkreis des Quadrates EFGH usw. 
+a<sub>1</sub>) Bestimmen Sie jeweils den Flächeninhalt der 
+ersten 3 Quadrate.
+a<sub>2</sub>) Bestimmen Sie jeweils den Flächeninhalt der 
+ersten 3 Kreise.
+a<sub>3</sub>) Bestimmen Sie die Summe der Flächeninhalte 
+der ersten 10 Quadrate.
+a<sub>4</sub>) Bestimmen Sie die Summe der Flächeninhalte 
+der ersten 10 Kreise.
+
+<img src="Aufgabe119.jpg" >
+
+b) Ein Bauer sollte von seinem König wegen treuer 
+Dienste ein Geschenk erhalten. Er wünschte sich 
+die Summe der Weizenkörner, die entsteht, wenn 
+man mit einem Korn auf dem ersten Feld eines 
+Schachbretts beginnt und die Anzahl auf den 
+nachfolgenden Feldern jeweils verdoppelt. 
+b<sub>1</sub>) Wieviel Körner sind es?
+b<sub>2</sub>) 20 000 Körner wiegen ein kg. Wieviel Waggons 
+mit einem Fassungsvermögen von 10 t würden zum 
+Abtransport gebraucht?
+b<sub>3</sub>) Ein Waggon ist 15 m lang. Wie lang wäre die 
+Kette aller Waggons?
+b<sub>4</sub>) Wie lange braucht ein Lichtstrahl 
+(Lichtgeschwindigkeit 300 000 km/s), um vom 
+Anfang bis zum Ende der Kette zu gelangen? 
+
+<button  onclick="window.open('Folge_Aufgabe119.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 120-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 120
+
+a) In einem Gefäß befinden sich 15 l 96%iger 
+Alkohol. Um den Alkohol zu verdünnen gibt man 
+erst 3 l Wasser hinzu und entnimmt dann 
+3 l Mischung.
+Wieviel prozentig ist die Mischung, wenn dies 
+6mal wiederholt wird? Wie oft muss man den 
+Vorgang wiederholen, damit die Mischung 18,6%ig 
+wird? 
+
+<input type="text" id="Eintrag120" maxlength="1" size="1" style= background-color:yellow ></input> mal <button id="Pruef120" onclick="Aufgabe120()">Prüfen</button>
+
+b) Ein Becher enthält 1 dm³ Wasser, in dem 50 g 
+Farbstoff gelöst sind. Nach dem Entleeren bleibt 
+noch 1 cm³ dieser Lösung im Eimer. Wieviel g 
+Farbstoff sind noch vorhanden, wenn man zum 
+Spülen fünfmal Wasser nachfüllt und den Becher 
+danach jedesmal bis auf 1 cm³ entleert?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe120() { 
+                                                
+                          if (Eintrag120.value=="9") {alert("Richtig"); document.getElementById("Pruef120").disabled= true;
+                          }  
+                           
+                          else if (Eintrag120.value!=="9" && Eintrag120.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag120").value="9"; window.open('Folge_Aufgabe120.html');           
+                          document.getElementById("Pruef120").disabled= true;}
+                               
+                          else if (Eintrag120.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 121-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 121
+
+a) Das Quadrat ABCD hat eine Seitenlänge von 
+10 cm. Verbindet man die Seitenmitten 
+miteinander, entsteht das Quadrat EFGH. Wie 
+groß ist der Flächeninhalt der Quadrate 
+insgesamt für die ersten 10 Quadrate? Wie groß 
+ist der Umfang der Quadrate insgesamt für die 
+ersten 10?
+
+<img src="Aufgabe121.jpg" >
+
+b) In einem Druckluftbehälter mit einem Volumen 
+von 1 dm³ herrscht ein Druck von 1 bar. Der Druck 
+soll mit einer Luftpumpe, die 400 cm³ fasst, auf 
+10 mbar abgesenkt werden. Wieviel Kolben-
+bewegungen der Pumpe sind nötig?        
+
+<button  onclick="window.open('Folge_Aufgabe121.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 122-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 122
+
+a) Eine Uhr zeigt 6.00 Uhr an. Nach welcher Zeit 
+liegen die Zeiger genau übereinander? Welchen 
+Winkel hat der große Zeiger bis dahin 
+überstrichen?
+
+b) Der Luftdruck sinkt um jeweils 1,2% alle 100 
+Höhenmeter. Wie hoch ist er auf einem 2 000 m 
+hohen Berg, wenn der Normalluftdruck 1,01 bar 
+beträgt? Wie hoch liegt ein Ort, in dem ein 
+Druck von 0,9466 bar gemessen wird?     
+
+Der Ort liegt <input type="text" id="Eintrag122" maxlength="3" size="1" style= background-color:yellow ></input> m hoch. <button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe122() { 
+                                                
+                          if (Eintrag122.value=="539") {alert("Richtig"); document.getElementById("Pruef122").disabled= true;
+                          }  
+                           
+                          else if (Eintrag122.value!=="539" && Eintrag122.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag122").value="539"; window.open('Folge_Aufgabe122.html');           
+                          document.getElementById("Pruef122").disabled= true;}
+                               
+                          else if (Eintrag122.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+ <!--//Aufgabe 123-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 123
+
+a) Ein weibliches Insekt legt in einem Jahr 
+120 Eier. In einem Jahr entstehen 3 Generationen. 
+60% der Eier sterben ab, 50% der überlebenden 
+Insekten sind weibliche Tiere. Wie hoch ist die 
+Gesamtzahl der überlebenden Insekten in einem 
+Jahr?
+
+b) Ein Pendel schwingt zu Beginn um 10 cm aus. 
+Welchen Weg legt die Pendelspitze bis zum 
+Stillstand zurück, wenn der Ausschlag nach jeder 
+Halbschwingung um 5% kürzer wird?
+
+<button  onclick="window.open('Folge_Aufgabe123.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 124-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 124
+
+a) Ein Unternehmen will seine Produktion in 
+7 Jahren um 85% steigern. Wie hoch ist seine 
+Gesamtproduktion bei gleichbleibender Steigerung 
+in 7 Jahren, wenn es im ersten Jahr mit 
+4 500 Stück beginnt?
+
+b) Wie lang ist der Streckenzug von a₁ bis aₙ 
+mit x = 10 cm?     
+
+<img src="Aufgabe124.jpg" > 
+
+Es sind <input type="text" id="Eintrag124" maxlength="5" size="2" style= background-color:yellow ></input> cm. <button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe124() { 
+                                                
+                          if (Eintrag124.value=="24,14") {alert("Richtig"); document.getElementById("Pruef124").disabled= true;
+                          }  
+                           
+                          else if (Eintrag124.value!=="24,14" && Eintrag124.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag124").value="24,14"; window.open('Folge_Aufgabe124.html');           
+                          document.getElementById("Pruef124").disabled= true;}
+                               
+                          else if (Eintrag124.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 125-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 125
+
+a) Ein Mottenweibchen legt 150 Eier. Daraus 
+entwickeln sich in einem Jahr 5 Generationen. 
+2/3 der Eier sterben ab, vom Rest ist die Hälfte 
+Weibchen. Wieviel Wolle fressen die Raupen in 
+einem Jahr, wenn jede 20 mg braucht?
+
+b) Eine Flasche enthält 100 cm³ Lösung von 40 g 
+Farbstoff. Nach dem Entleeren bleiben noch 
+0,5 cm³ dieser Lösung in der Flasche. Zum Spülen 
+wird zweimal Wasser nachgefüllt und die Flasche 
+bis auf 0,5 cm³ entleert. Wieviel g Farbstoff 
+sind nach jedem Spülen noch vorhanden?
+
+<button  onclick="window.open('Folge_Aufgabe125.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 126-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 126
+
+a<sub>1</sub>) Wie groß ist die Summe der Weizenkörner, die 
+entsteht, wenn man mit einem Korn auf dem ersten 
+Feld eines Schachbretts beginnt und die Anzahl 
+auf den nachfolgenden Feldern jeweils verdoppelt? 
+a<sub>2</sub>) Wieviel t wiegen die Körner, wenn 20 Körner 
+1 g wiegen?
+a<sub>3</sub>) Wie groß ist die Summe der Weizenkörner, die 
+entsteht, wenn auf das erste Feld 1 Korn, auf das 
+zweite 3 Körner, auf das dritte 5 Körner usw. 
+kommen?
+
+b) Das Dreieck ABC ist gleichseitig. Verbindet 
+man die Seitenmitten miteinander, entsteht das 
+gleichseitige Dreieck EFG usw. Wie groß sind der 
+Flächeninhalt A und der Umfang U aller Dreiecke?     
+
+<img src="Aufgabe126.jpg" >
+
+U = <input type="text" id="Eintrag126" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef126" onclick="Aufgabe126()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe126() { 
+                                                
+                          if (Eintrag126.value=="6a") {alert("Richtig"); document.getElementById("Pruef126").disabled= true;
+                          }  
+                           
+                          else if (Eintrag126.value!=="6a" && Eintrag126.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag126").value="6a"; window.open('Folge_Aufgabe126.html');           
+                          document.getElementById("Pruef126").disabled= true;}
+                               
+                          else if (Eintrag126.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 127-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 127
+
+a) Auf welchen Betrag wachsen 1 800 € an, wenn 
+sie 10 Jahre lang zu 5% verzinst und nicht 
+abgehoben werden?
+
+b) Auf welchen Betrag wachsen 6 000 € an, wenn 
+sie 15 Jahre lang zu 6,5% verzinst und nicht 
+abgehoben werden?
+
+<button  onclick="window.open('Folge_Aufgabe127.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 128-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 128
+
+a) Auf ein Sparbuch wurden am 01. 01. 1996 
+1 000 € eingezahlt. Welcher Betrag befindet sich 
+am 31. 12. 2011 bei einem Zinssatz von 3,5% auf 
+dem Sparbuch, wenn zwischenzeitlich nichts 
+abgehoben wird?
+
+b) Ein Betrag von 6 000 € wurde am 01. 01. 1990 
+zu 4,5% angelegt. Welcher Betrag steht dem 
+Anleger am 31. 12. 1998 zur Verfügung, wenn er 
+zwischenzeitlich nichts abgehoben hat?     
+
+Es sind <input type="text" id="Eintrag128" maxlength="7" size="4" style= background-color:yellow ></input> € <button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe128() { 
+                                                
+                          if (Eintrag128.value=="8916,57") {alert("Richtig"); document.getElementById("Pruef128").disabled= true;
+                          }  
+                           
+                          else if (Eintrag128.value!=="8916,57" && Eintrag128.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag128").value="8916,57"; window.open('Folge_Aufgabe128.html');           
+                          document.getElementById("Pruef128").disabled= true;}
+                               
+                          else if (Eintrag128.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 129-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 129
+
+a) Ein Betrag von 15 000 € wurde am 01. 01. 1985 
+zu 6% angelegt. Ab dem 01. 01. 1988 wurde er mit 
+5%, ab dem01. 01.1991 mit 4% verzinst. Welcher 
+Betrag K steht dem Anleger am 31. 12. 1995 zur 
+Verfügung?
+
+b) Welchen Betrag muss man am 01. 01. 1996 zu 
+einem Zinssatz von 5,5% anlegen, wenn am 
+31. 12. 2010 30 000 € ausgezahlt werden sollen?
+ 
+<button  onclick="window.open('Folge_Aufgabe129.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 130-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 130
+
+a) Ein Kapital wird 5 Jahre lang mit 5% und dann 
+6 Jahre lang mit 4% verzinst. Wie hoch war das 
+Anfangskapital, wenn es auf 9 876 € angewachsen 
+ist? 
+
+<input type="text" id="Eintrag130" maxlength="7" size="4" style= background-color:yellow ></input> € <button id="Pruef130" onclick="Aufgabe130()">Prüfen</button>
+
+b) Ein Sparer zahlt am Anfang des 1. des 5. und 
+des 6. Jahres 4 000 € auf sein Konto ein. Am Ende 
+des 8. Jahres ist sein Kontostand 17 584,22 €. 
+Wie hoch war der Kontostand vor der ersten 
+Einzahlung, wenn ein Zinssatz von 3,5% über die 
+Laufzeit vereinbart war?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe130() { 
+                                                
+                          if (Eintrag130.value=="6115,54") {alert("Richtig"); document.getElementById("Pruef130").disabled= true;
+                          }  
+                           
+                          else if (Eintrag130.value!=="6115,54" && Eintrag130.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag130").value="6115,54"; window.open('Folge_Aufgabe130.html');           
+                          document.getElementById("Pruef130").disabled= true;}
+                               
+                          else if (Eintrag130.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 131-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 131
+
+a) Eine Schuld von 5 400 € zahlbar in 5 Jahren 
+soll jetzt durch eine Einmalzahlung abgelöst 
+werden. Wie hoch ist der Einmalbetrag, wenn ein 
+Zinsatz von 6 %, allerdings bei halbjährlicher 
+Verzinsung, über die Laufzeit zugrundegelegt 
+wird?
+
+b) Ein Bankkunde hat die Wahl zwischen: 12 000 € 
+Auszahlung sofort, 22 500 € Auszahlung in 10 
+Jahren oder 36 000 € Auszahlung in 20 Jahren. 
+Welches Angebot ist das günstigste, wenn ein 
+Zinssatz von 6% vereinbart wurde?
+
+<button  onclick="window.open('Folge_Aufgabe131.html');" >Lösung</button></p></pre>   
+
+
+<!--//Aufgabe 132-->
+
+<pre><p class ="Aufgabe" >Aufgabe 132
+
+a) Der Käufer eines Hauses macht dem Verkäufer 
+3 Angebote zur Auswahl:
+1. 400 000 € sofort.
+2. 100 000 € sofort, 400 000 € in 5 Jahren.
+3. Raten zu je 158 000 €, eine Rate sofort, die 
+zweite nach 3 und die dritte nach 6 Jahren.
+Verzinsung von 6% für alle Angebote.
+Welches Angebot ist für den Verkäufer am 
+günstigsten?
+
+b) Ein Unternehmer hat einen ersten Kredit jetzt 
+und einen in gleicher Höhe 5 Jahre später 
+benötigt. 3 Jahre nach der 2. Auszahlung hatte er 
+Schulden in Höhe von 302 577,47 €. Wie hoch waren 
+die Kredite, wenn eine Verzinsung von 7,5% 
+vereinbart war?                       
+
+<input type="text" id="Eintrag132" maxlength="6" size="2" style= background-color:yellow ></input> € <button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe132() { 
+                                                
+                          if (Eintrag132.value=="100000") {alert("Richtig"); document.getElementById("Pruef132").disabled= true;
+                          }  
+                           
+                          else if (Eintrag132.value!=="100000" && Eintrag132.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag132").value="100000"; window.open('Folge_Aufgabe132.html');           
+                          document.getElementById("Pruef132").disabled= true;}
+                               
+                          else if (Eintrag132.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 133-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 133
+
+a) Auf welchen Betrag steigen 1 200 € an, wenn 
+sie 5 Jahre zu 12% jährlich oder halbjährlich 
+oder vierteljährlich verzinst werden?
+
+b) Ein Betrag von 5 000 € wird zu 4,8% verzinst. 
+Auf wieviel € ist er nach 6,5 Jahren angewachsen, 
+wenn die Zinszahlung monatlich erfolgt?  
+
+<button  onclick="window.open('Folge_Aufgabe133.html');" >Lösung</button></p></pre>   
+
+ <!--//Aufgabe 134-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 134
+
+a) Ein Kapital von 5 000 € hat sich innerhalb von 
+12 Jahren verdoppelt. Zu welchem gleichbleibenden 
+Zinssatz war es angelegt?
+
+Zu <input type="text" id="Eintrag134" maxlength="4" size="1" style= background-color:yellow ></input> % <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button>
+
+b) Zu welchem gleichbleibenden Zinssatz war ein 
+Betrag von 5 000 € ausgeliehen, wenn die 
+Rückforderung nach 5 Jahren 6 535 € beträgt?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe134() { 
+                                                
+                          if (Eintrag134.value=="5,95") {alert("Richtig"); document.getElementById("Pruef134").disabled= true;
+                          }  
+                           
+                          else if (Eintrag134.value!=="5,95" && Eintrag134.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag134").value="5,95"; window.open('Folge_Aufgabe134.html');
+                                            document.getElementById("Pruef134").disabled= true;}
+                               
+                          else if (Eintrag134.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>     
+                      
+<!--//Aufgabe 135-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 135
+
+a) In wieviel Jahren verdreifacht sich ein 
+Kapital, wenn es zu einem Zinssatz von 4% 
+angelegt war? 
+
+b) In wieviel Jahren ist ein Kapital von 
+10 000 € bei einem Zinssatz von 5% auf 
+14 774,55 € angewachsen?   
+
+<button  onclick="window.open('Folge_Aufgabe135.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 136-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 136
+
+a) Nach wieviel Jahren fallen 5 073,38 € Zinsen 
+an, wenn 15 000 € zu 6% angelegt waren?
+ 
+b) Jemand gründet eine Stiftung mit einem Kapital 
+von 198 000 € mit der Bedingung, dass das Geld so 
+lange mit 5% angelegt wird, bis die Zinsen in 
+einem Jahr ausreichen, 4 Stipendien zu jeweils 
+4 000 € auszuzahlen. 
+Nach wieviel Jahren ist dies der Fall?  
+
+Nach <input type="text" id="Eintrag136" maxlength="4" size="1" style= background-color:yellow ></input> Jahren <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe136() { 
+                                                
+                          if (Eintrag136.value=="10,8") {alert("Richtig"); document.getElementById("Pruef136").disabled= true;
+                          }  
+                           
+                          else if (Eintrag136.value!=="10,8" && Eintrag136.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag136").value="10,8"; window.open('Folge_Aufgabe136.html');           
+                          document.getElementById("Pruef136").disabled= true;}
+                               
+                          else if (Eintrag136.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 137-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 137
+
+a) Wie viele Jahre muss ein Kapital von 6 000 € 
+mit einem Zinssatz von 5,6% bei vierteljährlichem 
+Zinszuschlag verzinst werden, damit es auf 
+7 706,10 € anwächst?
+ 
+b) Nach welcher Zeit hat sich ein Kapital 
+verdoppelt, das mit 8% bei vierteljährlichem 
+Zuschlag verzinst wird?
+
+<button  onclick="window.open('Folge_Aufgabe137.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 138-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 138
+
+a) 35 000 € werden zu 4,8% bei halbjährlichem 
+Zinszuschlag angelegt.
+Auf welchen Betrag ist das Kapital nach 4 Jahren
+angestiegen? Zu welchem Zinssatz (Effektivzins) 
+hätte das Kapital bei jährlichem Zinszuschlag 
+verzinst werden müssen, um nach 4 Jahren auf den 
+gleichen Betrag zu kommen?
+
+Zu <input type="text" id="Eintrag138" maxlength="4" size="1" style= background-color:yellow ></input> % <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button>
+ 
+b) 80 000 € werden zu 6,2% bei vierteljährlichem 
+Zinszuschlag angelegt.
+Auf welchen Betrag ist das Kapital nach 8 Jahren 
+angestiegen? Zu welchem Zinssatz (Effektivzins) 
+hätte das Kapital bei jährlichem Zinszuschlag 
+verzinst werden müssen, um auf den gleichen 
+Betrag zu kommen? </p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe138() { 
+                                                
+                          if (Eintrag138.value=="4,86") {alert("Richtig"); document.getElementById("Pruef138").disabled= true;
+                          }  
+                           
+                          else if (Eintrag138.value!=="4,86" && Eintrag138.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag138").value="4,86"; window.open('Folge_Aufgabe138.html');           
+                          document.getElementById("Pruef138").disabled= true;}
+                               
+                          else if (Eintrag138.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 139-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 139
+
+a) Ein Arbeitnehmer zahlt 1 200 € 30 Jahre lang 
+nachschüssig zu einem Zinssatz von 4% in eine 
+Rentenanstalt ein.
+a<sub>1</sub>) Welcher Betrag steht ihm nach 30 Jahren zur 
+Verfügung?
+a<sub>2</sub>) Wie hoch wäre er bei vorschüssiger 
+Einzahlung?
+ 
+b) Über welchen Betrag kann eine Person nach 
+15 Jahren verfügen, die erst 6 Jahre lang 5 000 € 
+und dann 5 Jahre 8 000 € nachschüssig zu einem 
+Zinssatz von 4% auf ein Sparkonto einzahlt? 
+Wie hoch ist der Barwert der Einzahlungen?
+
+<button  onclick="window.open('Folge_Aufgabe139.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 140-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 140
+
+a) Ein Sparvertrag wird so abgeschlossen, dass 
+10 Jahre lang 2 500 € nachschüssig zu 6% 
+eingezahlt werden sollen. Aus persönlichen 
+Gründen wird diese Zahlung nach 5 Jahren für 
+2 Jahre unterbrochen, danach wieder aufgenommen. 
+a<sub>1</sub>) Wie hoch wäre der Rentenendwert bei nicht 
+unterbrochener Zahlung?
+a<sub>2</sub>) Wie hoch ist er tatsächlich?
+
+<input type="text" id="Eintrag140" maxlength="8" size="4" style= background-color:yellow ></input> € <button id="Pruef140" onclick="Aufgabe140()">Prüfen</button>
+ 
+b) Ein Sparvertrag wird am Anfang eines Jahres so 
+abgeschlossen, dass 15 Jahre lang 2 000 € 
+nachschüssig zu 6% eingezahlt werden sollen. 
+Diese Zahlung wird nach 6 Jahren dreimal 
+unterbrochen, danach fortgesetzt. 
+Wie hoch ist das Guthaben nach 15 Jahren? </p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe140() { 
+                                                
+                          if (Eintrag140.value=="26818,25") {alert("Richtig"); document.getElementById("Pruef140").disabled= true;
+                          }  
+                           
+                          else if (Eintrag140.value!=="26818,25" && Eintrag140.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag140").value="26818,25"; window.open('Folge_Aufgabe140.html');           
+                          document.getElementById("Pruef140").disabled= true;}
+                               
+                          else if (Eintrag140.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 141-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 141
+
+a) Einem Kind ist durch Erbschaft 15 Jahre lang 
+eine Zahlung von jeweils 3 000 € zugesichert. 
+Zur Finanzierung einer größeren Anschaffung 
+bittet es darum, ihr sofort den Wert der 
+Erbschaft auszuzahlen. Welcher Betrag steht ihm 
+bei nachschüssiger Einzahlung und einem Zinssatz 
+von 4,5% zu?
+
+b) Eine Person will an ihrem 50. Geburtstag einen 
+Betrag so anlegen, dass ihr mit Vollendung des 
+65. Lebensjahres 10 Jahre lang eine nachschüssig 
+gezahlte jährliche Rente von 8 000 € ausgezahlt 
+werden kann. Welchen Betrag muss sie bei einer 
+Verzinsung von 4% anlegen?
+
+<button  onclick="window.open('Folge_Aufgabe141.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 142-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 142
+
+a) Wie hoch ist der Betrag, den man sich auszahlen 
+lassen könnte, wenn man einen Anspruch auf eine 
+25-jährige nachschüssige Rente von 6 000 € bei einem 
+Zinssatz von 5,5% hat?
+
+b) Eine Versicherung hat 10 Jahre lang am Anfang eines 
+jeden Jahres eine Rente von 5 000 € zu zahlen. Zu Beginn 
+des 6. Jahres schlägt sie vor, den bestehenden 
+Restanspruch durch eine Einmalzahlung abzulösen. Wie 
+hoch ist der Barwert der Rente bei einer Verzinsung von 
+5%? Wie hoch wäre die Einmalzahlung bei dieser
+Verzinsung?    
+
+Einmalzahlung <input type="text" id="Eintrag142" maxlength="8" size="4" style= background-color:yellow ></input> € <button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe142() { 
+                                                
+                          if (Eintrag142.value=="22729,76") {alert("Richtig"); document.getElementById("Pruef142").disabled= true;
+                          }  
+                           
+                          else if (Eintrag142.value!=="22729,76" && Eintrag142.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag142").value="22729,76"; window.open('Folge_Aufgabe142.html');           
+                          document.getElementById("Pruef142").disabled= true;}
+                               
+                          else if (Eintrag142.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 143-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 143
+
+a) Eine Rente von 6 000 € soll nachschüssig ab 
+2004 15 Jahre lang gezahlt werden. Welches 
+Kapital musste 1996 zu 5% angelegt werden? 
+Im Jahr 2000 wird die Rente bei gleicher Laufzeit 
+um 4 Jahre vorgezogen. 
+Wie hoch ist dann die Rente?
+
+b) Für 2 Kinder wird ein Kapital zur Finanzierung 
+ihres Studiums zu 4% festgelegt. Das erste Kind 
+beginnt das Studium in 4, das zweite in 7 Jahren. 
+Es wird bei beiden mit einem 5jährigen Studium 
+gerechnet, das jährlich mit 15 000 € vorschüssig 
+unterstützt werden soll. Wie hoch ist das 
+anzulegende Kapital? Wie verändern sich die 
+Jahreszahlungen, wenn das Studium ein Jahr länger 
+dauert?
+
+<button  onclick="window.open('Folge_Aufgabe143.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 144-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 144
+
+a) Der Barwert einer nachschüssigen Rente mit 
+10jähriger Laufzeit bei einer Verzinsung von 4% 
+beträgt 32 443,58 €. Wie hoch ist die jährliche 
+Rente? 
+
+<input type="text" id="Eintrag144" maxlength="4" size="1" style= background-color:yellow ></input> € <button id="Pruef144" onclick="Aufgabe144()">Prüfen</button>
+
+b) Zur Finanzierung einer Rente werden vom 50. 
+bis zum 62. Lebensjahr nachschüssig jährlich 
+3 000 € eingezahlt. Nach der Pensionierung mit 62 
+soll dann 10 Jahre lang eine nachschüssige Rente 
+bei einer Verzinsung von 5% gezahlt werden. Wie 
+hoch ist die Rente? Wie hoch wäre sie, wenn bis 
+zum 65. Lebensjahr eingezahlt wird?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe144() { 
+                                                
+                          if (Eintrag144.value=="4000") {alert("Richtig"); document.getElementById("Pruef144").disabled= true;
+                          }  
+                           
+                          else if (Eintrag144.value!=="4000" && Eintrag144.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag144").value="4000"; window.open('Folge_Aufgabe144.html');           
+                          document.getElementById("Pruef144").disabled= true;}
+                               
+                          else if (Eintrag144.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 145-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 145
+
+a) Eine Lebensversicherung über 360 000 €, 
+auszuzahlen mit Vollendung des 65. Lebensjahres, 
+soll in eine nachschüssige Rente umgewandelt 
+werden. Wie hoch ist die jährliche Rente über 
+10 Jahre, wenn ein Zinssatz von 5% vereinbart 
+wird? Wie lange könnte eine Rente von 18 000 € 
+jährlich ausgezahlt werden, wenn mit einem 
+Zinssatz von 4% gerechnet wird? 
+
+b) Eine Lebensversicherung über 120 000 € soll 
+in 6 Jahren ausgezahlt werden. Sie soll ab 
+diesem Zeitpunkt in eine nachschüssige, 20 Jahre 
+zu zahlende Rente, bei einem Zinssatz von 4,5% 
+umgewandelt werden. Wie hoch ist der Barwert der 
+Versicherungssumme? Wie hoch ist die Rente?
+
+<button  onclick="window.open('Folge_Aufgabe145.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 146-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 146
+
+a) Wie hoch ist eine Rente, die von einer 
+15jährigen nachschüssigen in der Höhe von 2 500 € 
+in eine 10jährige vorschüsssige umgewandelt wird, 
+wenn 5% Verzinsung vereinbart sind?
+
+b) Wie lange kann eine jährliche nachschüssige 
+Rente von 7 538 € gezahlt werden, wenn 120 000 € 
+zu 4% angelegt sind?                 
+
+<input type="text" id="Eintrag146" maxlength="4" size="1" style= background-color:yellow ></input> Jahre <button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe146() { 
+                                                
+                          if (Eintrag146.value=="26,9") {alert("Richtig"); document.getElementById("Pruef146").disabled= true;
+                          }  
+                           
+                          else if (Eintrag146.value!=="26,9" && Eintrag146.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag146").value="26,9"; window.open('Folge_Aufgabe146.html');           
+                          document.getElementById("Pruef146").disabled= true;}
+                               
+                          else if (Eintrag146.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                       
+
+<!--//Aufgabe 147-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 147
+
+a) Wie hoch ist eine Rente, die von einer 
+15jährigen nachschüssigen in der Höhe von 
+2 000 € in eine 10jährige nachschüsssige 
+umgewandelt wird, wenn 5% Verzinsung 
+vereinbart sind?
+
+b) Wie lange wird eine Rente in der Höhe von 
+10 800 € jährlich nachschüssig ausgezahlt, wenn 
+der Rentenendwert 255 960 € bei 4%iger Verzinsung 
+beträgt?
+
+<button  onclick="window.open('Folge_Aufgabe147.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 148-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 148
+
+a) Ein Kapital wird mit 4% Zins so angelegt, dass 
+in 5 Jahren eine vorschüssige Rente von 12 000 € 
+15 Jahre lang gezahlt werden kann.
+a<sub>1</sub>) Wie hoch ist das angelegte Kapital?
+a<sub>2</sub>) Wie lang könnten 18 000 € jährlich gezahlt 
+werden?
+a<sub>3</sub>) Welchen Betrag müsste man 3 Jahre nach der 
+Kapitalanlage hinzuzahlen, damit 18 000 € 
+15 Jahre lang ausgezahlt werden?
+
+b) Ein Kapital von 200 000 € ist zu 6% Zinsen 
+angelegt. 
+Wie lang können in 5 Jahren 24 000 € jährlich 
+ausgezahlt werden?                 
+
+<input type="text" id="Eintrag148" maxlength="5" size="2" style= background-color:yellow ></input> Jahre <button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe148() { 
+                                                
+                          if (Eintrag148.value=="18,97") {alert("Richtig"); document.getElementById("Pruef148").disabled= true;
+                          }  
+                           
+                          else if (Eintrag148.value!=="18,97" && Eintrag148.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag148").value="18,97"; window.open('Folge_Aufgabe148.html');           
+                          document.getElementById("Pruef148").disabled= true;}
+                               
+                          else if (Eintrag148.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 149-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 149
+
+a) Eine vorschüssige Jahresrente von 3 200 € zu 
+einem Zinssatz von 5,5% soll 15 Jahre lang 
+ausgezahlt werden.
+a<sub>1</sub>) Wie hoch ist der Barwert der Rente?
+a<sub>2</sub>) Wie hoch wäre die Rente, wenn sie um 3 Jahre
+hinausgeschoben wird?
+a<sub>3</sub>) Wie hoch wäre sie, wenn die Zahlung nur 
+12 Jahre geleistet wird?
+
+b) Der Geldgewinn bei einer Lotterie steht als 
+Einmalzahlung von 100 000 € oder als lebenslange 
+vorschüssige jährliche Zahlung von 10 000 € zur 
+Verfügung. Nach welcher Zeit sind die beiden 
+Angebote bei einer Verzinsung von 4,5% 
+gleichwertig? 
+
+<button  onclick="window.open('Folge_Aufgabe149.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 150-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 150
+
+a) Zur Finanzierung eines Hausbaus wird ein 
+Darlehen von 200 000 € bei einem Zinssatz von 
+6% aufgenommen, die Tilgung beträgt 1%.
+a₁) Erstellen Sie den Tilgungsplan für die 
+ersten 8 Jahre.a₂) Wie hoch ist die Restschuld 
+nach 16 Jahren?a₃) Wie hoch ist die Restschuld 
+nach 32 Jahren?
+
+b) Ein Kredit von 350 000 € soll bei einer 
+Verzinsung von 5% in 10 Jahren getilgt werden. 
+Berechnen Sie die Annuität und den Tilgungsanteil.         
+
+Annuität = <input type="text" id="Eintrag150" maxlength="8" size="5" style= background-color:yellow ></input> € <button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe150() { 
+                                                
+                          if (Eintrag150.value=="45326,21") {alert("Richtig"); document.getElementById("Pruef150").disabled= true;
+                          }  
+                           
+                          else if (Eintrag150.value!=="45326,21" && Eintrag150.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag150").value="45326,21"; window.open('Folge_Aufgabe150.html');           
+                          document.getElementById("Pruef150").disabled= true;}
+                               
+                          else if (Eintrag150.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 151-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 151
+
+a) Wie hoch sind die Annuität und die Restschuld 
+nach 8 Jahren, wenn ein Kredit von 150 000 € bei 
+einem Zinssatz von 6% durch 12 gleich große 
+Annuitäten gelöscht werden soll?
+
+b) Ein Kredit von 100 000 € soll bei einer 
+Verzinsung von 8% in 10 Jahren getilgt werden. 
+Berechnen Sie die Annuität, den ersten Tilgungs-
+betrag, und stellen Sie einen Tilgungsplan für 
+die ersten 3 Jahre auf.
+
+<button  onclick="window.open('Folge_Aufgabe151.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 152-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 152
+
+a) Ein Darlehen von 200 000 € soll in 15 Jahren 
+durch Annuitätentilgung zurückgezahlt werden. 
+Die ersten 8 Jahre wird ein Zins von 5%, die 
+restlichen 7 einer von 8,5% vereinbart. 
+Wie hoch ist die Annuität in den ersten 8 und 
+dann in den restlichen 7 Jahren?
+
+b) Ein Kredit von 250 000 € soll bei einer 
+Verzinsung von 5,5% in 20 Jahren durch gleich 
+hohe Annuitäten getilgt werden. Wie hoch sind 
+die Annuität und die Restschuld nach 10 Jahren?      
+
+Annuität = <input type="text" id="Eintrag152" maxlength="8" size="4" style= background-color:yellow ></input> € <button id="Pruef152" onclick="Aufgabe152()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe152() { 
+                                                
+                          if (Eintrag152.value=="20918,82") {alert("Richtig"); document.getElementById("Pruef152").disabled= true;
+                          }  
+                           
+                          else if (Eintrag152.value!=="20918,82" && Eintrag152.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag152").value="20918,82"; window.open('Folge_Aufgabe152.html');           
+                          document.getElementById("Pruef152").disabled= true;}
+                               
+                          else if (Eintrag152.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 153-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 153
+
+a) Ein Darlehen von 500 000 € soll in 7 Jahren 
+durch Annuitätentilgung bei einem Zins von 6% 
+zurückgezahlt werden. Berechnen Sie die Annuität, 
+und stellen Sie den Tilgungsplan für die ersten 
+3 Jahre auf.
+
+b) Die Restschuld eines Kredits von 240 000 €, 
+der mit 6% verzinst und mit einer Tilgung von 
+1% vereinbart wurde, wird nach 10 Jahren durch 
+einen neuen Kredit zu 4,5% Zins und 1% Tilgung 
+abgelöst.
+b<sub>1</sub>) Wie hoch ist die anfängliche Annuität?
+b<sub>2</sub>) Wie hoch ist die Restschuld nach 10 Jahren?
+b<sub>3</sub>) Wie hoch ist die Annuität des neuen Kredits?
+b<sub>4</sub>) Wie lange ist dessen Laufzeit?
+
+<button  onclick="window.open('Folge_Aufgabe153.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 154-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 154
+
+a) Eine Familie kann jährlich 14 400 € für die 
+Verzinsung und Tilgung eines Kredits zum Kauf 
+eines Hauses aufbringen. Welchen Kredit kann eine 
+Bank bei einem Zinssatz von 7,5% gewähren, wenn 
+die Laufzeit 20, 25 oder 30 Jahre beträgt?
+
+b) Wieviele Jahre dauert die Tilgung eines 
+Darlehens von 1 000 000 €, wenn gleich hohe 
+Annuitäten von 119 277,03 € bei einer Verzinsung 
+von 6% geleistet werden können?           
+
+<input type="text" id="Eintrag154" maxlength="2" size="1" style= background-color:yellow ></input> Jahre <button id="Pruef154" onclick="Aufgabe154()">Prüfen</button></p></pre> 
+
+
+                      <script>
+                        function Aufgabe154() { 
+                                                
+                          if (Eintrag154.value=="12") {alert("Richtig"); document.getElementById("Pruef154").disabled= true;
+                          }  
+                           
+                          else if (Eintrag154.value!=="12" && Eintrag154.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag154").value="12"; window.open('Folge_Aufgabe154.html');           
+                          document.getElementById("Pruef154").disabled= true;}
+                               
+                          else if (Eintrag154.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 155-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 155
+
+a) Für den Kauf eines Hauses werden 180 000 € 
+zu einem Zinssatz von 4,5% benötigt. Wie lange 
+muss getilgt werden, wenn 15 000 € jährlich 
+für Verzinsung und Tilgung zur Verfügung stehen? 
+Ermitteln Sie den Tilgungsplan für die ersten 
+5 Jahre.
+
+b) Ein Darlehen von 160 000 € soll mit 6% 
+verzinst und mit 1% getilgt werden. Berechnen Sie 
+die Annuität und die Tilgungsdauer. Wie hoch ist 
+die Annuität, wenn nach 18 Jahren für 2 Jahre die 
+Zahlungen unterbrochen werden, das Darlehen aber 
+in der errechneten Zeit getilgt sein soll?
+
+<button  onclick="window.open('Folge_Aufgabe155.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 156-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 156
+
+a) Ein Darlehen von 300 000 € ist mit 7,5% 
+verzinst und soll in 20 Jahren zurückgezahlt 
+werden. Nach 10 Jahren wird die Annuität um 
+6 000 € erhöht. 
+a₁) Wie hoch ist die ursprüngliche Annuität?
+a₂) Wie hoch ist die Restschuld nach 10 Jahren?
+a₃) Wie hoch ist die Restlaufzeit nach Erhöhung 
+der Annuität?
+
+Es sind <input type="text" id="Eintrag156" maxlength="3" size="1" style= background-color:yellow ></input> Jahre <button id="Pruef156" onclick="Aufgabe156()">Prüfen</button>
+
+b) Für eine neue Heizung werden 25 000 € zu 6,8% 
+mit 5jähriger Zinsbindung und einer Tilgung von 
+1% aufgenommen. Wie hoch ist der 3 Jahre später 
+zu einem Zinssatz von 5% anzulegende Betrag, 
+damit die 25 000 € am Ende der Zinspreisbindung 
+abgelöst werden können?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe156() { 
+                                                
+                          if (Eintrag156.value=="7,7") {alert("Richtig"); document.getElementById("Pruef156").disabled= true;
+                          }  
+                           
+                          else if (Eintrag156.value!=="7,7" && Eintrag156.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag156").value="7,7"; window.open('Folge_Aufgabe156.html');           
+                          document.getElementById("Pruef156").disabled= true;}
+                               
+                          else if (Eintrag156.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                       
+
+<!--//Aufgabe 157-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 157
+
+a) Welcher Betrag muss am Anfang des ersten 
+Jahres bei einer Verzinsung von 5% eingezahlt 
+werden, wenn, vom Ende des 10. Jahres an, 
+15 Jahre lang eine nachschüssige Jahresrente von 
+6 000 € gezahlt werden soll?
+
+b) Am Anfang eines Jahres wird ein Einmalbetrag 
+eingezahlt, der mit 3,5% verzinst wird. Am Ende 
+eines jeden Jahres kommen 1 500 € hinzu. Nach 10 
+Jahren beträgt das Guthaben 59 915,05 €. 
+Wie hoch war der Einmalbetrag?
+
+<button  onclick="window.open('Folge_Aufgabe157.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 158-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 158
+
+a) Wieviel ist nach 12 Jahren auf einem neu 
+angelegten Sparbuch, wenn jeweils am Jahresende 
+1 200 €, 3 Jahre nach Anlage des Sparbuchs 
+einmalig 5 000 € und 6 Jahre danach einmalig 
+8 000 € bei einem Zinssatz von 4% eingezahlt 
+werden?
+
+Es sind <input type="text" id="Eintrag158" maxlength="8" size="4" style= background-color:yellow ></input> € <button id="Pruef158" onclick="Aufgabe158()">Prüfen</button>
+
+b) Wieviel ist nach 10 Jahren auf einem Spar-
+konto, wenn jeweils am Jahresanfang 2 000 € zu 
+3,75% eingezahlt, nach 3 Jahren am Jahresende 
+3 000 € abgehoben und 2 Jahre später 5 000 € 
+eingezahlt werden?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe158() { 
+                                                
+                          if (Eintrag158.value=="34146,44") {alert("Richtig"); document.getElementById("Pruef158").disabled= true;
+                          }  
+                           
+                          else if (Eintrag158.value!=="34146,44" && Eintrag158.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag158").value="34146,44"; window.open('Folge_Aufgabe158.html');           
+                          document.getElementById("Pruef158").disabled= true;}
+                               
+                          else if (Eintrag158.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 159-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 159
+
+a) Am Ende eines Jahres sind bei einer Verzinsung 
+von 5,5% 12 400 € auf einem Konto. Welcher Betrag 
+muss mit dem Beginn des folgenden Jahres 6 Jahre 
+lang vorschüssig dazugezahlt werden, damit danach 
+25 000 € auf dem Konto sind?
+
+b) Ein Betrag von 50 000 € ist zu 6% angelegt. 
+Wie hoch ist die jährliche Rente, die nach 8 Jahren 
+12 Jahre lang nachschüssig ausgezahlt werden kann? 
+
+<button  onclick="window.open('Folge_Aufgabe159.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 160-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 160
+
+a) Auf einem Konto befinden sich am Anfang eines 
+Jahres 20 000 €, die zu 4% verzinst werden. 
+Welcher Betrag muss 5 Jahre lang jeweils am 
+Anfang des Jahres eingezahlt werden, damit am 
+Ende des 5. Jahres 40 000 € angespart sind?
+
+b) Wie hoch ist das Restguthaben, wenn von 
+120 000 €, verzinst mit 5%, 5 Jahre lang 
+jeweils am Jahresende 15 000 € abgehoben werden? 
+Wie lange kann man 15 000 € abheben?         
+
+Es sind <input type="text" id="Eintrag160" maxlength="5" size="2" style= background-color:yellow ></input> Jahre <button id="Pruef160" onclick="Aufgabe160()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe160() { 
+                                                
+                          if (Eintrag160.value=="10,51") {alert("Richtig"); document.getElementById("Pruef160").disabled= true;
+                          }  
+                           
+                          else if (Eintrag160.value!=="10,51" && Eintrag160.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag160").value="10,51"; window.open('Folge_Aufgabe160.html');           
+                          document.getElementById("Pruef160").disabled= true;}
+                               
+                          else if (Eintrag160.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                             
+                      
+<!--//Aufgabe 161-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 161
+
+a) Auf wieviel ist ein Kapital von 10 000 € 
+angewachsen, wenn 10 Jahre lang jährlich 
+nachschüssig 5 000 € eingezahlt werden und es 
+mit 6% verzinst wird? Nach welcher Zeit sind 
+200 000 € auf dem Konto? 
+
+b) Eine Schuld von 20 000 €, verzinst mit 5%, 
+soll durch jährliche nachschüssige Zahlungen von 
+jeweils 2 000 € abgetragen werden. Nach welcher 
+Zeit ist die Schuld gelöscht?
+
+<button  onclick="window.open('Folge_Aufgabe161.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 162-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 162
+
+a) Wie lange kann eine nachschüssige Rente von 
+2 000 € nach Ablauf von 5 Jahren bezogen werden, 
+wenn 20 000 € zu 6% angelegt waren?
+
+b) Nach Abschluss eines Bausparvertrages über 
+90 000 €, werden 5 000 € sofort eingezahlt und 
+danach 10 Jahre lang jeweils 1 800 € am Ende 
+eines Jahres. Wie hoch ist das Sparguthaben am 
+Ende des 10. Jahres, wenn es mit 4,5% verzinst 
+wird? Nach welcher Zeit sind 40% der Vertrags-
+summe eingezahlt?    
+
+Nach <input type="text" id="Eintrag162" maxlength="4" size="1" style= background-color:yellow ></input> Jahren <button id="Pruef162" onclick="Aufgabe162()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe162() { 
+                                                
+                          if (Eintrag162.value=="11,9") {alert("Richtig"); document.getElementById("Pruef162").disabled= true;
+                          }  
+                           
+                          else if (Eintrag162.value!=="11,9" && Eintrag162.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag162").value="11,9"; window.open('Folge_Aufgabe162.html');           
+                          document.getElementById("Pruef162").disabled= true;}
+                               
+                          else if (Eintrag162.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 163-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 163
+
+a) Welcher Betrag steht nach Ablauf von 6 Jahren 
+noch zur Verfügung, wenn von einem Kapital von 
+100 000 € bei einer Verzinsung von 5% am Jahres-
+ende jeweils 10 000 € abgehoben werden? Wann ist 
+das Kapital aufgebraucht? 
+
+b) Am Anfang eines Jahres befinden sich 16 000 € 
+auf einem Konto. Sie werden mit 5,5% verzinst. 
+Nach wieviel Jahren ist der Betrag auf 
+70 930,48 € angestiegen, wenn jährlich 
+nachschüssig 4 000 € eingezahlt werden? 
+
+<button  onclick="window.open('Folge_Aufgabe163.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 164-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 164
+
+a) Wie lange kann man nachschüssig 4 000 € 
+jährlich von einem Konto abheben, auf dem 
+30 886,94 € zu 5% liegen?
+
+<input type="text" id="Eintrag164" maxlength="2" size="1" style= background-color:yellow ></input> Jahre <button id="Pruef164" onclick="Aufgabe164()">Prüfen</button>
+
+b) Von einem Sparguthaben von 40 000 €, verzinst 
+zu 6%, sollen nach einer Laufzeit von 5 Jahren 
+Beträge, mal am Jahresanfang mal am Jahresende, 
+so abgehoben werden, dass das angesparte Kapital 
+nicht kleiner wird. 
+Wie hoch sind diese Beträge?</p></pre> 
+
+
+                      <script>
+                        function Aufgabe164() { 
+                                                
+                          if (Eintrag164.value=="10") {alert("Richtig"); document.getElementById("Pruef164").disabled= true;
+                          }  
+                           
+                          else if (Eintrag164.value!=="10" && Eintrag164.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag164").value="10"; window.open('Folge_Aufgabe164.html');           
+                          document.getElementById("Pruef164").disabled= true;}
+                               
+                          else if (Eintrag164.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+<!--//Aufgabe 165-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 165
+
+a) Eine Firma hat eine Maschine für 600 000 € 
+gekauft, und schreibt sie degressiv mit 20% ab.
+a₁) Wie hoch ist der Buchwert am Ende des 5., 
+7. und 10. Jahres?
+a₂) Wie hoch sind die Abschreibungsbeträge für 
+das 1., 5. und 10. Jahr?
+
+b) Ein Lkw hat einen Wert von 40 000 € und wird 
+mit 30% über 8 Jahre degressiv abgeschrieben. 
+Nach Ablauf des 9. Jahres wird der Restbuchwert 
+unter Berücksichtigung des Erinnerungswertes von 
+1 € voll abgeschrieben. Wie hoch ist dieser 
+Abschreibungsbetrag?
+
+<button  onclick="window.open('Folge_Aufgabe165.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 166-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 166
+
+a) Eine Maschine hat nach 5-maliger degressiver 
+Abschreibung mit 20% noch einen Buchwert von 
+393 216 €. Wie hoch war der Anschaffungspreis?
+
+b) Der Buchwert einer Maschine beträgt am Ende 
+des 4.Jahres bei degressiver Abschreibung mit 
+20% noch 20 480 €.
+b<sub>1</sub>) Wie hoch war der Anschaffungswert?
+
+<input type="text" id="Eintrag166" maxlength="5" size="2" style= background-color:yellow ></input> € <button id="Pruef166" onclick="Aufgabe166()">Prüfen</button>
+
+b<sub>2</sub>) Nach wieviel Jahren beträgt der Buchwert noch 
+5 368,71 €?</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe166() { 
+                                                
+                          if (Eintrag166.value=="50000") {alert("Richtig"); document.getElementById("Pruef166").disabled= true;
+                          }  
+                           
+                          else if (Eintrag166.value!=="50000" && Eintrag166.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag166").value="50000"; window.open('Folge_Aufgabe166.html');           
+                          document.getElementById("Pruef166").disabled= true;}
+                               
+                          else if (Eintrag166.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                       
+
+<!--//Aufgabe 167-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 167
+
+a) Eine Maschine wird am Anfang eines Jahres für 
+50 000 € gekauft und soll 10 Jahre genutzt werden.
+a₁) Berechnen Sie den Abschreibungssatz und den 
+Abschreibungsbetrag bei linearer Abschreibung.
+a₂) Wie hoch ist der Restbuchwert bei degressiver 
+Abschreibung mit 30% nach 10 Jahren?
+a₃) Wie hoch sind die Abschreibungsbeträge, wenn 
+am Ende des 5. Jahres von der degressiven zur 
+linearen Abschreibung gewechselt wird?
+
+b) Eine Maschine im Wert von 200 000 € soll in 
+15 Jahren auf ein Fünftel ihres Wertes degressiv 
+abgeschrieben werden. Berechnen Sie den 
+Prozentsatz der Abschreibung.
+
+<button  onclick="window.open('Folge_Aufgabe167.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 168-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 168
+
+a) Eine Maschine im Wert von 860 000 € soll in 
+8 Jahren auf 235 000 € degressiv abgeschrieben 
+werden. 
+Berechnen Sie den Prozentsatz der Abschreibung.
+
+<input type="text" id="Eintrag168" maxlength="2" size="1" style= background-color:yellow ></input> % <button id="Pruef168" onclick="Aufgabe168()">Prüfen</button>
+
+b) Eine Maschine im Wert von 80 000 € wird mit 
+30% degressiv abgeschrieben. Am Ende welchen 
+Jahres beträgt der Abschreibungsbetrag 968,50 €?
+
+</p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe168() { 
+                                                
+                          if (Eintrag168.value=="15") {alert("Richtig"); document.getElementById("Pruef168").disabled= true;
+                          }  
+                           
+                          else if (Eintrag168.value!=="15" && Eintrag168.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag168").value="15"; window.open('Folge_Aufgabe168.html');           
+                          document.getElementById("Pruef168").disabled= true;}
+                               
+                          else if (Eintrag168.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 169-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 169
+
+a) Eine Maschine im Wert von 38 000 € wird 
+8 Jahre lang degressiv bis auf einene Rest-
+buchwert von 10 212 € abgeschrieben. Der 
+Abschreibungssatz ist in den ersten 4 Jahren 
+doppelt so hoch. Wie hoch ist der Abschreibungs-
+satz in den ersten 4 Jahren? Wie hoch war der 
+Buchwert vor der Änderung des Abschreibungssatzes?
+ 
+b) Mit welchem Prozentsatz muss eine Maschine 
+degressiv abgeschrieben werden, wenn sie nach 
+8 Jahren den gleichen Restwert haben soll wie 
+eine doppelt so teure Maschine, die 10 Jahre lang 
+mit 15% degressiv abgeschrieben wurde?
+
+<button  onclick="window.open('Folge_Aufgabe169.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 170-->
+
+  <pre><p class ="Aufgabe" >Aufgabe 170
+
+a) Wie lange wurde eine Maschine im Wert von 
+120 000 € mit einem Restwert von 21 158 € 
+abgeschrieben, wenn sie eine bestimmte Zeit mit 
+20% und dann doppelt so lange mit 10% degressiv 
+abgeschrieben wurde?
+ 
+b) Eine Anlage im Wert von 650 000 € soll mit 20% 
+degressiv abgeschrieben werden. Zu Beginn des 
+6. Jahres nach ihrer Anschaffung erfolgt eine 
+Sonderabschreibung von 20%. Berechnen Sie den 
+Buchwert nach 8 Jahren. Mit welchem Prozentsatz 
+hätte sie von Anfang an abgeschrieben werden 
+müssen, um nach 8 Jahren den gleichen Buchwert 
+ohne Sonderabschreibung zu erzielen?     
+
+Mit <input type="text" id="Eintrag170" maxlength="4" size="1" style= background-color:yellow ></input> % <button id="Pruef170" onclick="Aufgabe170()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe170() { 
+                                                
+                          if (Eintrag170.value=="22,2") {alert("Richtig"); document.getElementById("Pruef170").disabled= true;
+                          }  
+                           
+                          else if (Eintrag170.value!=="22,2" && Eintrag170.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag170").value="22,2"; window.open('Folge_Aufgabe170.html');           
+                          document.getElementById("Pruef170").disabled= true;}
+                               
+                          else if (Eintrag170.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 171-->                     
+                      
+    <pre><p class="Aufgabe">Aufgabe 171
+
+a) Eine Maschine wurde am Ende des ersten Jahres 
+mit 240 000 € und am Ende des 5. Jahres mit 
+98 304 € abgeschrieben.
+a<sub>1</sub>) Wie hoch ist der Abschreibungssatz q?
+a<sub>2</sub>) Wie hoch ist ihr Anschaffungswert A?
+a<sub>3</sub>) Wie hoch ist der Buchwert B nach der 
+5. Abschreibung?
+ 
+b) Eine Anlage hatte am Ende des 2. Jahres einen 
+Buchwert von 1 350 000 €, am Ende des 7. Jahres 
+einen von 320 362,33 €. Wie hoch sind 
+Abschreibungssatz q und Anschaffungswert A?
+
+<button  onclick="window.open('Folge_Aufgabe171.html');" >Lösung</button></p></b></pre>                       
+
+<a href="https://joafroehlich.github.io/Matheaufgaben-loesen/sek2.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
