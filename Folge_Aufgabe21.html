@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 21
+
+Bestimmen Sie den Grenzwert g der Folge. 
+Ermitteln Sie rechnerisch, ab welchem Glied 
+der Folge der Abstand zum Grenzwert weniger 
+als 0,1 beträgt.
+
+         1 + √n
+a) a<sub>n</sub> = --------
+         2 + √n
+
+         1 + n
+b) a<sub>n</sub> = --------
+           n
+
+a)
+
+      1 + √n
+a<sub>n</sub> = ---------
+      2 + √n
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+0,67   0,71   0,73   0,75   0,76   
+
+streng monoton steigende Folge --> g > a<sub>n</sub> 
+
+<span style="color:red">g =</span><math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow><mrow><mn>2</mn><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac></mfenced></math> =
+
+= <math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced><mfrac><mrow><msqrt><mi mathvariant="normal">n</mi></msqrt><mfenced><mrow><mfrac><mn>1</mn><msqrt><mi mathvariant="normal">n</mi></msqrt></mfrac><mo>+</mo><mn>1</mn></mrow></mfenced></mrow><mrow><msqrt><mi mathvariant="normal">n</mi></msqrt><mfenced><mrow><mfrac><mn>2</mn><msqrt><mi mathvariant="normal">n</mi></msqrt></mfrac><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac></mfenced></math> =
+
+= <math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced><mfrac><mrow><mfrac><mn>1</mn><msqrt><mi mathvariant="normal">n</mi></msqrt></mfrac><mo>+</mo><mn>1</mn></mrow><mrow><mfrac><mn>2</mn><msqrt><mi mathvariant="normal">n</mi></msqrt></mfrac><mo>+</mo><mn>1</mn></mrow></mfrac></mfenced></math> = <span style="color:red">1</span>
+
+1/√n  und  2/√n  sind Nullfolgen.
+
+                    1 + √n
+0,1 > g - a<sub>n</sub> = 1 - --------- |*(2 + √n)
+                    2 + √n
+
+0,2 + 0,1 * √n > 2 + √n - 1 - √n |-0,2
+
+0,1 * √n > 0,8 |:0,1
+
+√n > 8 |<sup>2</sup>
+
+n > 64 --> <span style="color:red">ab n = 65</span>
+
+b)
+      1 + n
+a<sub>n</sub> = --------
+        n
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>      a<sub>5</sub>
+ 2     1,5    4/3    1,25    1,2
+
+streng monoton fallende Folge --> a<sub>n</sub> > g
+
+<span style="color:red">g =</span><math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><mn>1</mn><mo>+</mo><mi mathvariant="normal">n</mi></mrow><mi mathvariant="normal">n</mi></mfrac></math> =
+
+= <math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><mi mathvariant="normal">n</mi><mfenced><mrow><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac><mo>+</mo><mn>1</mn></mrow></mfenced></mrow><mi mathvariant="normal">n</mi></mfrac></math> =
+
+= <math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced><mrow><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac><mo>+</mo><mn>1</mn></mrow></mfenced></math> = <span style="color:red">1</span>
+
+ 1
+--- ist eine Nullfolge.
+ n
+
+                1 + n
+0,1 > a<sub>n</sub> - g = ------- - 1|*n
+                  n
+
+0,1n > 1 + n - n |:0,1
+
+n > 10 --> <span style="color:red">ab n = 11</span>
+
+</p></b></pre>

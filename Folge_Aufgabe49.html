@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 49
+
+Bestimmen Sie die explizite Darstellung der 
+Folge a<sub>n</sub> und die nächsten 5 Folgeglieder, 
+wenn die ersten 5 Folgeglieder gegeben sind:
+
+a) 1, -2, 3, -4, 5 ...
+
+    1       5    7    3
+b) ---, 1, ---, ---, --- ...
+    2       4    5    2
+
+c)  5; 0,5; 0,05; 0,005; 0,0005 ...
+
+a)
+
+1 = (-1)<sup>2</sup> * 1
+
+-2 = (-1)³ * 2 
+
+3 = (-1)<sup>4</sup> * 3
+
+-4 = (-1)<sup>5</sup> * 4
+
+5 = (-1)<sup>6</sup> * 5
+
+<span style="color:red">a<sub>n</sub> = (-1)<sup>n+1</sup> * n</span>
+
+1, -2, 3, -4, 5, <span style="color:red">-6, 7, -8, 9, -10</span> ...
+
+b) 
+
+ 1     2 * 1 - 1
+--- = -----------
+ 2       1 + 1
+
+     2 * 2 - 1
+1 = -----------
+       2 + 1
+
+ 5     2 * 3 - 1
+--- = -----------
+ 4       3 + 1
+
+ 7     2 * 4 - 1
+--- = -----------
+ 5       4 + 1
+
+ 9     2 * 5 - 1
+--- = -----------
+ 6       5 + 1
+
+      <span style="color:red">2n - 1
+a<sub>n</sub> = --------
+       n + 1</span>
+           
+ 1       5    7    3    
+---, 1, ---, ---, ---, 
+ 2       4    5    2     
+ 
+ <span style="color:red">11    13    5    17    19
+----, ----, ---, ----, ----</span> ... 
+ <span style="color:red">7     8     3    10    11</span> 
+
+c)
+
+     50
+5 = ----
+     10
+
+       50      50
+0,5 = ----- = -----
+       100     10<sup>2</sup>
+
+         50      50
+0,05 = ------ = -----
+        1000     10<sup>3</sup>
+
+           50       50
+0,005 = -------- = -----
+         10 000     10<sup>4</sup>
+
+             50        50
+0,0005 = ---------- = -----
+          100 000      10<sup>5</sup>
+
+       <span style="color:red">50
+a<sub>n</sub> = ------
+       10<sup>n</sup></span>
+
+5; 0,5; 0,05; 0,005; 0,0005; 
+
+<span style="color:red">0,00005; 0,000005; 0,0000005; 0,00000005; 
+
+0,000000005</span> ...
+
+</p></b></pre>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 1
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+             1
+a) a<sub>n</sub> = 1 + ---
+             n
+
+          3  
+b) a<sub>n</sub> = (---)<sup>n</sup>
+          4 
+
+a)
+
+a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>       a<sub>4</sub>       a<sub>5</sub>
+2      1,5    1,33     1,25     1,2
+
+Vermutung: 2 ist obere Schranke.  
+
+         1  
+2 ≥ 1 + --- |*n
+         n      
+
+2n ≥ n + 1 |-n
+
+n ≥ 1 ist eine wahre Aussage 
+
+--> Vermutung stimmt: <span style="color:red">2 ist obere Schranke</span>.
+
+                      1  
+Für n --> ∞ geht 1 + --- gegen 1 
+                      n
+
+--> Vermutung: 1 ist untere Schranke
+
+         1
+1 < 1 + --- |*n
+         n 
+
+n < n + 1 |-n
+
+0 < 1 ist eine wahre Aussage 
+
+--> Vermutung stimmt: <span style="color:red">1 ist untere Schranke</span>. 
+
+             1       
+a<sub>n+1</sub> = 1 + -----
+           n + 1 
+
+                   1            1
+a<sub>n+1</sub> - a<sub>n</sub> = 1 + ------- - (1 + ---)
+                 n + 1          n 
+
+              n - (n + 1)           1  
+a<sub>n+1</sub> - a<sub>n</sub> = -------------- = - ----------- < 0  
+             (n + 1) * n        (n + 1)*n 
+
+--> </0>a<sub>n</sub> > a<sub>n+1</sub>
+
+--> <span style="color:red">a<sub>n</sub> ist streng monoton fallend</span>
+
+b)
+
+       3       3<sup>n</sup>
+a<sub>n</sub> = (---)<sup>n</sup> = ----
+       4       4<sup>n</sup> 
+
+  a<sub>1</sub>      a<sub>2</sub>        a<sub>3</sub>       a<sub>4</sub>      a<sub>5</sub>
+  0,75    0,5625    0,422    0,316   0,237   
+
+Vermutung: 0,75 ist obere Schranke.  
+
+         3        
+0,75 ≥ (---)<sup>n</sup> 
+         4       
+
+ 3      3
+--- ≥ (---)<sup>n</sup> : ist eine wahre Aussage 
+ 4      4
+
+--> Vermutung stimmt: <span style="color:red">0,75 ist obere Schranke</span>
+
+                   3
+Für n --> ∞ geht (---)<sup>n</sup> gegen 0 
+                   4
+
+Vermutung: --> 0 ist untere Schranke.
+
+Annahme:
+
+      3  
+0 < (---)<sup>n</sup> : ist eine wahre Aussage 
+      4 
+
+--> Vermutung stimmt: <span style="color:red">0 ist untere Schranke</span>
+
+         3<sup>n+1</sup>      3<sup>n</sup> * 3
+a<sub>n+1</sub> = (------) = -------- 
+         4<sup>n+1</sup>      4<sup>n</sup> * 4
+                 
+a<sub>n+1</sub> - a<sub>n</sub> =  
+
+   3<sup>n</sup> * 3    3<sup>n</sup>     3<sup>n</sup>       3
+= ------- - ---- = ---- * ((---) - 1) < 0 
+   4<sup>n</sup> * 4    4<sup>n</sup>     4<sup>n</sup>       4 
+   
+--> a<sub>n</sub> > a<sub>n+1</sub>   
+
+--> <span style="color:red">a<sub>n</sub> ist streng monoton fallend</span>
+
+</p></b></pre>

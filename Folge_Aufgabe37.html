@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 37
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen an. 
+            
+a) 
+
+      2<sup>n</sup> + 3<sup>n+1</sup>
+a<sub>n</sub> = -----------
+       2 * 3<sup>n</sup>
+
+            
+b) 
+
+      6n + 9           
+a<sub>n</sub> = --------
+      2n + 1
+
+a)
+
+      2<sup>n</sup> + 3<sup>n+1</sup>
+a<sub>n</sub> = -----------
+       2 * 3<sup>n</sup>
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+ 1,83    1,72    1,65     1,6    1,57
+
+<span style="color:red">g =</span> <math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><msup><mn>2</mn><mi mathvariant="normal">n</mi></msup><mo>+</mo><msup><mn>3</mn><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><msup><mn>3</mn><mi mathvariant="normal">n</mi></msup></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><msup><mn>2</mn><mi mathvariant="normal">n</mi></msup><mo>+</mo><msup><mn>3</mn><mi mathvariant="normal">n</mi></msup><mo>&#xd7;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><msup><mn>3</mn><mi mathvariant="normal">n</mi></msup></mrow></mfrac><mo>=</mo></math>
+
+<math mathsize="1.2em"><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><mrow><msup><mn>3</mn><mi mathvariant="normal">n</mi></msup><mo>&#xd7;</mo><mfenced><mrow><mfrac><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><mrow><msup><mn>3</mn><mi>n</mi></msup></mrow></mfrac><mo>+</mo><mn>3</mn></mrow></mfenced></mrow><mrow><mn>2</mn><mo>&#xd7;</mo><msup><mn>3</mn><mi mathvariant="normal">n</mi></msup></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><mrow><msup><mfenced><mfrac><mn>2</mn><mn>3</mn></mfrac></mfenced><mi mathvariant="normal">n</mi></msup><mo>+</mo><mn>3</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>=</mo><mn mathvariant="bold" mathcolor="#ff0000">1</mn><mo mathvariant="bold" mathcolor="#ff0000">,</mo><mn mathvariant="bold" mathcolor="#ff0000">5</mn><mo>&#xA0;</mo></math>
+
+  2          
+(---)n ist eine Nullfolge.
+  3   
+       
+ b)
+
+      6n + 9
+a<sub>n</sub> = --------
+      2n + 1
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+   5     4,2     3,86    3,67    3,55  
+
+<span style="color:red">g =</span> <math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><mn>6</mn><mi mathvariant="normal">n</mi><mo>+</mo><mn>9</mn></mrow><mrow><mn>2</mn><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><mi mathvariant="normal">n</mi><mo>&#xd7;</mo><mfenced><mrow><mn>6</mn><mo>+</mo><mfrac><mn>9</mn><mi mathvariant="normal">n</mi></mfrac></mrow></mfenced></mrow><mrow><mi mathvariant="normal">n</mi><mo>&#xd7;</mo><mfenced><mrow><mn>2</mn><mo>+</mo><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac></mrow></mfenced></mrow></mfrac><mo>=</mo></math>
+
+<math mathsize="1.2em"><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><mrow><mn>6</mn><mo>+</mo><mfrac><mn>9</mn><mi mathvariant="normal">n</mi></mfrac></mrow><mrow><mn>2</mn><mo>+</mo><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac></mrow></mfrac><mo>=</mo><mfrac><mn>6</mn><mn>2</mn></mfrac><mo>=</mo><mn mathvariant="bold" mathcolor="#ff0000">3</mn><mo>&#xA0;</mo></math>
+
+ 9       1      
+--- und --- sind Nullfolgen.
+ n       n       
+
+</p></b></pre>

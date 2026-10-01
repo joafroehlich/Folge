@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 16
+
+Untersuchen Sie die Folgen für n ∈ ℕauf 
+Beschränktheit.
+
+         2n + 1    
+a) a<sub>n</sub> = --------
+         3n - 1
+
+           n<sup>2</sup>  
+b) a<sub>n</sub> = -------
+         n + 2
+
+a)
+
+      2n + 1    
+a<sub>n</sub> = --------
+      3n - 1
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+1,5     1    0,875   0,82   0,79
+
+Vermutung: 1,5 ist obere Schranke.  
+
+       2n + 1         
+1,5 ≥ -------- |*(3n - 1)
+       3n - 1            
+
+ 4,5n - 1,5 ≥ 2n + 1 |-2n + 1,5
+
+2,5n ≥ 2,5 ist eine wahre Aussage 
+
+--> Vermutung stimmt: 1,5 ist obere Schranke.
+
+--> Vermutung: 0 ist untere Schranke
+
+     2n + 1         
+0 < -------- |*(3n - 1)
+     3n - 1            
+
+0 < 2n + 1 ist eine wahre Aussage 
+
+--> Vermutung stimmt: 0 ist untere Schranke.
+
+--> <span style="color:red">a<sub>n</sub> ist beschränkt</span>.
+
+b)
+
+        n<sup>2</sup>  
+a<sub>n</sub> = -------
+      n + 2
+ 
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+0,33    1     1,8    2,67   3,57
+
+Vermutung: 0 ist untere Schranke.  
+
+       n<sup>2</sup>         
+0 < ------- |*(n + 2)
+     n + 2             
+
+ 0 < n<sup>2</sup> ist eine wahre Aussage 
+
+--> Vermutung stimmt: 0 ist untere Schranke.
+
+Annahme: 5 ist obere Schranke
+
+         n<sup>2</sup>         
+5 > ------- |*(n + 2) 
+       n + 2             
+
+5n + 10 > n<sup>2</sup> ist ab n = 7 eine falsche Aussage 
+
+--> Annahme stimmt nicht.
+
+--> <span style="color:red">a<sub>n</sub> ist nach unten beschränkt</span>.
+
+</p></b></pre>

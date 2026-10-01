@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 61
+
+Bestimmen Sie den Grenzwert der rekursiv 
+gegebenen Folge. 
+
+                 2     
+a) a<sub>1</sub> = 0, a<sub>n</sub> = --- * a<sub>n-1</sub> - 2
+                 5
+
+                    2     
+b) a<sub>1</sub> = -2, a<sub>n</sub> = - --- * a<sub>n-1</sub> + 4
+                    3
+
+a)
+
+a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+ 0     -2     -2,8    -3,12   -3,248
+
+<math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">g</mi></math>
+
+<math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced><mfrac><mrow><mn>2</mn><mo>&#xd7;</mo><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow><mn>5</mn></mfrac></mfenced><mo>&#x2212;</mo><mn>2</mn></math>
+
+     2 * g    
+g = -------- - 2 |*5
+       5
+
+5g = 2g - 10 |-2g 
+
+3g = -10 |:3
+
+       <span style="color:red">10
+g = - ----
+        3</span>
+
+b)
+
+                    2     
+b) a<sub>1</sub> = -2, a<sub>n</sub> = - --- * a<sub>n-1</sub> + 4
+                    3
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>      a<sub>6</sub>
+  -2     5,33   0,447     3,7    1,53    2,98
+
+<math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>=</mo><mi mathvariant="normal">g</mi></math>
+
+<math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msub><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></msub><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced><mrow><mo>&#x2212;</mo><mo>&#xA0;</mo><mfrac><mrow><mn>2</mn><mo>&#xd7;</mo><msub><mi mathvariant="normal">a</mi><mrow><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><mn>1</mn></mrow></msub></mrow><mn>3</mn></mfrac></mrow></mfenced><mo>+</mo><mn>4</mn></math>
+
+       2 * g                   
+g = - -------- + 4 | *3
+         3  
+
+3g = -2g + 12 |+2g    
+
+5g = 12 |:5
+
+<span style="color:red">g = 2,4</span>
+
+</p></b></pre>

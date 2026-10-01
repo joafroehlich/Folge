@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+ <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 4
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+ 
+              5
+a) a<sub>n</sub> = 1 - (---)<sup>n</sup>
+              9 
+
+         1  
+b) a<sub>n</sub> = ----
+         √n 
+
+a)
+
+  a<sub>1</sub>      a<sub>1</sub>       a<sub>3</sub>       a<sub>4</sub>       a<sub>5</sub>  
+0,44     0,69     0,83     0,90     0,95 
+
+            4
+Vermutung: --- ist untere Schranke
+            9 
+
+ 4          5         5       4 
+--- ≤ 1 - (---)<sup>n</sup> |+ (---)<sup>n</sup> - ---
+ 9          9         9       9
+
+  5       5 
+(---)<sup>n</sup> ≤ ---  ist eine wahre Aussage
+  9       9
+
+                       <span style="color:red">4</span>  
+--> Vermutung stimmt: <span style="color:red">--- ist untere Schranke.  
+                       9</span>     
+
+                       5   
+Für n --> ∞ geht 1 - (---)<sup>n</sup> gegen 1 
+                       9  
+
+Vermutung: 1 ist obere Schranke
+
+          5        5 
+1 > 1 - (---)<sup>n</sup> |+(---)<sup>n</sup> - 1
+          9        9
+
+  5
+(---)<sup>n</sup> > 0 ist eine wahre Aussage
+  9 
+
+--> Vermutung stimmt: <span style="color:red">1 ist obere Schranke</span>.
+
+             5             5      5
+a<sub>n+1</sub> = 1 - (---)<sup>n</sup>+1 = 1 - --- * (---)<sup>n</sup>
+             9             9      9
+
+                 5      5             5 
+a<sub>n+1</sub> - a<sub>n</sub> = 1 - --- * (---)<sup>n</sup> - (1 - (---)<sup>n</sup>
+                 9      9             9 
+
+              5           5      4      5 
+a<sub>n+1</sub> - a<sub>n</sub> = (---)<sup>n</sup> *(1 - ---) = --- * (---)<sup>n</sup> > 0
+              9           9      9      9 
+
+--> a<sub>n+1</sub> > a<sub>n</sub> 
+
+--> <span style="color:red">a<sub>n</sub> ist streng monoton steigend</span>
+
+b)
+      1    
+a<sub>n</sub> = ----
+      √n  
+
+  a<sub>1</sub>        a<sub>2</sub>         a<sub>3</sub>         a<sub>4</sub>        a<sub>5</sub>
+  1        0,71       0,58        0,5      0,45 
+
+Vermutung: 1 ist obere Schranke
+
+     1    
+1 ≥ ---- |*√n
+     √n     
+
+√n ≥ 1 ist eine wahre Aussage
+
+--> Vermutung stimmt, <span style="color:red">1 ist obere Schranke</span>.  
+
+                  1   
+Für n --> ∞ geht ---- gegen 0 
+                  √n 
+
+Vermutung: 0 ist untere Schranke
+
+     1      
+0 ≤ ---- |*√n
+     √n 
+
+0 ≤ 1 ist eine wahre Aussage
+
+--> Vermutung stimmt, <span style="color:red">0 ist untere Schranke</span>.
+ 
+           1          
+a<sub>n+1</sub> = --------- 
+        <math mathsize="0.9em"><msqrt><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></msqrt></math>
+ 
+                1        1          
+a<sub>n+1</sub> - a<sub>n</sub> = --------- - ---- < 0 
+             <math mathsize="0.9em"><msqrt><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></msqrt></math>     √n
+
+--> a<sub>n</sub> > a<sub>n+1</sub> 
+
+--> <span style="color:red">a<sub>n</sub> ist streng monoton fallend</span>
+
+</p></b></pre>

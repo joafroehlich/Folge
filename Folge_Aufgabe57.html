@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 57
+
+Bestimmen Sie die explizite und rekursive 
+Darstellung der Folge a<sub>n</sub>, wenn die ersten 
+4 Folgeglieder gegeben sind:
+
+       4    3    8
+a) 1, ---, ---, --- ...
+       3    2    5
+
+          3    1
+b) 1, 1, ---, --- ...
+          4    2
+
+a)
+
+     2 * 1
+1 = -------
+     1 + 1
+
+ 4     2 * 2
+--- = -------
+ 3     2 + 1
+
+ 3     6     2 * 3
+--- = --- = -------
+ 2     4     3 + 1
+
+ 8     2 * 4
+--- = -------
+ 5     4 + 1
+
+        <span style="color:red">2n
+a<sub>n</sub> = -------
+      n + 1</span>
+
+        2 * (n + 1)     2n + 2      
+a<sub>n+1</sub> = ------------- = --------- 
+         n + 1 + 1       n + 2       
+
+a<sub>n+1</sub> = a<sub>n</sub> + b<sub>n</sub>
+
+ 2n + 2      2n               2n
+-------- = ------- + b<sub>n</sub> | - -------
+  n + 2     n + 1            n + 1
+
+ 2n + 2       2n          
+-------- - ------- = b<sub>n</sub> 
+ n + 2      n + 1            
+
+      (2n + 2) * (n + 1) - 2n * (n + 2)      
+b<sub>n</sub> = ----------------------------------- = 
+                 (n + 2) * (n + 1)
+                 
+   2n<sup>2</sup> + 4n + 2 - 2n<sup>2</sup> - 4n
+= -------------------------
+      (n + 2) * (n + 1)
+
+             2
+b<sub>n</sub> = -------------------
+      (n + 2) * (n + 1)
+
+                     <span style="color:red">2
+a<sub>n+1</sub> = a<sub>n</sub> + ------------------- 
+             (n + 2) * (n + 1)</span>
+
+b)
+
+      2 * 1
+ 1 = -------
+        2
+
+     2 * 2 
+1 = -------
+       2<sup>2</sup>
+
+ 3     6     2 * 3 
+--- = --- = -------
+ 4     8       2<sup>3</sup>
+
+ 4      8     2 * 4 
+--- = ---- = -------
+ 8     16      2<sup>4</sup>
+
+      <span style="color:red">2n
+a<sub>n</sub> = ----
+      2<sup>n</sup></span>
+
+        2 * (n + 1)     2 * (n + 1)     n + 1
+a<sub>n1+1</sub> = ------------- = ------------- = -------
+            2<sup>n+1</sup>           2<sup>n</sup> * 2         2<sup>n</sup>
+
+a<sub>n+1</sub> = a<sub>n</sub> + bn
+
+ n + 1      2n            2n
+-------- = ---- + b<sub>n</sub> | - ----
+   2<sup>n</sup>       2<sup>n</sup>            2<sup>n</sup>
+
+ n + 1     2n                
+------- - ---- = b<sub>n</sub> 
+  2<sup>n</sup>       2<sup>n</sup>
+
+      n + 1 - 2n     1 - n
+b<sub>n</sub> = ------------ = -------
+           2n          2n
+
+             <span style="color:red">1 - n
+a<sub>n+1</sub> = a<sub>n</sub> + ------- 
+               2<sup>n</sup></span>                                          
+
+</p></b></pre>

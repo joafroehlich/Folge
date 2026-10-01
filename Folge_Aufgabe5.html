@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+ <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 5
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+           1 + 5n<sup>2</sup>
+a) a<sub>n</sub> = -------------
+         n * (n + 1) 
+
+             1  
+b) a<sub>n</sub> = n + ---
+             n  
+
+a)
+
+        1 + 5n<sup>2</sup>       
+a<sub>n</sub> = -------------   
+      n * (n + 1) 
+
+a<sub>1</sub>       a<sub>2</sub>        a<sub>3</sub>        a<sub>4</sub>        a<sub>5</sub>
+3        3,5      3,83      4,05       4,2   
+
+Vermutung: 3 ist untere Schranke
+
+       1 + 5n<sup>2</sup>
+3 ≤ ------------- |*n * (n + 1)
+     n * (n + 1)
+
+3n<sup>2</sup> + 3n ≤ 1 + 5n<sup>2</sup> |-5n<sup>2</sup>
+
+3n - 2n<sup>2</sup> ≤ 1 ist eine wahre Aussage
+
+--> Vermutung stimmt: <span style="color:red">3 ist untere Schranke</span>. 
+
+Für n --> ∞ geht
+
+                            1
+                    n<sup>2</sup> * (---- + 5)
+     1 + 5n<sup>2</sup>               n<sup>2</sup>
+ -------------- = ------------------- =  
+   n * (n * 1)          n<sup>2</sup> + n
+
+          1
+   n<sup>2</sup> * (---- + 5)
+          n<sup>2</sup> 
+= ------------------ gegen 5,    
+              1  
+   n<sup>2</sup> * (1 + ---)  
+              n  
+
+        1       1  
+ weil ---- und --- Nullfolgen sind.
+       n<sup>2</sup>       n  
+
+Vermutung: 5 ist obere Schranke
+
+       1 + 5n<sup>2</sup>
+5 > ------------- |*n * (n + 1)
+     n * (1 + n) 
+
+5n<sup>2</sup> + 5n > 1 + 5n<sup>2</sup> |-5n<sup>2</sup>
+
+5n > 1 ist eine wahre Aussage
+
+--> Vermutung stimmt: <span style="color:red">5 ist obere Schranke</span>.
+
+              1 + 5 * (n + 1)<sup>2</sup>
+a<sub>n+1</sub> = -------------------------- =
+           (n + 1) * (n + 1 + 1)
+           
+   1 + 5 * (n<sup>2</sup> + 2n + 1)
+= -----------------------           
+         n<sup>2</sup> + 3n + 2     
+
+        1 + 5n<sup>2</sup> + 10n + 5     5n<sup>2</sup> + 10n + 6
+a<sub>n+1</sub> = ------------------- = ----------------
+           n<sup>2</sup> + 3n + 2         n<sup>2</sup> + 3n + 2  
+
+             5n<sup>2</sup> + 10n + 6       1 + 5n<sup>2</sup>
+a<sub>n+1</sub> - a<sub>n</sub> = ---------------- - (---------)
+              n<sup>2</sup> + 3n + 2        n<sup>2</sup> + n
+
+             5n<sup>4</sup> + 5n<sup>3</sup> + 10n<sup>3</sup> + 10n<sup>2</sup> + 6n<sup>2</sup> + 
+a<sub>n+1</sub> - a<sub>n</sub> = --------------------------------
+               (n<sup>2</sup> + 3n + 2) * (n<sup>2</sup> + n)
+
++ 6n - n<sup>2</sup> - 3n - 2 - 5n<sup>4</sup> - 15n<sup>3</sup> - 10n<sup>2</sup>
+---------------------------------------
+     (n<sup>2</sup> + 3n + 2) * (n<sup>2</sup> + n)
+
+a<sub>n+1</sub> - a<sub>n</sub> = 
+             
+         5n<sup>2</sup> + 3n - 2            > 0
+= -------------------------- = ------ = > 0
+   (n<sup>2</sup> + 3n + 2) * (n<sup>2</sup> + n)      > 0
+
+--> a<sub>n+1</sub> > a<sub>n</sub> --> <span style="color:red">a<sub>n</sub> ist streng monoton steigend</span>
+
+b)
+          1 
+a<sub>n</sub> = n + ---
+          n  
+
+   a<sub>1</sub>       a<sub>2</sub>        a<sub>3</sub>        a<sub>4</sub>        a<sub>5</sub>
+   2       2,5       3,33      4,25       5,2   
+
+Vermutung: 2 ist untere Schranke
+
+         1  
+2 ≤ n + --- |*n
+         n 
+
+2n ≤ n<sup>2</sup> + 1 ist eine wahre Aussage
+
+--> Vermutung stimmt: <span style="color:red">2 ist untere Schranke</span>
+
+                      1
+Für n --> ∞ geht n + --- gegen ∞ 
+                      n
+
+--> keine obere Schranke
+
+Annahme: 5 sei obere Schranke
+
+         1  
+5 > n + --- |*n
+         n 
+
+5n > n<sup>2</sup> + 1 gilt bis n = 5, für alle n > 5 
+nicht mehr
+
+--> Annahme stimmt nicht, <span style="color:red">keine obere Schranke</span>
+
+                  1       (n + 1)<sup>2</sup> + 1
+a<sub>n+1</sub> = n + 1 + ------- = ---------------
+                n + 1         n + 1  
+
+             (n + 1)<sup>2</sup> + 1          1
+a<sub>n+1</sub> - a<sub>n</sub> = -------------- - (n + ---) = 
+                 n + 1             n
+                 
+   (n + 1)<sup>2</sup> + 1     n<sup>2</sup> - 1
+= -------------- - --------
+       n + 1           n   
+                  
+a<sub>n+1</sub> - a<sub>n</sub> = 
+
+   [((n + 1)<sup>2</sup> + 1) * n] - (n<sup>2</sup> - 1) * (n + 1)
+= -------------------------------------------
+                  n * (n + 1)
+
+             n<sup>3</sup> + 2n<sup>2</sup> + 2n - n<sup>3</sup> - n<sup>2</sup> + n + 1            
+a<sub>n+1</sub> - a<sub>n</sub> = ---------------------------------- = 
+                        (n + 1) * n
+                        
+   n<sup>2</sup> + 3n + 1     > 0
+= ------------- = ----- = > 0
+   (n + 1) * n     > 0 
+
+--> a<sub>n+1</sub> > a<sub>n</sub> --> <span style="color:red">a<sub>n</sub> ist streng monoton steigend</span>
+
+</p></b></pre>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 58
+
+Bestimmen Sie die explizite und rekursive 
+Darstellung der Folge a<sub>n</sub>, wenn die ersten 
+4 Folgeglieder gegeben sind:
+
+a) 2, 6, 14, 30 ...
+
+             1
+b) 4, 2, 1, --- ...
+             2
+
+a)
+
+2 = 2<sup>1+1</sup> - 2
+
+6 = 2<sup>2+1</sup> - 2
+
+14 = 2<sup>3+1</sup> - 2
+
+30 = 2<sup>4+1</sup> - 2
+
+<span style="color:red">a<sub>n</sub> = 2<sup>n+1</sup> - 2</span>
+
+a<sub>n+1</sub> = 2<sup>n+1+1</sup> - 2 = 2<sup>n+2</sup> - 2
+
+a<sub>n+1</sub> = a<sub>n</sub> + b<sub>n</sub> 
+
+2<sup>n+2</sup> - 2 = 2<sup>n+1</sup> - 2 + b<sub>n</sub> |-2<sup>n+1</sup> + 2
+
+2<sup>n+2</sup> - 2<sup>n+1</sup> = b<sub>n</sub> 
+
+b<sub>n</sub> = 2<sup>n</sup> * 2² - 2<sup>n</sup> * 2 = 2 * 2<sup>n</sup>  
+
+<span style="color:red">a<sub>n+1</sub> = a<sub>n</sub> + 2 * 2<sup>n</sup></span> 
+
+b)
+
+4 = 2<sup>3-1</sup>
+
+2 = 2<sup>3-2</sup>
+
+1 = 2<sup>3-3</sup>
+
+0,5 = 2<sup>3-4</sup>
+
+<span style="color:red">a<sub>n</sub> = 2<sup>3-n</sup></span>
+
+a<sub>n+1</sub> = 2<sup>3-(n + 1)</sup> = 2<sup>2-n</sup> 
+
+a<sub>n+1</sub> = a<sub>n</sub> + b<sub>n</sub> 
+
+2<sup>2-n</sup> = 2<sup>3-n</sup> + b<sub>n</sub> |-2<sup>3-n</sup> 
+
+2<sup>2-n</sup> - 2<sup>3-n</sup> = b<sub>n</sub>  
+
+      4      8        4
+b<sub>n</sub> = ---- - ---- = - ---- 
+      2<sup>n</sup>     2<sup>n</sup>       2<sup>n</sup>
+
+             <span style="color:red">4 
+a<sub>n+1</sub> = a<sub>n</sub> - ---- 
+             2<sup>n</sup></span>
+
+</p></b></pre>

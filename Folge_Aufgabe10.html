@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+ <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 10
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie und Beschränktheit:
+
+         n<sup>2</sup> + 12
+a) a<sub>n</sub> = ---------
+            n
+
+b) a<sub>n</sub> = lg n
+              
+a)
+
+       n<sup>2</sup> + 12
+a<sub>n</sub> = ----------
+          n
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>     a<sub>6</sub>     a<sub>7</sub>
+ 13     8      7      7     7,4     8     8,7
+
+Vermutung: 7 ist untere Schranke
+
+     n<sup>2</sup> + 12
+7 ≤ --------- |*n        
+        n
+
+7n ≤ n<sup>2</sup> + 12 |-7n
+
+n<sup>2</sup> - 7n + 12 ≥ 0
+
+p, q - Formel:
+
+p = -7, q = 12
+
+n<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>7</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>12</mn></mrow></msqrt></math>
+
+n<sub>1,2</sub> = 3,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>12</mn><mo>,</mo><mn>25</mn><mo>&#x2212;</mo><mn>12</mn></mrow></msqrt></math>
+
+n<sub>1,2</sub> = 3,5 ± <math mathsize="0.9em"><msqrt><mrow><mn>0</mn><mo>,</mo><mn>25</mn></mrow></msqrt></math>
+
+n<sub>1</sub> = 3
+ 
+n<sub>2</sub> = 4 --> 
+
+Für n = 3 und n = 4 ist n<sup>2</sup> - 7n + 12 = 0, 
+für alle anderen > 0 
+
+--> <span style="color:red">7 ist untere Schranke </span>
+                  
+Für n --> ∞ geht 
+
+                        12
+             n<sup>2</sup> * (1 + ----)
+ n<sup>2</sup> + 12                 n
+--------- = ----------------- =
+    n               n
+    
+            12
+= n * (1 + ----) gegen ∞     
+             n
+
+--> <span style="color:red">keine obere Schranke</span>
+
+Annahme: 10 sei obere Schranke
+
+      n<sup>2</sup> + 12 
+10 > --------- |*n
+         n  
+
+10n > n<sup>2</sup> + 12 |-10n
+
+n<sup>2</sup> - 10n + 12 < 0
+
+p, q - Formel:
+
+p = -10, q = 12
+
+n<sub>1,2</sub> = <math mathsize="1em"><mo>&#x2212;</mo><mfrac><mrow><mo>&#x2212;</mo><mn>10</mn></mrow><mn>2</mn></mfrac><mo>&#xb1;</mo><msqrt><mrow><msup><mfenced><mfrac><mrow><mo>&#x2212;</mo><mn>10</mn></mrow><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>&#x2212;</mo><mn>12</mn></mrow></msqrt></math>
+
+n<sub>1,2</sub> = 5 ± <math mathsize="0.9em"><msqrt><mrow><mn>25</mn><mo>&#x2212;</mo><mn>12</mn></mrow></msqrt></math>
+
+n<sub>1,2</sub> = 5 ± <math mathsize="0.9em"><msqrt><mn>13</mn></msqrt></math>
+
+n<sub>1</sub> = 8,6
+ 
+n<sub>2</sub> = 1,4 keine Lösung, 7 ist untere Schranke
+
+ --> Für n > 8 ist 
+ 
+ n<sup>2</sup> - 10n + 12 > 0, Widerspruch  
+
+--> Annahme stimmt nicht, keine obere Schranke
+
+        (n + 1)<sup>2</sup> + 12     n<sup>2</sup> + 2n + 1 + 12     
+a<sub>n+1</sub> = --------------- = ------------------ =    
+             n + 1              n + 1
+             
+   n<sup>2</sup> + 2n + 13          
+= --------------             
+       n + 1
+
+             n<sup>2</sup> + 2n + 13     n<sup>2</sup> + 12    
+a<sub>n+1</sub> - a<sub>n</sub> = -------------- - --------- 
+                 n + 1           n 
+                
+a<sub>n+1</sub> - a<sub>n</sub> =
+
+   (n<sup>2</sup> + 2n + 13) * n - (n<sup>2</sup> + 12) * (n + 1)
+= ------------------------------------------
+                 n * (n +1)
+               
+a<sub>n+1</sub> - a<sub>n</sub> = 
+
+   n³ + 2n<sup>2</sup> + 13n - (n³ + n<sup>2</sup> + 12n + 12) 
+= ---------------------------------------
+                 n * (n +1)             
+
+             n<sup>2</sup> + n - 12     
+a<sub>n+1</sub> - a<sub>n</sub> = ------------- = 
+              n * (n +1)        
+              
+   (x + 4) * (x - 3)     > 0 ab n = 4
+= ------------------- = ---------------
+       n * (n + 1)            > 0
+
+
+--> a<sub>n+1</sub> > a<sub>n</sub> --> 
+
+<span style="color:red">a<sub>n</sub> ist streng monoton steigend ab n = 4</span>
+
+b)
+
+a<sub>n</sub> = lg n
+      
+a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>     a<sub>6</sub>
+ 0   0,301  0,477  0,602  0,699   0,778
+
+Vermutung: 0 ist untere Schranke
+
+0 ≤ lg n        
+
+Entlogarithmiert:
+
+100 ≤ n
+
+1 ≤ n ist eine wahre Aussage --> 
+
+<span style="color:red">0 ist untere Schranke</span>
+
+a<sub>n+1</sub> = lg (n + 1)
+
+a<sub>n+1</sub> - a<sub>n</sub> = lg (n + 1) - lg n ist > 0, 
+
+weil lg (n + 1) immer > lg n 
+
+--> a<sub>n+1</sub> > a<sub>n</sub> --> <span style="color:red">a<sub>n</sub> ist streng monoton steigend</span>
+
+Für n --> ∞ geht lg n gegen ∞
+
+--> <span style="color:red">keine obere Schranke</span>
+
+</p></b></pre>

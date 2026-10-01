@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 17
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Beschränktheit.
+
+a) a<sub>n</sub> = (-2)<sup>n</sup>
+
+b) a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></math> - n
+
+a)
+
+a<sub>n</sub> = (-2)<sup>n</sup>
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+ -2     4      -8     16    -32
+
+Die Folge alterniert und ist divergent.
+
+--> <span style="color:red">a<sub>n</sub> ist nicht beschränkt</span>.
+
+b)
+
+a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></math> - n
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+0,41   0,32   0,27   0,24   0,21
+
+Vermutung: 0 ist untere Schranke.  
+
+0 < <math mathsize="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></math> - n |+n
+
+n < <math mathsize="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></math> - n |<sup>2</sup>
+^
+n<sup>2</sup> < n<sup>2</sup> + 1  ist eine wahre Aussage.
+
+--> Vermutung stimmt: 0 ist untere Schranke.
+
+Vermutung: 1 ist obere Schranke
+
+1 > <math mathsize="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></math> - n |+n
+
+1+n > <math mathsize="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></msqrt></math>  |<sup>2</sup>
+
+n<sup>2</sup> + 2n + 1 > n<sup>2</sup> + 1 |-n<sup>2</sup> - 1
+
+2n > 0 ist eine wahre Aussage
+
+--> Vermutung stimmt: 1 ist obere Schranke.
+
+--> <span style="color:red">a<sub>n</sub> ist beschränkt</span>.
+
+</p></b></pre>

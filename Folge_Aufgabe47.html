@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 47
+
+Berechnen Sie den Grenzwert g der 
+Zahlenfolgen a<sub>n</sub>.            
+
+a) a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></math>
+
+b) a<sub>n</sub> = <math mathsize="1em"><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><mfenced><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfenced></math>
+
+c) a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></math>
+
+a)
+
+a<sub>n</sub> = <math mathsize="1.2em"><mfrac><mrow><mfenced><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfenced></mrow><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac></math>
+
+a<sub>n</sub> = <math mathsize="1.2em"><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn><mo>&#x2212;</mo><mi>n</mi></mrow><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac></math>
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+ 0,41    0,32    0,27    0,24    0,21
+
+<span style="color:red">g =</span> <math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mn>1</mn><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac><mo>=</mo><mn mathvariant="bold" mathcolor="#ff0000">0</mn></math>
+
+b)
+
+a<sub>n</sub> = <math mathsize="1em"><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><mfenced><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfenced></math>
+
+a<sub>n</sub> = <math mathsize="1.2em"><mfrac><mrow><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><mfenced><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfenced></mrow><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac></math>
+
+a<sub>n</sub> = <math mathsize="1.2em"><mfrac><mrow><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></mfenced></mrow><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac><mo>=</mo><mfrac><msqrt><mi mathvariant="normal">n</mi></msqrt><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac></math>
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+ 0,41    0,45    0,46    0,47    0,48
+
+<span style="color:red">g =</span> <math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><msqrt><mi mathvariant="normal">n</mi></msqrt><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><msqrt><mi mathvariant="normal">n</mi></msqrt><mrow><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><mfenced><mrow><mfrac><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><msqrt><mi mathvariant="normal">n</mi></msqrt></mfrac><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo>=</mo></math>
+
+<math mathsize="1.2em"><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><mn>1</mn><mrow><msqrt><mfrac><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow><mi mathvariant="normal">n</mi></mfrac></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><mn>1</mn><mrow><msqrt><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac></mrow></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac mathcolor="#ff0000"><mn mathvariant="bold" mathcolor="#ff0000">1</mn><mn mathvariant="bold" mathcolor="#ff0000">2</mn></mfrac></math>
+
+c)
+
+a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></math>
+
+a<sub>n</sub> = <math mathsize="1.2em"><mfrac><mrow><mfenced><mrow><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>+</mo><mi mathvariant="normal">n</mi></mrow></mfenced></mrow><mrow><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>+</mo><mi mathvariant="normal">n</mi></mrow></mfrac></math>
+
+a<sub>n</sub> = <math mathsize="1.2em"><mfrac><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi><mo>&#x2212;</mo><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></mrow><mrow><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>+</mo><mi mathvariant="normal">n</mi></mrow></mfrac><mo>=</mo><mo>&#x2212;</mo><mfrac><mi mathvariant="normal">n</mi><mrow><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>+</mo><mi mathvariant="normal">n</mi></mrow></mfrac></math>
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+ -1    -0,586   -0,55   -0,54   -0,53
+
+<span style="color:red">g =</span> <math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><msqrt><mi mathvariant="normal">n</mi></msqrt><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>+</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><msqrt><mi mathvariant="normal">n</mi></msqrt><mrow><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><mfenced><mrow><mfrac><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><msqrt><mi mathvariant="normal">n</mi></msqrt></mfrac><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></mfrac><mo>=</mo></math>
+
+<math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mo>&#x2212;</mo><mfrac><mi mathvariant="normal">n</mi><mrow><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>+</mo><mi mathvariant="normal">n</mi></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mo>&#x2212;</mo><mfrac><mn>1</mn><mfrac><mrow><msqrt><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></msqrt><mo>+</mo><mi mathvariant="normal">n</mi></mrow><mi mathvariant="normal">n</mi></mfrac></mfrac><mo>=</mo></math>
+
+<math mathsize="1.2em"><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><msqrt><mfrac><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></mrow></mfrac></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mo>&#x2212;</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac></mrow></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mo mathvariant="bold" mathcolor="#ff0000">&#x2212;</mo><mfrac mathcolor="#ff0000"><mn mathvariant="bold" mathcolor="#ff0000">1</mn><mn mathvariant="bold" mathcolor="#ff0000">2</mn></mfrac></math>
+
+</p></b></pre>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 54
+
+Bestimmen Sie die explizite Darstellung der 
+Folge a<sub>n</sub>, wenn die ersten 4 Folgeglieder 
+gegeben sind:
+
+    1     4     9    16
+a) ---, ----, ----, ----- ... 
+    8    27    64    125
+
+    1    3     5    7
+b) ---, ---, ----, ---- ... 
+    2    5    10    17
+
+a)
+
+ 1     1<sup>2</sup>
+--- = ----
+ 8     2<sup>3</sup>
+
+  4     2<sup>2</sup>
+---- = ----
+ 27     3<sup>3</sup>
+
+  9     3<sup>2</sup>
+---- = ----
+ 64     4<sup>3</sup>
+
+ 16      4<sup>2</sup>
+----- = ----
+125      5<sup>3</sup>
+
+         <span style="color:red">n<sup>2</sup>
+a<sub>n</sub> = ----------
+      (n + 1)<sup>3</sup></span>
+ 
+b)
+
+ 1     2 * 1 - 1
+--- = -----------
+ 2       1<sup>2</sup> + 1
+
+ 3     2 * 2 - 1
+--- = -----------
+ 5      2<sup>2</sup> + 1
+
+ 5     2 * 3 - 1
+---- = -----------
+ 10      3<sup>2</sup> + 1
+
+  7     2 * 4 - 1
+---- = -----------
+ 17      4<sup>2</sup> + 1
+
+      <span style="color:red">2n - 1
+a<sub>n</sub> = --------
+      n<sup>2</sup> + 1</span>
+
+</p></b></pre>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 46
+
+Ist der angegebene Wert für g Grenzwert der 
+Folge an? 
+Überprüfen Sie dies mithilfe der ε-Umgebung.
+            
+a) 
+               
+      1 - 2n
+a<sub>n</sub> = --------     g = -2
+         n     
+            
+b) 
+
+      (-1)n 
+a<sub>n</sub> = -------     g = 0
+        n
+
+a) 
+
+      1 - 2n
+a<sub>n</sub> = --------     
+         n     
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+  -1     -1,5   -1,67   -1,75    -1,8
+
+<span style="color:red">g =</span> <math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><mn>1</mn><mo>&#x2212;</mo><mn>2</mn><mi mathvariant="normal">n</mi></mrow><mi mathvariant="normal">n</mi></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><mi mathvariant="normal">n</mi><mo>&#xd7;</mo><mfenced><mrow><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac><mo>&#x2212;</mo><mn>2</mn></mrow></mfenced></mrow><mi mathvariant="normal">n</mi></mfrac><mo>=</mo></math>
+
+<math mathsize="1em"><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfenced><mrow><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac><mo>&#x2212;</mo><mn>2</mn></mrow></mfenced><mo>&#xA0;</mo><mo>=</mo><mo mathvariant="bold" mathcolor="#ff0000">&#x2212;</mo><mn mathvariant="bold" mathcolor="#ff0000">2</mn></math>
+
+Nachweis mit der ε-Umgebung:
+
+|a<sub>n</sub> - g| < ε       
+
+   1 - 2n
+|--------- - (-2)| < ε 
+      n 
+
+   1 - 2n + 2n
+|---------------| < ε |*n
+           n 
+
+  1            1      1
+|---| < ε    |---| = ---   für alle n
+  n            n      n
+
+ 1
+--- < ε *n |:ε
+ n
+
+     1
+n > ---   
+     ε
+       
+Für alle n, die diese Bedingung erfüllen, 
+ist |a<sub>n</sub> - g| < ε
+
+Beispiel für ε = 0,001
+
+       1
+n > ------- = 1 000
+     0,001
+
+Ab n > 1 000 ist |a<sub>n</sub> - (-2)| < 0,001
+
+a<sub>1001</sub> = -1,9990009 
+
+|-1,9990009 + 2| = 0,00099 < 0,001 --> 
+
+<span style="color:red">g = -2 ist richtig</span>.
+
+b)
+
+      (-1)<sup>n</sup> 
+a<sub>n</sub> = -------     
+        n
+
+  a<sub>1</sub>      a<sub>2</sub>      a<sub>3</sub>      a<sub>4</sub>       a<sub>5</sub>
+  -1     0,5    -0,33    0,25    -0,2
+
+<span style="color:red">g =</span> <math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mfenced><mi mathvariant="normal">n</mi></msup></mrow><mi mathvariant="normal">n</mi></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced open="|" close="|"><mfrac><mrow><msup><mfenced><mrow><mo>&#x2212;</mo><mn>1</mn></mrow></mfenced><mi mathvariant="normal">n</mi></msup></mrow><mi mathvariant="normal">n</mi></mfrac></mfenced><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac><mo>=</mo><mn mathvariant="bold" mathcolor="#ff0000">0</mn></math>
+
+Nachweis mit der ε-Umgebung:
+
+|a<sub>n</sub> - g| < ε       
+
+    (-1)<sup>n</sup>                  
+| -------- - 0| < ε       
+       n  
+
+   (-1)<sup>n</sup>      1    
+ |-------| = ---  für alle n      
+     n        n 
+
+ 1
+--- < ε |*n
+ n
+ 
+1 < ε * n |:ε 
+
+     1
+n > ---
+     ε 
+
+Für alle n, die diese Bedingung erfüllen, 
+ist |a<sub>n</sub> - g| < ε
+
+Beispiel für ε = 0,001
+
+       1
+n > ------- = 1 000
+     0,001
+
+Ab n > 1 000 ist |a<sub>n</sub> - 0| < 0,001
+
+           (-1)<sup>1001</sup>
+a<sub>1001</sub> = - ---------- = - 0,000999 
+             1001
+
+|-0,000999 - 0| = 0,000999 < 0,001 --> 
+
+<span style="color:red">g = 0 ist richtig</span>.
+
+</p></b></pre>

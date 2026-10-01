@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 51
+
+Bestimmen Sie die explizite Darstellung der 
+Folge a<sub>n</sub>, wenn die rekursive Darstellung gegeben
+ist. 
+
+         3
+a) a<sub>1</sub> = ---, a<sub>n+1</sub> = 2a<sub>n</sub>  
+         2  
+
+b) a<sub>1</sub> = 0, a<sub>n+1</sub> = a<sub>n</sub> + 2n 
+
+a)
+
+              3
+Zahlenfolge: ---, 3, 6, 12, 24 ...
+              2
+ 
+ 3
+--- = 0,75 * 2<sup>1</sup> 
+ 2
+
+3 = 0,75 * 2<sup>2</sup>
+
+6 = 0,75 * 2<sup>3</sup>
+
+12 = 0,75 * 2<sup>4</sup>
+
+24 = 0,75 * 2<sup>5</sup>
+
+<span style="color:red">a<sub>n</sub> = 0,75 * 2<sup>n</sup></span>
+
+oder
+
+es handelt sich um eine geometrische Folge 
+mit q = 2
+
+Allgemeine Form:
+
+a<sub>n</sub> = a<sub>1</sub> * q<sup>n-1</sup>
+
+Eingesetzt:
+
+         3
+a<sub>n</sub> = --- * 2<sup>n-1</sup>
+         2
+
+a<sub>n</sub> = 1,5 * 2<sup>n</sup> * 2<sup>-1</sup>
+
+        1,5 * 2<sup>n</sup>  
+a<sub>n</sub> = ----------
+             2
+
+a<sub>n</sub> = 0,75 * 2<sup>n</sup>
+
+
+b)
+
+Zahlenfolge: 0, 2, 6, 12, 20 ...
+
+0 = 1 * (1 - 1) 
+
+2 = 2 * (2 - 1)
+
+6 = 3 * (3 - 1)
+
+12 = 4 * (4 - 1)
+
+20 = 5 * (5 - 1)
+
+<span style="color:red">a<sub>n</sub> = n * (n - 1)</span>
+
+</p></b></pre>

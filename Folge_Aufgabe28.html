@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 28
+
+Zeigen Sie, dass die Folge a<sub>n</sub> konvergent ist, 
+und bestimmen Sie ihren Grenzwert.
+
+a<sub>n</sub> = <math mathsize="1.2em"><mfrac><msqrt><mn>5</mn></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></math>
+
+Eine Folge a<sub>n</sub> ist dann konvergent, wenn sie 
+monoton und beschränkt ist.
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+√2,5   1,83   1,94    2     2,04
+
+Vermutung: √2,5 ist untere Schranke
+        
+√2,5 ≤ <math mathsize="1.2em"><mfrac><msqrt><mn>5</mn></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac></math>|*<math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math>
+
+<math mathsize="1em"><msqrt><mrow><mn>2</mn><mo>,</mo><mn>5</mn><mi mathvariant="normal">n</mi><mo>+</mo><mn>2</mn><mo>,</mo><mn>5</mn></mrow></msqrt><mo>&#x2264;</mo><msqrt><mrow><mn>5</mn><mi mathvariant="normal">n</mi></mrow></msqrt></math> |<sup>2</sup>
+
+2,5n + 2,5 ≤ 5n |-2,5n
+
+2,5n ≥ 2,5 ist eine wahre Aussage --> 
+
+√2,5 ist untere Schranke
+
+√5 ist obere Schranke, siehe Grenzwert g
+
+<math mathsize="1.2em"><msqrt><mn>5</mn></msqrt><mo>&gt;</mo><mfrac><msqrt><mn>5</mn></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac><mo>&#xA0;</mo><mo>|</mo><mo>&#xd7;</mo><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math>
+
+<math mathsize="1em"><msqrt><mrow><mn>5</mn><mi mathvariant="normal">n</mi><mo>+</mo><mn>5</mn></mrow></msqrt><mo>&gt;</mo><msqrt><mn>5</mn></msqrt></math> |<sup>2</sup>
+
+5n + 5 > 5n |-5n
+
+5 > 0 ist eine wahre Aussage --> 
+
+√5 ist obere Schranke
+
+--> <span style="color:red">a<sub>n</sub> ist beschränkt</span>
+
+Monotonie:
+
+a<sub>n+1</sub> = <math mathsize="1.2em"><mfrac><msqrt><mrow><mn>5</mn><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac><mo>=</mo><mfrac><msqrt><mrow><mn>5</mn><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>2</mn></mrow></msqrt></mfrac></math>
+
+a<sub>n+1</sub> - a<sub>n</sub> = <math mathsize="1.2em"><mfrac><msqrt><mrow><mn>5</mn><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>2</mn></mrow></msqrt></mfrac><mo>&#xA0;</mo><mo>&#x2212;</mo><mfrac><msqrt><mrow><mn>5</mn><mi mathvariant="normal">n</mi></mrow></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac><mo>=</mo></math>
+
+<math mathsize="1.2em"><mo>=</mo><mfrac><mrow><msqrt><mrow><mn>5</mn><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>&#xd7;</mo><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></msqrt><mo>&#x2212;</mo><msqrt><mrow><mn>5</mn><mi mathvariant="normal">n</mi><mo>&#xd7;</mo><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>2</mn></mrow></mfenced></mrow></msqrt></mrow><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>2</mn></mrow></msqrt><mo>&#xd7;</mo><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mrow></mfrac></math>
+
+
+a<sub>n+1</sub> - a<sub>n</sub> = <math mathsize="1.2em"><mfrac><msqrt><mrow><mn>5</mn><mfenced><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>2</mn></mrow></msqrt></mfrac><mo>&#xA0;</mo><mo>&#x2212;</mo><mfrac><msqrt><mrow><mn>5</mn><mi mathvariant="normal">n</mi></mrow></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac><mo>=</mo><mfrac><mrow><mo>&gt;</mo><mn>0</mn></mrow><mrow><mo>&gt;</mo><mn>0</mn></mrow></mfrac></math> = > 0     
+
+--> a<sub>n+1</sub> > a<sub>n</sub> --> a<sub>n</sub> ist streng monoton steigend
+
+--> <span style="color:red">a<sub>n</sub> ist konvergent</span>
+
+Grenzwert:
+
+<span style="color:red"></span>g = <math mathsize="1.2em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><msqrt><mrow><mn>5</mn><mi mathvariant="normal">n</mi></mrow></msqrt><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><msqrt><mn>5</mn></msqrt></mrow><mrow><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac></mrow></msqrt></mrow></mfrac></math> =
+
+<math mathsize="1.2em"><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><msqrt><mn>5</mn></msqrt><msqrt><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac></mrow></msqrt></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><msqrt><mfrac><mn>5</mn><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi mathvariant="normal">n</mi></mfrac></mrow></mfrac></msqrt><mo>=</mo><msqrt mathcolor="#ff0000"><mn mathvariant="bold" mathcolor="#ff0000">5</mn></msqrt></math>
+
+ 1  
+---- ist eine Nullfolge. 
+ √n
+
+</p></b></pre>

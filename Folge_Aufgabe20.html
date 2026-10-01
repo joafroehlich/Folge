@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 20
+
+Bestimmen Sie den Grenzwert g der Folge. 
+Ermitteln Sie rechnerisch, ab welchem Glied 
+der Folge der Abstand zum Grenzwert weniger 
+als 0,1 beträgt.
+
+         6n + 2
+a) a<sub>n</sub> = --------
+           3n
+
+           3n<sup>2</sup>
+b) a<sub>n</sub> = --------
+         n<sup>2</sup> + 5
+
+a)
+
+      6n + 2
+a<sub>n</sub> = --------
+        3n
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+8/3    7/3    20/9   13/6   32/15   
+
+streng monoton fallende Folge --> a<sub>n</sub> > g
+
+<span style="color:red">g =</span><math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><mn>6</mn><mi mathvariant="normal">n</mi><mo>+</mo><mn>2</mn></mrow><mrow><mn>3</mn><mi mathvariant="normal">n</mi></mrow></mfrac></math> =
+
+= <math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced><mrow><mfrac><mrow><mn>6</mn><mi mathvariant="normal">n</mi></mrow><mrow><mn>3</mn><mi mathvariant="normal">n</mi></mrow></mfrac><mo>+</mo><mfrac><mn>2</mn><mrow><mn>3</mn><mi mathvariant="normal">n</mi></mrow></mfrac></mrow></mfenced></math> =
+
+= <math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfenced><mrow><mn>2</mn><mo>+</mo><mfrac><mn>2</mn><mrow><mn>3</mn><mi mathvariant="normal">n</mi></mrow></mfrac></mrow></mfenced></math> = <span style="color:red">2</span>
+
+ 2
+---- ist eine Nullfolge.
+ 3n 
+
+                6n + 2
+0,1 > a<sub>n</sub> - g = -------- - 2 |*3n
+                  3n
+
+0,3n > 2 |:0,3
+
+n > 6,67 --> <span style="color:red">ab n = 7</span>
+
+b)
+
+        3n<sup>2</sup>
+a<sub>n</sub> = --------
+      n<sup>2</sup> + 5
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+0,5    4/3   27/14   16/7   2,5
+
+streng monoton steigende Folge --> g > a<sub>n</sub>
+
+<span style="color:red">g =</span><math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mrow><mn>3</mn><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></mrow><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn></mrow></mfrac></math> =
+
+= <math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><mrow><mn>3</mn><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></mrow><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>5</mn><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfenced></mrow></mfrac></math> =
+
+= <math mathsize="1em"><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi>&#x221e;</mi></mrow></munder><mfrac><mn>3</mn><mrow><mn>1</mn><mo>+</mo><mfrac><mn>5</mn><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfrac></math> = <span style="color:red">3</span>
+
+  5
+---- ist eine Nullfolge.
+ n<sup>2</sup>
+
+                      3n<sup>2</sup>
+0,1 > g - a<sub>n</sub> = 3 - -------- |*(n<sup>2</sup> + 5)
+                    n<sup>2</sup> + 5
+
+0,1n<sup>2</sup> + 0,5  > 3n<sup>2</sup> + 15 - 3n<sup>2</sup> |-0,5
+
+0,1n<sup>2</sup> > 14,5 |:0,1
+
+n<sup>2</sup> > 145 |√
+
+n = 12,04 --> <span style="color:red">ab n = 13</span>
+
+</p></b></pre>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 13
+
+Untersuchen Sie die Folgen für n ∈ ℕ auf 
+Monotonie:
+
+         (2 - n)<sup>2</sup>
+a) a<sub>n</sub> = ----------
+          n + 1
+
+            n<sup>2</sup>
+b) a<sub>n</sub> = ---------
+         2n<sup>2</sup> - 1
+
+a)
+
+      (2 - n)<sup>2</sup>     4 - 4n + n<sup>2</sup>
+a<sub>n</sub> = ---------- = -------------
+        n + 1         n + 1
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+0,5     0     0,25   0,8    1,5
+
+        (2 - (n + 1))<sup>2</sup>     (1 - n)<sup>2</sup>    
+a<sub>n+1</sub> = ---------------- = --------- = 
+           n + 1 + 1        n + 2         
+           
+   1 - 2n + n<sup>2</sup>        
+= --------------           
+       n + 2
+
+              1 - 2n + n<sup>2</sup>      4 - 4n + n<sup>2</sup>
+a<sub>n+1</sub> - a<sub>n</sub> = --------------- - ------------- 
+                 n + 2            n + 1
+
+             (1 - 2n + n<sup>2</sup>) * (n + 1)     
+a<sub>n+1</sub> - a<sub>n</sub> = ------------------------- - 
+               (n + 2) * (n + 1)
+               
+    (4 - 4n + n<sup>2</sup>) * (n + 2)
+- ---------------------------               
+       (n + 2) * (n + 1)
+
+             
+a<sub>n+1</sub> - a<sub>n</sub> = 
+
+   n+1 - 2n<sup>2</sup>-2n + n³+n<sup>2</sup> - (4n+8 - 4n<sup>2</sup>-8n+n³+2n<sup>2</sup>)
+= ----------------------------------------------- 
+                (n + 2) * (n + 1)
+
+                 n<sup>2</sup> + 3n - 7
+a<sub>n+1</sub> - a<sub>n</sub> = -------------------- = 
+             (n + 2) * (n + 1)
+             
+   > 0 ab n = 2           
+= -------------- = > 0 ab n = 2
+        > 0
+
+--> a<sub>n+1</sub> > a<sub>n</sub> --> 
+
+<span style="color:red">a<sub>n</sub> ist streng monoton steigend ab n = 2</span>
+
+b)
+
+        n<sup>2</sup>
+a<sub>n</sub> = ---------
+      2n<sup>2</sup> - 1
+
+
+ a<sub>1</sub>     a<sub>2</sub>     a<sub>3</sub>     a<sub>4</sub>     a<sub>5</sub>
+ 1     0,57   0,53   0,52   0,51
+
+            (n + 1)<sup>2</sup>             n<sup>2</sup> + 2n + 1
+a<sub>n+1</sub> = ------------------ = ------------------ = 
+        2 * (n + 1)<sup>2</sup> - 1     2n<sup>2</sup> + 4n + 2 - 1     
+        
+   n<sup>2</sup> + 2n + 1     
+= --------------        
+   2n<sup>2</sup> + 4n + 1 
+
+              n<sup>2</sup> + 2n + 1        n<sup>2</sup>
+a<sub>n+1</sub> - a<sub>n</sub> = -------------- - --------- 
+             2n<sup>2</sup> + 4n + 1     2n<sup>2</sup> - 1
+
+             
+a<sub>n+1</sub> - a<sub>n</sub> = 
+                        
+   (n<sup>2</sup> + 2n + 1)*(2n<sup>2</sup> - 1) - n<sup>2</sup>*(2n<sup>2</sup> + 4n + 1)
+= ---------------------------------------------  
+            (2n<sup>2</sup> + 4n + 1) * (2n<sup>2</sup> - 1)
+
+a<sub>n+1</sub> - a<sub>n</sub> = 
+
+   2n4 - n<sup>2</sup> + 4n³ - 2n + 2n<sup>2</sup> - 1 - 2n4 - 4n³ - n<sup>2</sup>
+= ------------------------------------------------   
+           (2n<sup>2</sup> + 4n + 1) * (2n<sup>2</sup> - 1)
+
+a<sub>n+1</sub> - a<sub>n</sub> = 
+
+              - 2n - 1            < 0
+= ---------------------------- = ------ = < 0
+   (2n<sup>2</sup> + 4n + 1) * (2n<sup>2</sup> - 1)     > 0
+
+--> a<sub>n</sub> > a<sub>n+1</sub> --> <span style="color:red">a<sub>n</sub> ist streng monoton fallend</span>
+
+</p></b></pre>

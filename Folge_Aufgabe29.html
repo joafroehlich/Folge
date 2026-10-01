@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 29
+
+Zeigen Sie, dass die Folge a<sub>n</sub> konvergent ist, 
+und bestimmen Sie ihren Grenzwert.
+
+      n * √n + 10
+a<sub>n</sub> = -------------     
+           n<sup>2</sup>
+
+Eine Folge a<sub>n</sub> ist dann konvergent, wenn sie 
+monoton und beschränkt ist.
+
+ a1     a2     a3     a4     a5        
+ 11    3,21   1,69   1,13   0,85
+
+0 ist untere Schranke, siehe Grenzwert g
+
+     n * √n + 10
+0 < -------------  |*n<sup>2</sup>
+         n<sup>2</sup>
+
+0 < n * √n + 10 ist eine wahre Aussage.  
+
+--> 0 ist untere Schranke
+
+Vermutung: 11 ist obere Schranke
+
+      n * √n + 10 
+11 ≥ ------------- |*n<sup>2</sup>
+          n<sup>2</sup> 
+
+11n<sup>2</sup> ≥ n * √n + 10 |:n
+
+11n ≥ √n + 10 ist eine wahre Aussage
+
+--> 11 ist obere Schranke
+
+--> <span style="color:red">a<sub>n</sub> ist beschränkt</span>
+
+Monotonie:
+
+        (n + 1) * <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math> + 10
+a<sub>n+1</sub> = -----------------------
+                (n + 1)<sup>2</sup> 
+
+            (n + 1) * <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math> + 10     n * √n + 10    
+a<sub>n+1</sub> - an = ---------------------- - --------------
+                    (n + 1)<sup>2</sup>                n<sup>2</sup>
+0
+               1          10        1       10   
+a<sub>n+1</sub> - an = ------- + ---------- - ---- - ------ = < 0, weil
+            <math mathsize ="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math>     (n + 1)<sup>2</sup>     √n      n<sup>2</sup>
+
+   1         1           10         10
+-------  < ---- und  ---------- < ------  
+ <math mathsize ="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math>     √n        (n + 1)<sup>2</sup>      n<sup>2</sup> 
+
+--> an > a<sub>n+1</sub> > an --> <span style="color:red">a<sub>n</sub> ist streng monoton fallend</span>
+
+--> <span style="color:red"></span>a<sub>n</sub> ist konvergent
+
+Grenzwert:
+
+<span style="color:red">g </span><math mathsize ="1.2em"><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfrac><mrow><mi mathvariant="normal">n</mi><mo>&#xd7;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>+</mo><mn>10</mn></mrow><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><munder accentunder='false'><mi>lim</mi><mrow><mi mathvariant="normal">n</mi><mo lspace="0" rspace="0">&#x2192;</mo><mi mathvariant="italic">&#x221e;</mi></mrow></munder><mfenced><mrow><mfrac><msqrt><mi mathvariant="normal">n</mi></msqrt><mi mathvariant="normal">n</mi></mfrac><mo>+</mo><mfrac><mn>10</mn><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfenced><mo>=</mo><mn mathvariant="bold" mathcolor="#ff0000">0</mn></math>
+
+ √n       10
+---- und ---- sind Nullfolgen.
+  n       n<sup>2</sup>
+
+</p></b></pre>
