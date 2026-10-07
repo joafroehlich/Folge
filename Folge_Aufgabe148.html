@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 148
+
+a) Ein Kapital wird mit 4% Zins so angelegt, 
+dass in 5 Jahren eine vorschüssige Rente von 
+12 000 € 15 Jahre lang gezahlt werden kann.
+a<sub>1</sub>) Wie hoch ist das angelegte Kapital?
+a<sub>2</sub>) Wie lang könnten 18 000 € jährlich gezahlt 
+werden?
+a<sub>3</sub>) Welchen Betrag müsste man 3 Jahre nach der 
+Kapitalanlage hinzuzahlen, damit 18 000 € 
+15 Jahre lang ausgezahlt werden?
+
+b) Ein Kapital von 200 000 € ist zu 6% Zinsen 
+angelegt. Wie lang können in 5 Jahren 24 000 € 
+jährlich ausgezahlt werden?
+  
+a)
+
+a<sub>1</sub>)
+
+Rentenendwert vorschüssig:
+
+              1,04<sup>15</sup> - 1
+R = 12 000 * ------------ * 1,04 = 249 894,37 €
+               1,04 - 1
+
+Barwert:
+
+     249 894,37
+B = ------------- = 138 757,47 €
+       1,04<sup>15</sup>
+
+Barwert vor 5 Jahren = angelegtes Kapital:
+
+     138 757,47
+<span style="color:red">B =</span> ------------ = <span style="color:red">114 048,53 €</span>
+        1,04<sup>5</sup>
+
+a<sub>2</sub>)
+
+Laufzeit:
+
+114 048,53 * 1,04<sup>n+5</sup> = 
+
+            1,04<sup>n</sup> - 1
+= 18 000 * ----------- * 1,04 
+             1,04 - 1
+
+114 048,53 * 1,04<sup>n</sup> * 1,045 = 
+
+= 468 000 * (1,04<sup>n</sup> - 1) |:468 000
+
+0,2965 * 1,04<sup>n</sup> = 1,04<sup>n</sup> - 1 |+ 1 -0,2965 * 1,04n
+
+0 = 1,04n - 1 - 0,2965 * 1,04<sup>n</sup> |+1
+
+1 = 0,7035 * 1,04<sup>n</sup> |:0,7035
+
+1,421 = 1,04<sup>n</sup> 
+
+Logarithmieren:
+
+lg 1,04<sup>n</sup> = lg 1,421
+
+ n * lg 1,04 = lg 1,421 |: lg 1,04
+
+     lg 1,421
+<span style="color:red">n =</span> ---------- = 8,96 = <span style="color:red">9 Jahre gerundet</span>
+      lg 1,04 
+
+a<sub>3</sub>)
+
+114 048,53 * 1,04<sup>20</sup> + x * 1,04<sup>17</sup> = 
+
+            1,04<sup>15</sup> - 1
+= 18 000 * ------------ * 1,04
+             1,04 - 1
+
+249 894,37 + x * 1,04<sup>17</sup> = 
+
+= 468 000 * (1,04<sup>15</sup> - 1) |-249 894,37
+
+x * 1,04<sup>17</sup> = 124 947,19 |:1,04<sup>17</sup>
+
+<span style="color:red">x = 64 144,54 €</span>
+
+b)
+
+Rentenbarwert:
+
+B = 200 000 * 1,06<sup>5</sup> = 267 645,12 €
+
+Laufzeit:
+
+                               1,06<sup>n</sup> - 1
+267 645,12 * 1,06<sup>n</sup> = 24 000 * ----------- |:24 000   
+                               1,06 – 1
+
+                          1,06<sup>n</sup> - 1
+11,15 * 1,06<sup>n</sup> = 24 000 * ----------- |*0,06    
+                             0,06
+
+0,669 * 1,06<sup>n</sup> = 1,06<sup>n</sup> - 1 |-0,669 * 1,06<sup>n</sup>n
+
+0 = 1,06<sup>n</sup> - 1 - 0,669 * 1,06<sup>n</sup> |+1
+
+0,331 * 1,06<sup>n</sup> = 1 |:0,331
+
+3,02 = 1,06<sup>n</sup> 
+
+Logarithmieren:
+
+lg 1,06<sup>n</sup> = lg 3,02
+
+ n * lg 1,06 = lg 3,02 |:lg 1,06
+
+     lg 3,02
+<span style="color:red">n =</span> ---------- = 8,96 = <span style="color:red">18,97 Jahre</span>
+     lg 1,06 
+
+</p></b></pre>

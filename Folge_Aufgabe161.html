@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 161
+
+a) Auf wieviel ist ein Kapital von 10 000 € 
+angewachsen, wenn 10 Jahre lang jährlich 
+nachschüssig 5 000 € eingezahlt werden und es mit 
+6% verzinst wird? Nach welcher Zeit sind 
+200 000 € auf dem Konto? 
+
+b) Eine Schuld von 20 000 €, verzinst mit 5%, 
+soll durch jährliche nachschüssige Zahlungen von 
+jeweils 2 000 € abgetragen werden. Nach welcher 
+Zeit ist die Schuld gelöscht?
+
+a)
+
+1. Anfangsguthaben 5 Jahre verzinst, ergibt:
+
+10 000 * 1,06<sup>10</sup>
+
+2. Nachschüssige Zuzahlung:
+
+         1,06<sup>10</sup> - 1 
+5 000 * ------------  
+          1,06 - 1
+
+1. + 2. ergeben:
+
+                               1,06<sup>10</sup> - 1 
+<span style="color:red">K =</span> 10 000 * 1,06<sup>10</sup> + 5 000 * ------------ =  
+                                1,06 - 1
+
+= 17 908,48 ++ 65 903,97 = <span style="color:red">83 812,45 €</span>
+
+Laufzeit:
+
+                          1,06<sup>n</sup> - 1
+10 000 * 1,06<sup>n</sup> + 5 000 * ----------- = 200 000
+                           1,06 - 1
+
+10 000 * 1,06<sup>n</sup> + 83 333,33 * (1,06<sup>n</sup> - 1) = 
+
+= 200 000
+
+10 000 * 1,06<sup>n</sup> + 83 333,33 * 1,06<sup>n</sup> - 83 333,33 = 
+
+= 200 000 |+83 333,33
+
+93 333,33 * 1,06<sup>n</sup> = 283 333,33 |:93 333,33
+
+1,06<sup>n</sup> = 3,036
+
+Logarithmieren:
+
+lg 1,06<sup>n</sup> = lg 3,036
+
+n * lg 1,06 = lg 3,036 |:lg 1,06
+
+     lg 3,036
+<span style="color:red">n =</span> ---------- = <span style="color:red">19,06 Jahre</span>
+      lg 1,06   
+
+b)
+
+Laufzeit:
+
+                          1,05<sup>n</sup> - 1
+20 000 * 1,05<sup>n</sup> - 2 000 * ----------- = 0
+                           1,05 - 1
+
+20 000 * 1,05<sup>n</sup> - 40 000 * (1,05<sup>n</sup> - 1) = 0
+
+20 000 * 1,05<sup>n</sup> - 40 000 * 1,05<sup>n</sup> + 
+
++ 40 000 = 0 |+20 000 * 1,05<sup>n</sup>
+
+40 000 = 20 000 * 1,05<sup>n</sup> |:20 000
+
+2 = 1,05<sup>n</sup>
+
+Logarithmieren:
+
+lg 2 = lg 1,05<sup>n</sup>
+
+lg 2 = n * lg 1,05 |: lg 1,05
+
+       lg 2
+<span style="color:red">n =</span> --------- = <span style="color:red">14,21 Jahre</span>
+     lg 1,05
+
+</p></b></pre>

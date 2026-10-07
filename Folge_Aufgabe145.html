@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 145
+
+a) Eine Lebensversicherung über 360 000 €, 
+auszuzahlen mit Vollendung des 65. Lebensjahres, 
+soll in eine nachschüssige Rente umgewandelt 
+werden. Wie hoch ist die jährliche Rente über 
+10 Jahre, wenn ein Zinssatz von 5% vereinbart 
+wird? Wie lange könnte eine Rente von 18 000 € 
+jährlich ausgezahlt werden, wenn mit einem 
+Zinssatz von 4% gerechnet wird? 
+
+b) Eine Lebensversicherung über 120 000 € soll 
+in 6 Jahren ausgezahlt werden. Sie soll ab diesem 
+Zeitpunkt in eine nachschüssige, 20 Jahre zu 
+zahlende Rente, bei einem Zinssatz von 4,5% 
+umgewandelt werden. Wie hoch ist der Barwert der 
+Versicherungssumme? Wie hoch ist die Rente?
+  
+a)
+
+Rentenendwert:
+
+R = 360 000 * 1,05<sup>10</sup> = 586 402,07 €
+
+Rente:
+
+                  1,05<sup>10</sup> - 1
+586 402,07 = r * ------------ |*0,05
+                   1,05 - 1
+
+29 320,10 = r * (1,05<sup>10</sup> - 1) |:(1,05<sup>10</sup> - 1)
+
+<span style="color:red">r = 46 621,64 €</span>
+
+Rentenendwert: 
+
+R1 = 360 000 * 1,04<sup>n</sup>
+
+Laufzeit:
+
+                            1,04<sup>n</sup> - 1
+360 000 * 1,04<sup>n</sup> = 18 000 * ----------- |:18 000
+                             1,04 - 1
+
+              1,04<sup>n</sup> - 1
+20 * 1,04<sup>n</sup> = ----------- |*0,04
+                0,04
+
+0,8 * 1,04<sup>n</sup> = 1,04<sup>n</sup> - 1 |-0,8 * 1,04<sup>n</sup> 
+
+0 = 1,04<sup>n</sup> - 0,8 * 1,04<sup>n</sup> - 1 |+1 
+
+1 = 0,2 * 1,04<sup>n</sup> |:0,2
+
+1,04<sup>n</sup> = 5
+
+Logarithmieren:
+
+lg 1,04<sup>n</sup> = lg 5
+
+ n * lg 1,04 = lg 5 |:lg 1,04
+
+      lg 5
+<span style="color:red">n =</span> --------- = <span style="color:red">41 Jahre</span>
+     lg 1,04 
+
+b)
+
+Rentenbarwert:
+
+      120 000
+<span style="color:red">B =</span> ---------- = <span style="color:red">92 147,49 €</span>
+      1,045<sup>6</sup> 
+
+Rentenendwert 
+
+R = 120 000 * 1,045<sup>20</sup> = 289 405,68 €
+
+Rente:
+
+                  1,045<sup>20</sup> - 1
+289 405,68 = r * -------------- |*0,045
+                    1,045 - 1
+
+13 023,26 = r * (1,045<sup>20</sup> - 1) |:(1,045<sup>20</sup> - 1)
+
+<span style="color:red">r = 9 225,14 €</span>
+
+</p></b></pre>

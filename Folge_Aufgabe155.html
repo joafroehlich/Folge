@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 155
+
+a) Für den Kauf eines Hauses werden 180 000 € zu 
+einem Zinssatz von 4,5% benötigt. Wie lange muss 
+getilgt werden, wenn 15 000 € jährlich für 
+Verzinsung und Tilgung zur Verfügung stehen? 
+Ermitteln Sie den Tilgungsplan für die ersten 
+5 Jahre.
+
+b) Ein Darlehen von 160 000 € soll mit 6% 
+verzinst und mit 1% getilgt werden. Berechnen Sie 
+die Annuität und die Tilgungsdauer. Wie hoch ist 
+die Annuität, wenn nach 18 Jahren für 2 Jahre die 
+Zahlungen unterbrochen werden, das Darlehen aber 
+in der errechneten Zeit getilgt sein soll?
+
+a)
+
+Laufzeit:
+
+                                 1,045<sup>n</sup> - 1
+0 = 180 000 * 1,045<sup>n</sup> - 15 000 * ------------
+                                  1,045 - 1 
+
+0 = 180 000 * 1,045<sup>n</sup> - 333 333,33 * (1,045<sup>n</sup> - 1)
+
+0 = 180 000 * 1,045<sup>n</sup> - 333 333,33 * 1,045<sup>n</sup> + 
+
++ 333 333,33
+
+0 = -153 333,33 * 1,045<sup>n</sup> + 
+
++ 333 333,33|+ 153 333,33 * 1,045<sup>n</sup>
+
+153 333,33 * 1,045<sup>n</sup> = 333 333,33 |:153 333,33
+
+1,045<sup>n</sup> = 2,174
+
+Logarithmieren:
+
+lg 1,045<sup>n</sup> = lg 2,174 
+
+n * lg 1,045 = lg 2,174 |:lg 1,045
+
+     lg 2,174        
+<span style="color:red">n =</span> ----------- = <span style="color:red">17,6 Jahre</span>
+     lg 1,045  
+
+<span style="color:red">Tilgungsplan:</span>
+
+Zinsen im ersten Jahr = 180 000 * 0,045 = 8 100 €
+
+Tilgung im ersten Jahr = 15 000 - 8 100 = 6 900 €
+                                       
+1. Jahr   180 000 
+Zinsen          Tilgung          Restschuld
+8 100            6 900            173 100
+2. Jahr   173 100              
+7 789,5          7 210,5          165 889,5   
+3. Jahr   165 889,5           
+7 465,03         7 534,97         158 354,53
+4. Jahr   158 354,53          
+7 125,95         7 874,05         150 480,48
+5. Jahr   150 480,48         
+6 771,62         8 228,38         142 252,10
+
+b)
+
+Annuität:
+
+<span style="color:red">A =</span> 160 000 * 0,06 + 160 000 * 0,01 = <span style="color:red">11 200 €</span>
+
+Tilgungsdauer:
+
+                                1,06<sup>n</sup> - 1
+0 = 160 000 * 1,06<sup>n</sup> - 11 200 * ------------
+                                 1,06 - 1 
+
+0 = 160 000 * 1,06<sup>n</sup> - 186 666,67 * (1,06<sup>n</sup> - 1)
+
+0 = 160 000 * 1,06<sup>n</sup> - 186 666,67 * 1,06<sup>n</sup> + 
+
++ 186 666,67
+
+0 = - 26 666,67 * 1,06<sup>n</sup> + 
+
++ 186 666,67 |+ 26 666,67 * 1,06<sup>n</sup>
+
+26 666,67 * 1,06<sup>n</sup> = 186 666,67  |:26 666,67
+
+1,06<sup>n</sup> = 7
+
+Logarithmieren:
+
+lg 1,06<sup>n</sup> = lg 7 
+
+n * lg 1,06 = lg 7 |:lg 1,06
+
+       lg 7        
+<span style="color:red">n =</span> ---------- = <span style="color:red">33,4 Jahre</span>
+      lg 1,06  
+
+Restschuld nach 18 Jahren:
+
+                                 1,06<sup>18</sup> - 1
+R = 160 000 * 1,06<sup>18</sup> - 11 200 * ------------   
+                                  1,06 – 1
+
+R = 110 550,96 €                       
+
+Restschuld nach 20 Jahren:(2 weitere Jahre 
+Verzinsung ohne Tilgung):
+
+110 550,96 € * 1,06<sup>2</sup> = 124 215,06 €  
+
+Noch abzulösender Betrag:
+(Laufzeit = 33,4 - 20 = 13,4 Jahre)
+
+124 215,06 € * 1,06<sup>13,4</sup> = 271 189,48 €
+
+Neue Annuität A<sub>n</sub>:
+
+                       1,06<sup>13,4</sup> - 1
+0 = 271 189,48 - A<sub>n</sub> * --------------
+                         1,06 - 1
+
+0 = 271 189,48 - A<sub>n</sub> * 19,72  |+A<sub>n</sub> * 19,72
+
+271 189,48 = A<sub>n</sub> * 19,72  |:19,72
+
+<span style="color:red">A<sub>n</sub> = 13 752 €</span>
+
+</p></b></pre>

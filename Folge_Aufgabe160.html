@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 160
+
+a) Auf einem Konto befinden sich am Anfang eines 
+Jahres 20 000 €, die zu 4% verzinst werden. 
+Welcher Betrag muss 5 Jahre lang jeweils am 
+Anfang des Jahres eingezahlt werden, damit am 
+Ende des 5. Jahres 40 000 € angespart sind?
+
+b) Wie hoch ist das Restguthaben, wenn von 
+120 000 €, verzinst mit 5%, 5 Jahre lang jeweils 
+am Jahresende 15 000 € abgehoben werden? 
+Wie lange kann man 15 000 € abheben?
+
+a)
+
+1. Anfangsguthaben 5 Jahre verzinst, ergibt:
+
+20 000 * 1,04<sup>5</sup>
+
+2. Vorschüssige Zuzahlung:
+
+     1,04<sup>5</sup> - 1 
+r * ----------- * 1,04 
+      1,04 - 1
+
+1. + 2. ergeben 40 000 €:
+
+                    1,04<sup>5</sup> - 1 
+20 000*1,04<sup>5</sup> + r * ----------- * 1,04 = 40 000
+                     1,04 - 1
+
+24 333,06 + r * 5,63 = 40 000 |-24 333,06
+
+r * 5,63 = 15 666,94 |:5,63
+
+<span style="color:red">r = 2 782,76 €</span>
+
+b)
+
+1. Anfangsguthaben 5 Jahre verzinst, ergibt:
+
+120 000 * 1,05<sup>5</sup>
+
+2. Nachschüssige Abhebung:
+
+          1,05<sup>5</sup> - 1 
+15 000 * -----------  
+           1,05 - 1
+
+1. - 2. ergibt Guthaben:
+
+                                
+                            1,05<sup>5</sup> - 1
+120 000 * 1,05<sup>5</sup> - 15 000 * ----------- = 
+                             1,05 - 1
+
+=153 153,79 - 82 884,47 = 70 269,32 € 
+
+                            1,05<sup>n</sup> - 1
+120 000 * 1,05<sup>n</sup> = 15 000 * -----------
+                             1,05 - 1
+
+120 000 * 1,05<sup>n</sup> = 300 000 * (1,05<sup>n</sup> - 1)
+
+120 000 * 1,05<sup>n</sup> = 300 000 * 1,05n - 
+
+- 300 000 |+300 000 - 120 000 * 1,05<sup>n</sup>
+
+300 000 = 180 000 * 1,05<sup>n</sup> |:180 000
+
+1,67 = 1,05<sup>n</sup>
+
+Logarithmieren:
+
+lg 1,67 = lg 1,05<sup>n</sup>
+
+lg 1,67 = n * lg 1,05 |: lg 1,05
+
+     lg 1,67
+<span style="color:red">n =</span> --------- = <span style="color:red">10,51 Jahre</span>
+     lg 1,05
+
+</p></b></pre>

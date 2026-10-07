@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 153
+
+a) Ein Darlehen von 500 000 € soll in 7 Jahren 
+durch Annuitätentilgung bei einem Zins von 6% 
+zurückgezahlt werden. Berechnen Sie die Annuität,
+und stellen Sie den Tilgungsplan für die ersten 
+3 Jahre auf.
+
+b) Die Restschuld eines Kredits von 240 000 €, 
+der mit 6% verzinst und mit einer Tilgung von 1% 
+vereinbart wurde, wird nach 10 Jahren durch einen 
+neuen Kredit zu 4,5% Zins und 1% Tilgung abgelöst.
+b<sub>1</sub>) Wie hoch ist die anfängliche Annuität?
+b<sub>2</sub>) Wie hoch ist die Restschuld nach 10 Jahren?
+b<sub>3</sub>) Wie hoch ist die Annuität des neuen Kredits?
+b<sub>4</sub>) Wie lange ist dessen Laufzeit?
+
+a)
+
+Annuität:
+
+                       1,06<sup>7</sup> - 1
+500 000 * 1,06<sup>7</sup> = A * ------------
+                        1,06 - 1 
+
+751 815,13 = A * 8,39 |:8,39
+
+<span style="color:red">A = 89 608,48 €</span>
+
+<span style="color:red">Tilgungsplan:</span>
+                                       
+1. Jahr   500 000 
+Zinsen        Tilgung          Restschuld
+30 000        59 608,48        440 391,52
+2. Jahr   440 391,52          
+26 423,49     63 184,99        377 206,53   
+3. Jahr   377 206,53          
+22 632,39     66 976,10        310 230,43
+
+b)
+
+b<sub>1</sub>)
+
+Annuität:
+
+<span style="color:red">A =</span> 240 000 * 0,06 + 240 000 * 0,01 = <span style="color:red">16 800 €</span>
+
+b<sub>2</sub>)
+
+Restschuld nach 10 Jahren:
+
+                                 1,06<sup>10</sup> - 1
+R = 240 000 * 1,06<sup>10</sup> - 16 800 * ------------ 
+                                   1,06 - 1
+
+<span style="color:red">R = 208 366,09 € </span>
+
+b<sub>3</sub>)
+
+Annuität A<sub>1</sub> neuer Kredit: 
+
+A<sub>1</sub> = 208 366,09 * 0,045 + 208 366,09 * 0,01 
+
+<span style="color:red">A<sub>1</sub> = 11 460,13 €</span>
+
+b<sub>4</sub>)
+
+Laufzeit:
+
+                                     1,045<sup>n</sup> - 1
+0 = 208 366,09*1,045<sup>n</sup> - 11 460,13 * ------------
+                                      1,045 - 1 
+
+0 = 208 366,09*1,045<sup>n</sup> - 254 669,56*(1,045<sup>n</sup> - 1)
+
+0 = 208 366,09 * 1,045<sup>n</sup> - 254 669,56 * 1,045<sup>n</sup> + 
+
++ 254 669,56
+
+0 = -46 303,47 * 1,045<sup>n</sup> + 
+
++ 254 669,56 |+46 303,47 * 1,045<sup>n</sup>
+
+46 303,47 * 1,045<sup>n</sup> = 254 669,56 |:46 303,47 
+
+1,045<sup>n</sup> = 5,5 
+
+Logarithmieren:
+
+lg 1,045<sup>n</sup> = lg 5,5 
+
+n * lg 1,045 = lg 5,5 |: lg 1,045
+
+      lg 5,5        
+<span style="color:red">n =</span> ---------- = <span style="color:red">38,7 Jahre</span>
+     lg 1,045  
+
+</p></b></pre>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folgen und Reihen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>    
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><b><p class ="Aufgabe">Aufgabe 164
+
+a) Wie lange kann man nachschüssig 4 000 € 
+jährlich von einem Konto abheben, auf dem 
+30 886,94 € zu 5% liegen?
+
+b) Von einem Sparguthaben von 40 000 €, verzinst 
+zu 6%, sollen nach einer Laufzeit von 5 Jahren 
+Beträge, mal am Jahresanfang mal am Jahresende, 
+so abgehoben werden, dass das angesparte Kapital 
+nicht kleiner wird. Wie hoch sind diese Beträge? 
+
+a)
+
+Laufzeit:
+
+                             1,05<sup>n</sup> - 1 
+30 886,94 * 1,05<sup>n</sup> = 4 000 * ------------  
+                              1,05 - 1
+
+30 886,94 * 1,05<sup>n</sup> = 80 000 * (1,05<sup>n</sup> - 1)  
+
+30 886,94 * 1,05<sup>n</sup> = 
+
+= 80 000 * 1,05<sup>n</sup> - 80 000 |+80 000  
+
+30 886,94 * 1,05<sup>n</sup> + 80 000 = 
+
+= 80 000 * 1,05<sup>n</sup> |-30 886,94
+
+80 000 = 49 113,06 * 1,05<sup>n</sup> |:49 113,06
+
+1,629 = 1,05<sup>n</sup>
+
+Logarithmieren:
+
+lg 1,05<sup>n</sup> = lg 1,629
+
+n * lg 1,05 = lg 1.629 |:lg 1,05
+
+     lg 1,629
+<span style="color:red">n =</span> ---------- = <span style="color:red">10 Jahre</span>
+      lg 1,05   
+
+b)
+
+Angespartes Kapital nach 5 Jahren:
+
+40 000 * 1,06<sup>5</sup> = 53 529,02 €
+
+Zuwachs = 53 529,02 - 40 000 = 13 529,02 €
+
+Der Zuwachs kann in 5 Jahren abgebaut werden, 
+ohne dass sich das eingesetzte Kapital 
+verringert.
+
+Am Jahresanfang:
+
+                         1,06<sup>5</sup> - 1 
+13 529,02 * 1,06<sup>5</sup> = r * ----------- |*0,06  
+                          1,06 - 1
+
+1 086,29 = r * (1,06<sup>5</sup> - 1) |:(1,06<sup>5</sup> - 1) 
+
+<span style="color:red">r = 3 211,73 €</span>
+
+Am Jahresende:
+
+<span style="color:red">r<sub>E</sub> =</span> r * 1,06 = 3 211,73 * 1,06 = <span style="color:red">3 404,43 € </span>
+
+</p></b></pre>
