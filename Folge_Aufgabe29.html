@@ -65,13 +65,13 @@ Monotonie:
 a<sub>n+1</sub> = -----------------------
                 (n + 1)<sup>2</sup> 
 
-            (n + 1) * <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math> + 10     n * √n + 10    
+            (n + 1) * <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math> + 10     n * √n + 10
 a<sub>n+1</sub> - an = ---------------------- - --------------
                     (n + 1)<sup>2</sup>                n<sup>2</sup>
-0
+
                1          10        1       10   
 a<sub>n+1</sub> - an = ------- + ---------- - ---- - ------ = < 0, weil
-            <math mathsize ="1em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math>     (n + 1)<sup>2</sup>     √n      n<sup>2</sup>
+            <math mathsize ="0.9em"><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt></math>   (n + 1)<sup>2</sup>     √n      n<sup>2</sup>
 
    1         1           10         10
 -------  < ---- und  ---------- < ------  
@@ -89,4 +89,40 @@ Grenzwert:
 ---- und ---- sind Nullfolgen.
   n       n<sup>2</sup>
 
+<math xmlns="http://w3.org" display="block">
+    
+  <!-- Erster Bruch: 1 / ((n+1)^2) -->
+  <mfrac>
+    <mn>1</mn>
+    <msup>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mrow>
+      <mn>2</mn>
+    </msup>
+  </mfrac>
+  
+  <!-- Pluszeichen -->
+  <mo>+</mo>
+  
+  <!-- Zweiter Bruch mit verkleinerter Schrift im Nenner (mathsize="0.9em") -->
+  <mfrac>
+    <mn>10</mn>
+    <mrow>
+      <math mathsize="0.9em">
+        <msqrt>
+          <mrow>
+            <mi mathvariant="normal">n</mi>
+            <mo>+</mo>
+            <mn>1</mn>
+          </mrow>
+        </msqrt>
+      </math>
+    </mrow>
+  </mfrac>
+</math>  
 </p></b></pre>
