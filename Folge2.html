@@ -194,11 +194,11 @@ a) a<sub>n</sub> = --------, g = 3
 b) a<sub>n</sub> = ---------, g = 0,2
            5n<sup>2</sup>
            
-<button id ="ja" onclick="Schalter1('ja')">Ja</button> <button id ="nein" onclick="Schalter1('nein')" >Nein</button>    <button  id = "L25" onclick="window.open('Folge_Aufgabe25.html');" style="display:none;">Lösung</button></p></pre>
+<button id ="ja" onclick="Schalter('ja')">Ja</button> <button id ="nein" onclick="Schalter('nein')" >Nein</button>    <button  id = "L25" onclick="window.open('Folge_Aufgabe25.html');" style="display:none;">Lösung</button></p></pre>
         
 <script>
 
-function Schalter1(buttonId){
+function Schalter(buttonId){
                                                 
                           if (buttonId==="ja") {alert("Richtig"); document.getElementById("ja").disabled= true;document.getElementById("nein").disabled= true;
                           
@@ -415,16 +415,16 @@ a) a<sub>n</sub> = -------
 b) a<sub>n</sub> = ---------      
           2<sup>n-1</sup>
 
-y = x<sup>2</sup> + <input type="text" id="Eintrag35" maxlength="2" size="1" style= background-color:yellow ></input> x + 25 <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button></p></pre> 
+g = <input type="text" id="Eintrag35" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button></p></pre> 
  
                       <script>
                         function Aufgabe35() { 
                                                 
-                          if (Eintrag35.value=="10") {alert("Richtig"); document.getElementById("Pruef35").disabled= true; 
+                          if (Eintrag35.value=="2") {alert("Richtig"); document.getElementById("Pruef35").disabled= true; 
                           }  
                            
-                          else if (Eintrag35.value!=="10" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
-                          document.getElementById("Pruef35").disabled= true; document.getElementById("Eintrag35").value="10"; window.open('Folge_Aufgabe35.html');}
+                          else if (Eintrag35.value!=="2" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef35").disabled= true; document.getElementById("Eintrag35").value="2"; window.open('Folge_Aufgabe35.html');}
                                
                           else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
 
@@ -507,9 +507,9 @@ Zahlenfolgen a<sub>n</sub>.
 a) a<sub>n</sub> = -----------       
          4n + 3n<sup>2</sup>             
          
-     <input type="text" id="Eintrag39" maxlength="1" size="1" style= background-color:yellow ></input>   
-g = -------  <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button>       
-       3
+       <input type="text" id="Eintrag39" maxlength="1" size="1" style= background-color:yellow ></input>   
+g = - -------  <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button>       
+         3
 
         (4 + n)<sup>2</sup> - 16
 b) a<sub>n</sub> = --------------
@@ -597,11 +597,11 @@ Folge a<sub>n</sub>?
 Überprüfen Sie dies mithilfe der ε-Umgebung.
 
       3n + 1
-a<sub>n</sub> = ---------     g = 3   <button id ="ja1" onclick="Schalter1('ja1')">Ja</button> <button id ="nein1" onclick="Schalter1('nein1')" >Nein</button>    <button  id = "L43" onclick="window.open('Folge_Aufgabe25.html');" style="display:none;">Lösung</button>
+a<sub>n</sub> = ---------     g = 3   <button id ="ja1" onclick="Schalter('ja1')">Ja</button> <button id ="nein1" onclick="Schalter('nein1')" >Nein</button>    <button  id = "L43" onclick="window.open('Folge_Aufgabe25.html');" style="display:none;">Lösung</button>
          n</p></pre>           
 <script>
 
-function Schalter1(buttonId){
+function Schalter(buttonId){
                                                 
                           if (buttonId==="ja1") {alert("Richtig"); document.getElementById("ja1").disabled= true;document.getElementById("nein1").disabled= true;
                           
@@ -692,7 +692,7 @@ a) a<sub>n</sub> = <math mathsize="1em"><msqrt><mrow><mi mathvariant="normal">n<
 
 b) a<sub>n</sub> = <math mathsize="1em"><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xd7;</mo><mfenced><mrow><msqrt><mrow><mi mathvariant="normal">n</mi><mo>+</mo><mn>1</mn></mrow></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt></mrow></mfenced><mo>&#xa0;</mo></math>
 
-g = <input type="text" id="Eintrag47" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef47" onclick="Aufgabe47()">Prüfen</button> 
+g = - <input type="text" id="Eintrag47" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef47" onclick="Aufgabe47()">Prüfen</button> 
 
 c) a<sub>n</sub> = <math mathsize="1em"><msqrt><mfenced><mrow><msup><mi mathvariant="normal">n</mi><mn>2</mn></msup><mo>&#x2212;</mo><mi mathvariant="normal">n</mi></mrow></mfenced></msqrt><mo>&#x2212;</mo><msqrt><mi mathvariant="normal">n</mi></msqrt><mo>&#xa0;</mo></math></p></b></pre>
 
