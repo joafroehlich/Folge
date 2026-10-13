@@ -40,6 +40,14 @@ d = 2
 
 s<sub>n</sub> = 1 640
 
+      n
+s<sub>n</sub> = --- * (a<sub>1</sub> + a<sub>n</sub>) 
+      2
+
+      n
+s<sub>n</sub> = --- * (a<sub>1</sub> + a<sub>1</sub> + (n - 1) * d) 
+      2
+
          n
 1 640 = --- * (2 + 2 + (n - 1) * 2) |*2
          2
@@ -48,11 +56,11 @@ s<sub>n</sub> = 1 640
 
 3 280 = n * (2n + 2) 
 
-3 280 = 2na<sup>2</sup> + 2n |:2
+3 280 = 2n<sup>2</sup> + 2n |:2
 
-1 640 = na<sup>2</sup> + n |- 1 640
+1 640 = n<sup>2</sup> + n |- 1 640
 	
-na<sup>2</sup> + n - 1 640 = 0
+n<sup>2</sup> + n - 1 640 = 0
 
 p, q - Formel
 
@@ -67,25 +75,23 @@ n<sub>2</sub> = - 41 < 0 --> keine Lösung
 b)
 
             600            2
-600 km/h = ----- m/s = 166--- m/s = a1
+600 km/h = ----- m/s = 166--- m/s = a<sub>1</sub>
             3,6            3
 
 d = 9,8 m/s
 
 a<sub>n</sub> = 0
 
-        2                         2
-0 = 166--- + (n - 1) * 9,8 |- 166---
-        3                         3
+        2
+0 = 166--- - n * 9,8 |+ n * 9,8
+        3
 
     2
-166--- = 9,8n - 9,8 |*3 
+166--- = 9,8n |*3 
     3
 
-500 = 29,4n - 29,4 |+29,4
+500 = 29,4n |:29,4
 
-29,4n = 529,4 |:29,4
-
-<span style="color:red">n = 18 s</span>
+<span style="color:red">n = 17 s</span>
 
 </p></b></pre>
