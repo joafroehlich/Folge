@@ -298,7 +298,7 @@ wenn man von einer Temperatur von 10° in 25 m
 Tiefe ausgeht.
 b<sub>1</sub>) Wie hoch ist die Temperatur in einer Tiefe
 von 2 300 m?    
-Es sind <input type="text" id="Eintrag76" maxlength="2" size="1" style= background-color:yellow ></input>° <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button>
+Es sind <input type="text" id="Eintrag76" maxlength="5" size="2" style= background-color:yellow ></input>° <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button>
 b<sub>2</sub>) In welcher Tiefe sind es 100°?
 b<sub>3</sub>) Aus welcher Tiefe kommt Heilwasser, das 
 eine Temperatur von 45° hat?</p></pre>  
@@ -306,11 +306,11 @@ eine Temperatur von 45° hat?</p></pre>
                       <script>
                         function Aufgabe76() { 
                                                 
-                          if (Eintrag76.value=="79") {alert("Richtig"); document.getElementById("Pruef76").disabled= true; 
+                          if (Eintrag76.value=="78,25") {alert("Richtig"); document.getElementById("Pruef76").disabled= true; 
                           }  
                            
-                          else if (Eintrag76.value!=="79" && Eintrag76.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
-                          document.getElementById("Pruef76").disabled= true; document.getElementById("Eintrag76").value="79"; window.open('Folge_Aufgabe76.html');}
+                          else if (Eintrag76.value!=="78,25" && Eintrag76.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef76").disabled= true; document.getElementById("Eintrag76").value="78,25"; window.open('Folge_Aufgabe76.html');}
                                
                           else if (Eintrag76.value=="") {alert("Bitte eine Eingabe machen")}}
 
