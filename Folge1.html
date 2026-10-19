@@ -11,56 +11,65 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>      
   
-</head>
 <body style="background-color: white;">
 
-    <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
-        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
-        
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
-        input {background-color:yellow; }
-    </style>
+    <style>
+
+.Text1 {font-size: 1.3em;font-family: Verdana,Sans-serif; }
+.Text2 { font-size: 1em; font-family: Verdana,Sans-serif;}
+input {background-color:yellow; }
+body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }
+main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 6rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+
+</style>
+</head>
+
+<body>
+<main>	
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 <p class="Text1">Folgen und Reihen</p> 
-    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
-  	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+    <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder den Schalter: Lösung.</span></p>
+  	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es oder starten Sie eine Lösung.</span></p>
+
+<div class="check">
 
 <!--//Aufgabe 1-->
 
-  <pre><b><p class="Aufgabe">Aufgabe 1
-
-Untersuchen Sie die Folgen für n ∈ ℕ auf 
+<h2>Aufgabe 1</h2>
+<p>Untersuchen Sie die Folgen für n ∈ ℕ auf 
 Monotonie und Beschränktheit:
 
-             1
+<pre>             1
 a) a<sub>n</sub> = 1 + ---
              n
 
           3  
 b) a<sub>n</sub> = (---)<sup>n</sup>
-          4                   
-
-<button  onclick="window.open('Folge_Aufgabe1.html');" >Lösung</button></p></pre>
+          4</pre>     </p>
+<button  onclick="window.open('Folge_Aufgabe1.html');" >Lösung</button></p>
 
 
 <!--//Aufgabe 2-->
 
-    <pre><p class="Aufgabe">Aufgabe 2
+    <h2>Aufgabe 2</h2>
 
-Untersuchen Sie die Folgen für n ∈ ℕ auf 
+<p>Untersuchen Sie die Folgen für n ∈ ℕ auf 
 Monotonie und Beschränktheit:
 
-a) a<sub>n</sub> = (-1)<sup>n</sup>
+<pre> a) a<sub>n</sub> = (-1)<sup>n</sup>
 
-             (-1)<sup>n</sup>
+            (-1)<sup>n</sup>
 b) a<sub>n</sub> = 1 + ------     
-              n    
+              n</pre>    
                
-b) kleinste obere Schranke = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+b) kleinste obere Schranke = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input></p> 
+
+<button id="Pruef2" onclick="Aufgabe2()">Prüfen</button>
 
 <script>
                         function Aufgabe2() { 
@@ -77,18 +86,18 @@ b) kleinste obere Schranke = <input type="text" id="Eintrag2" maxlength="3" size
 
         <!--//Aufgabe 3-->
 
-  <pre><p class="Aufgabe">Aufgabe 3
+  <h2>Aufgabe 3</h2>
 
-Untersuchen Sie die Folgen für n ∈ ℕ auf 
+<p>Untersuchen Sie die Folgen für n ∈ ℕ auf 
 Monotonie und Beschränktheit:
 
-           8<sup>n</sup>  
+<pre>           8<sup>n</sup>  
 a) a<sub>n</sub> = --------
         n<sup>2</sup> + 1 
 
           n<sup>2</sup>
 b) a<sub>n</sub> = ------ + n
-         100  
+         100</pre>  
          
 <button  onclick="window.open('Folge_Aufgabe3.html');" >Lösung</button></p></pre>
 
