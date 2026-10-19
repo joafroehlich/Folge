@@ -103,18 +103,17 @@ b) a<sub>n</sub> = ------ + n
 
 <!--//Aufgabe 4-->
 
-  <pre><p class="Aufgabe">Aufgabe 4
-
-Untersuchen Sie die Folgen für n ∈ ℕ auf 
+<h2>Aufgabe 4</h2>
+<p>Untersuchen Sie die Folgen für n ∈ ℕ auf 
 Monotonie und Beschränktheit:
 
-              5
+<pre>              5
 a) a<sub>n</sub> = 1 - (---)<sup>n</sup>     
-              9 
+              9</pre> 
 
-größte untere Schranke = <input type="text" id="Eintrag4" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button>
+größte untere Schranke = <input type="text" id="Eintrag4" maxlength="1" size="1" style= background-color:yellow ></input></p> <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button>
 
-         1  
+<pre>         1  
 b) a<sub>n</sub> = ----
         √n</p></pre>
 
@@ -134,37 +133,36 @@ b) a<sub>n</sub> = ----
 
  <!--//Aufgabe 5-->  
 
-  <pre><p class="Aufgabe">Aufgabe 5
+  <h2>Aufgabe 5</h2>
 
-Untersuchen Sie die Folgen für n ∈ ℕ auf 
+<p>Untersuchen Sie die Folgen für n ∈ ℕ auf 
 Monotonie und Beschränktheit:
 
-          1 + 5n<sup>2</sup>
+<pre>          1 + 5n<sup>2</sup>
 a) a<sub>n</sub> = ------------
         n * (n + 1) 
 
              1  
 b) a<sub>n</sub> = n + ---
-             n 
+             n</pre> 
              
-<button  onclick="window.open('Folge_Aufgabe5.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Folge_Aufgabe5.html');" >Lösung</button></p>
 
 <!--//Aufgabe 6-->
 
- <pre><p class="Aufgabe">Aufgabe 6
-
-Untersuchen Sie die Folgen für n ∈ ℕ auf 
+ <h2>Aufgabe 6</h2>
+<p>Untersuchen Sie die Folgen für n ∈ ℕ auf 
 Monotonie und Beschränktheit:
 
-          n<sup>2</sup>
+<pre>         n<sup>2</sup>
 a) a<sub>n</sub> = ------     
-        n + 1 
+        n + 1</pre>  
 
-a<sub>n</sub> ist streng monoton
+a<sub>n</sub> ist streng monoton</p>
 
 <button id ="steig" onclick="Schalter1('steig')">steigend</button> <button id ="fall" onclick="Schalter1('fall')" >fallend</button>    <button  id = "L6" onclick="window.open('Folge_Aufgabe6.html');" style="display:none;">Lösung</button>
         
-         2<sup>n</sup>
+<pre>         2<sup>n</sup>
 b) a<sub>n</sub> = ----
          n<sup>2</sup></p></pre>    
 
@@ -186,20 +184,20 @@ function Schalter1(buttonId){
 
   <!--//Aufgabe 7-->   
 
-  <pre><p class="Aufgabe">Aufgabe 7
+  <h2>Aufgabe 7</h2>
 
-Untersuchen Sie die Folgen für n ∈ ℕ auf 
+<p>Untersuchen Sie die Folgen für n ∈ ℕ auf 
 Monotonie und Beschränktheit:
 
-                2n + 1  
+<pre>                 2n + 1  
 a) a<sub>n</sub> = (-1)<sup>n</sup> * --------
                    n!  
 
            1
 b) a<sub>n+1</sub> = --- * a<sub>n</sub> + 2, a<sub>1</sub> = 2
-           2   
+           2</pre>    
 
-<button  onclick="window.open('Folge_Aufgabe7.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Folge_Aufgabe7.html');" >Lösung</button></p>
 
 <!--//Aufgabe 8-->
 
@@ -321,20 +319,20 @@ a) a<sub>n</sub> = ----------
 b) a<sub>n</sub> = --------     
         2n<sup>2</sup> - 1
 
-ist monoton <button id ="steig1" onclick="Schalter1('steig1')">steigend</button> <button id ="fall1" onclick="Schalter1('fall1')" >fallend</button>    
+ist monoton <button id ="steig2" onclick="Schalter2('steig2')">steigend</button> <button id ="fall2" onclick="Schalter2('fall2')" >fallend</button>    
 
 <button  id = "L13" onclick="window.open('Folge_Aufgabe13.html');" style="display:none;">Lösung</button></p></pre>
 
 <script>
 
-function Schalter1(buttonId){
+function Schalter2(buttonId){
                                                 
-                          if (buttonId==="fall1") {alert("Richtig"); document.getElementById("fall1").disabled= true;document.getElementById("steig1").disabled= true;
+                          if (buttonId==="fall2") {alert("Richtig"); document.getElementById("fall2").disabled= true;document.getElementById("steig2").disabled= true;
                           
                          }                     
                           
-                          else if (buttonId ==="steig1" ) {alert("Leider falsch. Fallend ist richtig.");            
-                          document.getElementById("steig1").disabled= true;document.getElementById("fall1").disabled= true;
+                          else if (buttonId ==="steig2" ) {alert("Leider falsch. Fallend ist richtig.");            
+                          document.getElementById("steig2").disabled= true;document.getElementById("fall2").disabled= true;
                           document.getElementById("L13").style.display="inline";}
                           
                           }
