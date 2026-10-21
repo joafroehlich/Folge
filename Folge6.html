@@ -14,56 +14,67 @@
 </head>
 <body style="background-color: white;">
 
-    <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
-        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
-        
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
-        input {background-color:yellow; }
-    </style>
+        <style>
+
+.Text1 {font-size: 1.3em;font-family: Verdana,Sans-serif; }
+.Text2 { font-size: 1em; font-family: Verdana,Sans-serif;}
+input {background-color:yellow; }
+body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }
+main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+
+</style>
+</head>
+
+<body>
+<main>	
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 <p class="Text1">Folgen und Reihen</p> 
     <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
   	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
+<div class="check">
+
 <!--//Aufgabe 71-->                          
 
-<pre><p class="Aufgabe">Aufgabe 71
+<h2>Aufgabe 71</h2>
 
-Zwischen die Zahlen a und b sollen 4 Zahlen 
+<p>Zwischen die Zahlen a und b sollen 4 Zahlen 
 so eingefügt werden, dass eine arithmetische 
 Folge entsteht. 
-Bestimmen Sie das d dieser Folge. 
+Bestimmen Sie das d dieser Folge.</p> 
 
-a) a = 1 und b = 11
+a) a = 1 und b = 11</p>
 
 Zwischen die Zahlen a und b sollen 5 Zahlen 
 so eingefügt werden, dass eine arithmetische 
 Folge entsteht. 
-Bestimmen Sie das d dieser Folge. 
+Bestimmen Sie das d dieser Folge.</p>   
 
-b) a = -39 und b = -33
+b) a = -39 und b = -33</p>
 
-<button  onclick="window.open('Folge_Aufgabe71.html');" >Lösung</button></p></b></pre>
+<button  onclick="window.open('Folge_Aufgabe71.html');" >Lösung</button></p>
                           
 <!--//Aufgabe 72--> 
 
-<pre><b><p class ="Aufgabe" >Aufgabe 72
+<h2>Aufgabe 72</h2>
 
-Im luftleeren Raum fällt ein Körper in der 
+<p>Im luftleeren Raum fällt ein Körper in der 
 1. Sekunde etwa 4,9 m, in jeder folgenden 
-Sekunde 9,8 m mehr als in der vorhergehenden.
-a) Wieviel m fällt er in der 10. Sekunde? 
+Sekunde 9,8 m mehr als in der vorhergehenden.</p> 
+a) Wieviel m fällt er in der 10. Sekunde?</p>  
 
-Es sind <input type="text" id="Eintrag72" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button>
+Es sind <input type="text" id="Eintrag72" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p> 
 
 b) Wie groß ist der Fallweg in den ersten 
-10 und in den folgenden 10 Sekunden?</p></pre>  
+10 und in den folgenden 10 Sekunden?</p> 
 
-                      <script>
+                        <script>
+
                         function Aufgabe72() { 
                                                 
                           if (Eintrag72.value=="93,1") {alert("Richtig"); document.getElementById("Pruef72").disabled= true; 
@@ -79,29 +90,29 @@ b) Wie groß ist der Fallweg in den ersten
                           
 <!--//Aufgabe 73-->                           
                           
-<pre><p class="Aufgabe">Aufgabe 73
+<h2>Aufgabe 73</h2>
 
-Die Schar von Halbkreisen bildet eine Spirale.
+<p>Die Schar von Halbkreisen bildet eine Spirale.</p> 
 
-<img src="Aufgabe73.jpg">
+<img src="Aufgabe73.jpg"></p> 
 
 a) Wie lang ist der 10. Halbkreisbogen, 
-wenn r<sub>1</sub> = 1 cm und r<sub>2</sub> = 1,5 cm betragen?
+wenn r<sub>1</sub> = 1 cm und r<sub>2</sub> = 1,5 cm betragen?</p> 
 b) Wie groß ist die Gesamtlänge l der Spirale 
-bis einschließlich 10. Halbkreisbogen?
+bis einschließlich 10. Halbkreisbogen?</p> 
 
-<button  onclick="window.open('Folge_Aufgabe73.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Folge_Aufgabe73.html');" >Lösung</button></p>
 
 <!--//Aufgabe 74--> 
 
-<pre><p class ="Aufgabe" >Aufgabe 74
+<h2>Aufgabe 74</h2>
 
-Ein Kreis soll so in 6 Ausschnitte geteilt 
+<p>Ein Kreis soll so in 6 Ausschnitte geteilt 
 werden, dass die jeweiligen Zentriwinkel um 10° 
 größer werden. Bestimmen Sie die Folge der 
-Zentriwinkel.     
+Zentriwinkel.    </p> 
 
-a<sub>1</sub> = <input type="text" id="Eintrag74" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p></pre>  
+a<sub>1</sub> = <input type="text" id="Eintrag74" maxlength="2" size="1" style= background-color:yellow ></input> ° <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p>  
 
                       <script>
                         function Aufgabe74() { 
@@ -119,16 +130,16 @@ a<sub>1</sub> = <input type="text" id="Eintrag74" maxlength="2" size="1" style= 
                           
 <!--//Aufgabe 75-->                           
                           
-<pre><p class="Aufgabe">Aufgabe 75
+<h2>Aufgabe 75</h2>
 
-a) Wie groß ist die Summe aller durch 11 
-teilbaren zweiziffrigen Zahlen?
+<p>a) Wie groß ist die Summe aller durch 11 
+teilbaren zweiziffrigen Zahlen?</p>
 
 b) Zwischen die Zahlen 7 und 16 sollen 5 Zahlen 
 so eingefügt werden, dass eine arithmetische 
 Folge entsteht. 
 Bestimmen Sie die Glieder der Folge.
-Wie groß ist ihre Summe?
+Wie groß ist ihre Summe?    </p> 
 
 <button  onclick="window.open('Folge_Aufgabe75.html');" >Lösung</button></p></pre>
 
