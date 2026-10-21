@@ -14,29 +14,39 @@
 </head>
 <body style="background-color: white;">
 
-    <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
-        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
-        
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
-        input {background-color:yellow; }
-    </style>
+        <style>
+
+.Text1 {font-size: 1.3em;font-family: Verdana,Sans-serif; }
+.Text2 { font-size: 1em; font-family: Verdana,Sans-serif;}
+input {background-color:yellow; }
+body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }
+main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+
+</style>
+</head>
+
+<body>
+<main>	
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 <p class="Text1">Folgen und Reihen</p> 
     <p class="Text2" > <span style= "background-color:white;">Sie sehen eine gelbes Eingabefeld oder <br>den Schalter: Lösung.</span></p>
   	<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
+<div class="check">
+
 <!--//Aufgabe 96-->
 
-<pre><b><p class ="Aufgabe" >Aufgabe 96
+<h2>Aufgabe 96</h2>
 
-Bestimmen Sie die Bildungsgesetze der folgenden 
+<p>Bestimmen Sie die Bildungsgesetze der folgenden 
 Zahlenfolgen, und ermitteln Sie a<sub>10</sub>.
 
-       1    1                       
+<pre>       1    1                       
 a) 1, ---, --- ...    
        2    4
 
@@ -61,27 +71,27 @@ b) 2, ---, -----, -----, ...
 
 <!--//Aufgabe 97-->
                           
-<pre><p class="Aufgabe">Aufgabe 97
+<h2>Aufgabe 97</h2>
 
-Berechnen Sie a<sub>10</sub> und s<sub>10</sub> für die Folgen:
+<p>Berechnen Sie a<sub>10</sub> und s<sub>10</sub> für die Folgen:</p>
 
-a) 3, 6, 12 ...
+a) 3, 6, 12 ...</p>
 
-b) 1 000, 500, 250 ...
+b) 1 000, 500, 250 ...</p>
 
-<button  onclick="window.open('Folge_Aufgabe97.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Folge_Aufgabe97.html');" >Lösung</button></p>
 
 <!--//Aufgabe 98-->
 
-<pre><p class ="Aufgabe" >Aufgabe 98
+<h2>Aufgabe 98</h2>
 
-Berechnen Sie a<sub>10</sub> und s<sub>10</sub> für die Folgen:
+<p>Berechnen Sie a<sub>10</sub> und s<sub>10</sub> für die Folgen:</p>
 
-a) -2, 6, -18 ...
+a) -2, 6, -18 ...</p>
 
-s<sub>10</sub> = <input type="text" id="Eintrag98" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button>
+s<sub>10</sub> = <input type="text" id="Eintrag98" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button></p>
 
-b) 0,2; -0,8; 3,2 ...</p></pre>  
+b) 0,2; -0,8; 3,2 ...</p>  
 
                       <script>
                         function Aufgabe98() { 
@@ -97,28 +107,29 @@ b) 0,2; -0,8; 3,2 ...</p></pre>
                           
 <!--//Aufgabe 99-->
                           
-<pre><p class="Aufgabe">Aufgabe 99
+<h2>Aufgabe 99</h2>
 
-Berechnen Sie a<sub>10</sub> und s<sub>10</sub> für die Folgen:
+<p>Berechnen Sie a<sub>10</sub> und s<sub>10</sub> für die Folgen:</p>
 
-a) -13 122, 4 374, -1 458 ...
+a) -13 122, 4 374, -1 458 ...</p>
 
-b) 0,1; 0,01; 0,001 ...
+b) 0,1; 0,01; 0,001 ...</p>
 
-<button  onclick="window.open('Folge_Aufgabe99.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Folge_Aufgabe99.html');" >Lösung</button></p>
 
 <!--//Aufgabe 100-->
 
-<pre><p class ="Aufgabe" >Aufgabe 100
+<h2>Aufgabe 100</h2>
 
-a) Von einer geometrischen Folge sind a<sub>4</sub> = 16 
-und a<sub>5</sub> = 32 gegeben. Berechnen Sie a<sub>1</sub> und a<sub>6</sub>. 
+<p>a) Von einer geometrischen Folge sind a<sub>4</sub> = 16 
+und a<sub>5</sub> = 32 gegeben. Berechnen Sie a<sub>1</sub> und a<sub>6</sub>.</p> 
 
-a<sub>1</sub> = <input type="text" id="Eintrag100" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button>
+a<sub>1</sub> = <input type="text" id="Eintrag100" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p>
 
 b) Von einer geometrischen Folge sind a<sub>4</sub> = -1 
-und a<sub>5</sub> = 1 gegeben. Berechnen Sie a<sub>1</sub> und a<sub>6</sub>. </p></pre>  
+und a<sub>5</sub> = 1 gegeben. Berechnen Sie a<sub>1</sub> und a<sub>6</sub>.</p>
 
+ 
                       <script>
                         function Aufgabe100() { 
                                                 
@@ -134,32 +145,32 @@ und a<sub>5</sub> = 1 gegeben. Berechnen Sie a<sub>1</sub> und a<sub>6</sub>. </
 
 <!--//Aufgabe 101-->
                           
-<pre><p class="Aufgabe">Aufgabe 101
+<h2>Aufgabe 101</h2>
 
-a) Fügen Sie zwischen die Zahlen 4 und 128 
+<p>a) Fügen Sie zwischen die Zahlen 4 und 128 
 4 Zahlen so ein, dass eine geometrische 
-Zahlenfolge entsteht. 
+Zahlenfolge entsteht.</p> 
 
 b) Fügen Sie zwischen die Zahlen -200 und -6,25 
 4 Zahlen so ein, dass eine geometrische 
-Zahlenfolge entsteht.
+Zahlenfolge entsteht.</p> 
 
-<button  onclick="window.open('Folge_Aufgabe101.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Folge_Aufgabe101.html');" >Lösung</button></p>
 
 <!--//Aufgabe 102-->
 
-<pre><p class ="Aufgabe" >Aufgabe 102
+<h2>Aufgabe 102</h2>
 
-a) 3 Zahlen bilden eine geometrische Folge mit 
+<p>a) 3 Zahlen bilden eine geometrische Folge mit 
 der Summe 39. Die mittlere Zahl ist gleich 10. 
-Wie lauten die beiden anderen Zahlen?
+Wie lauten die beiden anderen Zahlen?</p>
 
-a<sub>1</sub> = <input type="text" id="Eintrag102" maxlength="2" size="1" style= background-color:yellow ></input> oder 4 <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button>
+a<sub>1</sub> = <input type="text" id="Eintrag102" maxlength="2" size="1" style= background-color:yellow ></input> oder 4 <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button></p>
 
 b) Von 3 Zahlen, die eine geometrische Folge 
 bilden, ist die zweite um 13 größer als die erste 
 und die dritte um 26 größer als die zweite. 
-Wie lauten die Zahlen? </p></pre>  
+Wie lauten die Zahlen?</p> 
 
                       <script>
                         function Aufgabe102() { 
@@ -176,30 +187,30 @@ Wie lauten die Zahlen? </p></pre>
                         
 <!--//Aufgabe 103-->
                           
-<pre><p class="Aufgabe">Aufgabe 103
+<h2>Aufgabe 103</h2>
 
-a) a<sub>1</sub> und a<sub>3</sub> einer geometrischen Folge ergeben 
+<p>a) a<sub>1</sub> und a<sub>3</sub> einer geometrischen Folge ergeben 
 als Summe 68 und als Produkt 256. Wie lauten die 
-beiden Glieder der Folge? 
+beiden Glieder der Folge?</p> 
 
 b) Bestimmen Sie die Summe s<sub>n</sub> der Glieder einer 
 geometrischen Folge mit a<sub>1</sub> = 3, a<sub>n</sub> = 12 288 und 
-q = 4.
+q = 4.</p>
 
-<button  onclick="window.open('Folge_Aufgabe103.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Folge_Aufgabe103.html');" >Lösung</button></p>
 
 <!--//Aufgabe 104-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 104
+  <h2>Aufgabe 104</h2>
 
-a) Bestimmen Sie die Summe s<sub>n</sub> der Glieder einer 
+<p>a) Bestimmen Sie die Summe s<sub>n</sub> der Glieder einer 
 geometrischen Folge mit a<sub>1</sub> = 7, a<sub>n</sub> = 273,4375 
-und q = 2,5.
+und q = 2,5.</p>
 
 b) Wieviele Glieder der geometrischen Folge 
-mit 3, 6, ... ergeben die Summe s<sub>n</sub> = 6 141?
+mit 3, 6, ... ergeben die Summe s<sub>n</sub> = 6 141?</p> 
 
-n = <input type="text" id="Eintrag104" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p></pre> 
+n = <input type="text" id="Eintrag104" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p> 
     
  
                       <script>
@@ -217,33 +228,32 @@ n = <input type="text" id="Eintrag104" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 105-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 105
+    <h2>Aufgabe 105</h2>
 
-a) Wieviele Glieder der geometrischen Folge 
+<p>a) Wieviele Glieder der geometrischen Folge 
 mit -4, -1, ... ergeben die Summe 
-s<sub>n</sub> = -5,33203125?
+s<sub>n</sub> = -5,33203125?</p>
 
 b) Vom wievielten Glied der geometrischen Folge 
 mit 3, 12, 48, 192, ... ab, sind die Folgeglieder 
-größer als 106?
+größer als 106?</p>
 
-<button  onclick="window.open('Folge_Aufgabe105.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Folge_Aufgabe105.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 106-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 106
+  <h2>Aufgabe 106</h2>
 
-a) Vom wievielten Glied der geometrischen Folge 
+<p>a) Vom wievielten Glied der geometrischen Folge 
 mit 1; 0,5; 0,25; 0,125; ... ab, sind die 
-Folgeglieder kleiner als 10<sup>-6</sup>?
+Folgeglieder kleiner als 10<sup>-6</sup>?</p>
 
-An n > <input type="text" id="Eintrag106" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button>
+An n > <input type="text" id="Eintrag106" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button></p>
 
-b) Bei welcher geometrischen Folge mit a₁ = 5 
+b) Bei welcher geometrischen Folge mit a<sub>1</sub> = 5 
 und a<sub>7</sub> = 3 645 ist die Summe der ersten 6 Glieder 
-gleich -910?</p></pre> 
-    
- 
+gleich -910?</p>
+
                       <script>
                         function Aufgabe106() { 
                                                 
@@ -259,34 +269,34 @@ gleich -910?</p></pre>
 
 <!--//Aufgabe 107-->
                       
-    <pre><p class="Aufgabe">Aufgabe 107
+    <h2>Aufgabe 107</h2>
 
-a) Das 7. Glied einer geometrischen Folge mit 
+<p>a) Das 7. Glied einer geometrischen Folge mit 
 q = 2 ist gleich 96. Bestimmen Sie mit der 
 expliziten Darstellung dieser Folge die 
-Glieder 1 - 6. 
+Glieder 1 - 6.</p> 
 
 b) Das 6. Glied einer geometrischen Folge ist 
 gleich 243, das 4. gleich 27.
 Bestimmen sie die ersten 6 Glieder der Folge 
-und deren Summe. 
+und deren Summe. </p>
 
-<button  onclick="window.open('Folge_Aufgabe107.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Folge_Aufgabe107.html');" >Lösung</button></p>   
 
 <!--//Aufgabe 108-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 108
+  <h2>Aufgabe 108</h2>
 
-a) Gegeben sind die ersten 3 Glieder 2, 4/3, 8/9 
+<p>a) Gegeben sind die ersten 3 Glieder 2, 4/3, 8/9 
 einer geometrischen Folge. 
-Bestimmen Sie a<sub>6</sub> und s<sub>12</sub>.
+Bestimmen Sie a<sub>6</sub> und s<sub>12</sub>.</p>
 
 b) Die Summe des 2. und 3. Gliedes einer 
 geometrischen Folge ist gleich 60, der Quotient 
 des 1. und 4. Gliedes gleich 8/27. 
-Bestimmen Sie eine Darstellung der Folge und s<sub>5</sub>.
+Bestimmen Sie eine Darstellung der Folge und s<sub>5</sub>.</p> 
 
-s<sub>5</sub> = <input type="text" id="Eintrag108" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef108" onclick="Aufgabe108()">Prüfen</button></p></b></pre> 
+s<sub>5</sub> = <input type="text" id="Eintrag108" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef108" onclick="Aufgabe108()">Prüfen</button></p></div> 
     
  
                       <script>
