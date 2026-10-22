@@ -31,7 +31,12 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
             .br-mobil {
                 display: block;
             }}
-         
+.br-desk {
+            display: block;}    
+@media screen and (width < 767px) {
+            .br-desk {
+                display: none;
+            }}         
 </style>
 </head>
 
@@ -155,7 +160,7 @@ angewachsen ist?</p>
   <h2>Aufgabe 114</h2>
 
 <p>a) In wieviel Jahren wachsen 22 500 € bei einem 
-Zinssatz von 5% auf 59 699 € an?</p>
+Zinssatz von 5% auf <br class="br-desk">59 699 € an?</p>
 
 In <input type="text" id="Eintrag114" maxlength="2" size="1" style= background-color:yellow ></input> Jahren <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p>
 
