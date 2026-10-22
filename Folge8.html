@@ -27,7 +27,7 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
 .check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; }
 .br-mobil {
             display: none;}    
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
             .br-mobil {
                 display: block;
             }}
@@ -97,7 +97,7 @@ n Schritten?</p>
 
 <img src="Aufgabe111.jpg"></p>
 
-b) Wie groß ist im gleichseitigen Dreieck für 
+b) Wie groß ist im gleichseitigen Dreieck für<br class="br-mobil"> 
 A<sub>0</sub> = 1 die farbige Fläche A<sub>n</sub> nach n Schritten?</p>
 
 <img src="Aufgabe111b.jpg"></p>
@@ -185,7 +185,7 @@ verdreifacht hat?</p>
 Konto, wenn er am Ende eines jeden Jahres weitere 
 400 € einzahlt?</p>
 
-b) Nach wieviel Jahren ist ein Guthaben von 
+b) Nach wieviel Jahren ist ein Guthaben von<br class="br-mobil"> 
 10 000 €, das mit 3,5% verzinst wird, 
 aufgebraucht, wenn am Ende eines jeden Jahres 
 960 € abgehoben werden?</p>
@@ -199,6 +199,8 @@ aufgebraucht, wenn am Ende eines jeden Jahres
 <p>a) 5 Bakterien teilen sich alle 20 Minuten 
 einmal. Wieviel Bakterien sind es in 6 Stunden.</p>
 
+<input type="text" id="Eintrag116" maxlength="7" style= background-color:yellow ></input> Bakterien <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p>
+
 b) Ein weibliches Insekt legt 1 600 Eier. In 
 einem Jahr entstehen 4 Generationen. 75% der 
 Eier sterben ab. Die Hälfte der überlebenden 
@@ -207,8 +209,6 @@ b<sub>1</sub>) Wie hoch ist die Anzahl der überlebenden
 Insekten in einem Jahr, die auf weibliche 
 Insekten zurückgeführt werden können?</p>
 
-<input type="text" id="Eintrag116" maxlength="10" size="6" style= background-color:yellow ></input> Insekten <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p>
-
 b<sub>2</sub>) Wie hoch ist die Gesamtzahl der gelegten 
 Eier in einem Jahr?</p>
    
@@ -216,10 +216,10 @@ Eier in einem Jahr?</p>
                       <script>
                         function Aufgabe116() { 
                                                 
-                          if (Eintrag116.value=="3200000000") {alert("Richtig"); document.getElementById("Pruef116").disabled= true;
+                          if (Eintrag116.value=="1310720") {alert("Richtig"); document.getElementById("Pruef116").disabled= true;
                           }  
                            
-                          else if (Eintrag116.value!=="3200000000" && Eintrag116.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag116").value="3200000000"; window.open('Folge_Aufgabe116.html');           
+                          else if (Eintrag116.value!=="1310720" && Eintrag116.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag116").value="1310720"; window.open('Folge_Aufgabe116.html');           
                           document.getElementById("Pruef116").disabled= true;}
                                
                           else if (Eintrag116.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -248,7 +248,7 @@ erhalten? </p>
   <h2>Aufgabe 118</h2>
 
 <p>a) 1 l Alkohol wird mit 4 l Wasser vermischt. 
-In 1 l dieser Mischung kommen wieder 4 l Wasser. 
+In <br class="br-mobil">1 l dieser Mischung kommen wieder 4 l Wasser. 
 Wie oft muss dieser Mischvorgang durchgeführt 
 werden, damit die Mischung noch 0,00032 l Alkohol 
 enthält?</p>
